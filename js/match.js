@@ -3,8 +3,8 @@
    - しあいのボタンのリスト(国でしぼりこみもできる)
    - スコアボード(ホームは左、アウェイは右。PKせんにも対応)
    - とくてん(ゴール)
-   - さいしょに出るメンバー(先発)と せんしゅこうたい(まとめて表示)
-   - じょうほうのもと(出典)へのリンク
+   - さいしょに出るメンバー(先発)と 選手交代(まとめて表示)
+   - 情報のもと(出典)へのリンク
    ========================================================= */
 
 const MatchView = (() => {
@@ -90,25 +90,25 @@ const MatchView = (() => {
 
     let lastType = null;
     sections.forEach((section) => {
-      // 「グループリーグ」と「けっしょうトーナメント」の大きな見出し
+      // 「グループリーグ」と「決勝トーナメント」の大きな見出し
       if (section.stageType !== lastType) {
         const big = document.createElement("h4");
         big.className = "stage-type-heading";
         big.textContent =
           section.stageType === "group"
             ? "🏁 グループリーグ(1回せんリーグ)"
-            : "🏆 けっしょうトーナメント(かったら つぎにすすめる)";
+            : "🏆 決勝トーナメント(かったら つぎにすすめる)";
         listEl.appendChild(big);
         lastType = section.stageType;
       }
 
       const details = document.createElement("details");
       details.className = "stage-box";
-      // 国でしぼったとき・えらんだしあいがある箱・けっしょうの箱は、ひらいておく
+      // 国でしぼったとき・えらんだしあいがある箱・決勝の箱は、ひらいておく
       if (
         options.openAll ||
         section.matches.some((m) => m.id === selectedId) ||
-        section.stage === "けっしょう(決勝)"
+        section.stage === "決勝"
       ) {
         details.open = true;
       }
@@ -145,9 +145,9 @@ const MatchView = (() => {
     btn.innerHTML =
       `<span class="match-btn-date">${escapeHtml(match.dateJa)}${noteText ? escapeHtml(noteText) : ""}</span>` +
       `<span class="match-btn-card">` +
-      `<span class="mb-team mb-home">${escapeHtml(match.homeTeam.nameJa)}<img class="mb-flag" src="${escapeHtml(home.flag)}" alt=""></span>` +
+      `<span class="mb-team mb-home">${escapeHtml(match.homeTeam.nameJa)}<img class="mb-flag" src="${escapeHtml(home.flag)}" alt="" loading="lazy"></span>` +
       `<span class="mb-score">${match.homeTeam.score} - ${match.awayTeam.score}</span>` +
-      `<span class="mb-team mb-away"><img class="mb-flag" src="${escapeHtml(away.flag)}" alt="">${escapeHtml(match.awayTeam.nameJa)}</span>` +
+      `<span class="mb-team mb-away"><img class="mb-flag" src="${escapeHtml(away.flag)}" alt="" loading="lazy">${escapeHtml(match.awayTeam.nameJa)}</span>` +
       `</span>`;
     btn.addEventListener("click", () => onSelect(match.id));
     return btn;
@@ -191,7 +191,7 @@ const MatchView = (() => {
       if (!goals.length && teamScore === 0) return `<p class="no-data">ゴールなし</p>`;
       let html = goals.slice().sort(sortByMinute).map(goalRow).join("");
       if (goals.length < teamScore) {
-        html += `<p class="no-data">(とくてんの くわしい じょうほうは かくにん中)</p>`;
+        html += `<p class="no-data">(とくてんの くわしい 情報は かくにん中)</p>`;
       }
       return html;
     };
@@ -210,11 +210,11 @@ const MatchView = (() => {
         ? `<p class="formation-note">※ 公式のならびが かくにんできていないため、せんしゅの とうろくポジションをもとにした、おおよその ならびです。</p>`
         : "";
 
-    // こうたいの見方のせつめい(先発とこうたいの両方があるときだけ出す)
+    // 交代の見方のせつめい(先発と交代の両方があるときだけ出す)
     const hasSubs = home.substitutions.length || away.substitutions.length;
     const subHint =
       hasLineup && hasSubs
-        ? `<p class="sub-hint">せんしゅの下の 黄色い「(66分 ○○)」は、その時間に ○○せんしゅと こうたいして 下がった という意味だよ。</p>`
+        ? `<p class="sub-hint">せんしゅの下の 黄色い「(66分 ○○)」は、その時間に ○○せんしゅと 交代して 下がった という意味だよ。</p>`
         : "";
 
     const sourcesHtml = match.sources.length
@@ -268,7 +268,7 @@ const MatchView = (() => {
       </div>
 
       <div class="match-part">
-        <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)と せんしゅこうたい</h4>
+        <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)と 選手交代</h4>
         ${formationNote}
         ${subHint}
         <div class="pitches">
@@ -278,7 +278,7 @@ const MatchView = (() => {
       </div>
 
       <div class="match-part">
-        <h4><span aria-hidden="true">🔎</span> じょうほうのもとを見る</h4>
+        <h4><span aria-hidden="true">🔎</span> 情報源を見る</h4>
         ${sourcesHtml}
       </div>
     `;
@@ -286,15 +286,15 @@ const MatchView = (() => {
 
   /**
    * 1チームぶんの箱:コート(先発)+ とちゅうから出たせんしゅ
-   * コートの上では、こうたいで下がったせんしゅに「(○分OUT)」と出す。
-   * コートの下に、こうたいで出たせんしゅを「名前(○分IN・だれとこうたい)」で出す。
+   * コートの上では、交代で下がったせんしゅに「(○分OUT)」と出す。
+   * コートの下に、交代で出たせんしゅを「名前(○分IN・だれと交代)」で出す。
    */
   function teamLineupBox(team, side) {
     if (!team.startingPlayers.length) {
       return `
         <div class="pitch-box">
           <p class="pitch-title">${escapeHtml(team.nameJa)}</p>
-          <p class="no-data">先発メンバーと こうたいの じょうほうは かくにん中です</p>
+          <p class="no-data">先発メンバーと 交代の 情報は かくにん中です</p>
         </div>`;
     }
 
@@ -305,10 +305,10 @@ const MatchView = (() => {
           .map(
             (s) =>
               `<p class="sub-row">${escapeHtml(s.playerIn)}` +
-              `<span class="sub-inout">(<span class="minute">${escapeHtml(s.minute)}分</span>IN・${escapeHtml(s.playerOut)} とこうたい)</span></p>`
+              `<span class="sub-inout">(<span class="minute">${escapeHtml(s.minute)}分</span>IN・${escapeHtml(s.playerOut)} と交代)</span></p>`
           )
           .join("")
-      : `<p class="no-data">こうたいの じょうほうは かくにん中です</p>`;
+      : `<p class="no-data">交代の 情報は かくにん中です</p>`;
 
     return `
       <div class="pitch-box">
@@ -353,7 +353,7 @@ const MatchView = (() => {
   /**
    * サッカーコートの上に先発メンバーをならべたSVGをつくる
    * - row 0 がゴールキーパー(いちばん下)、数字が大きいほど前(上)
-   * - こうたいで下がったせんしゅには「(○分 かわりに出たせんしゅ)」と出す
+   * - 交代で下がったせんしゅには「(○分 かわりに出たせんしゅ)」と出す
    */
   function pitchSvg(team, side) {
     const W = 400;
@@ -400,7 +400,7 @@ const MatchView = (() => {
           })
           .join("");
 
-        // こうたいで下がった選手には「(○分 かわりに出たせんしゅ)」と出す
+        // 交代で下がった選手には「(○分 かわりに出たせんしゅ)」と出す
         const sub = subByOutName.get(p.name);
         let outText = "";
         if (sub) {

@@ -16,8 +16,8 @@
   --away-red: #ff6b6b;      /* アウェイの国の赤 */
   --joined-green: #2f9e63;  /* ワールドカップに出た国の緑 */
   --joined-green-light: #43c07e; /* 緑の国にマウスをのせたときの色 */
-  --other-navy: #22375c;    /* 出ていない国の色 */
-  --ocean: #0e2244;         /* 海の色 */
+  --other-land: #a3b1c2;    /* 出ていない国(明るいグレー)。海とはっきり分ける */
+  --ocean: #17517f;         /* 海の色(陸とはっきり分かる青) */
   --pitch-green: #17643b;   /* サッカーコートの緑 */
   --focus: #ffe08a;         /* キーボードでえらんだときのわく */
 }
@@ -181,8 +181,8 @@ kbd {
 
 /* 地図の中の国の色 */
 .country {
-  fill: var(--other-navy);
-  stroke: #0a1a33;
+  fill: var(--other-land);
+  stroke: #35465c;
   stroke-width: 0.6;
   vector-effect: non-scaling-stroke; /* ズームしても、国ざかいの線は太くしない */
 }
@@ -284,9 +284,6 @@ kbd {
 }
 .match-list {
   margin-bottom: 16px;
-  max-height: 560px;       /* リストが長いので、この中でスクロールできるようにする */
-  overflow-y: auto;
-  padding-right: 6px;
 }
 .stage-type-heading {
   margin: 14px 0 8px;

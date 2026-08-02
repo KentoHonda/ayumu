@@ -4,7 +4,7 @@
    2. 地図とそれぞれの画面をつくる
    3. うごきのながれ:
       - 国をえらぶ → その国のしあいが ぜんぶリストに出る
-      - しあいをえらぶ → 国のじょうほうと、しあいのくわしいけっかが出る
+      - しあいをえらぶ → 国の情報と、しあいのくわしいけっかが出る
    ========================================================= */
 
 (() => {
@@ -60,7 +60,7 @@
     selectedMatchId = null;
 
     WorldMap.highlightCountries(selected);   // 地図:えらんだ国を黄色に
-    CountryView.render(selected);            // 国のじょうほうカード
+    CountryView.render(selected);            // 国の情報カード
     renderMatchList();                       // その国のしあいだけをリストに出す
     MatchView.renderDetailPlaceholder();     // くわしいけっかは「しあいをえらんでね」に
   }
@@ -77,7 +77,7 @@
     WorldMap.showMatch(match, home, away);            // 地図:色つけ+たいせんライン
     MatchView.updateSelected(matchId);                // ボタンの「えらんでいる」しるしをつけかえる
     MatchView.renderMatchDetail(match, countriesById); // しあいのくわしい中身
-    CountryView.render([home, away]);                 // 2つの国のじょうほう
+    CountryView.render([home, away]);                 // 2つの国の情報
   }
 
   /** アプリのスタート */

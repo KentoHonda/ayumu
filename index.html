@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ワールドカップ2026 せかい地図アプリ</title>
-  <meta name="description" content="2026年サッカーワールドカップのしあいと出場国を、せかい地図でしらべられる学習アプリです(小学生の自由研究)。">
+  <title>ワールドカップ2026 世界地図アプリ</title>
+  <meta name="description" content="2026年サッカーワールドカップのしあいと出場国を、世界地図でしらべられる学習アプリです(小学生の自由研究)。">
   <link rel="icon" href="assets/icons/ball.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,13 +25,13 @@
         </svg>
         <div>
           <h1>ワールドカップ2026</h1>
-          <p class="subtitle">せかい地図で しあいを チェック!</p>
+          <p class="subtitle">世界地図で しあいを チェック!</p>
         </div>
       </div>
       <nav class="main-nav" aria-label="ページの中のメニュー">
-        <a href="#map-section">せかい地図</a>
+        <a href="#map-section">世界地図</a>
         <a href="#match-section">しあいのけっか</a>
-        <a href="#country-section">国のじょうほう</a>
+        <a href="#country-section">国の情報</a>
       </nav>
     </div>
   </header>
@@ -42,9 +42,9 @@
       README の「パソコンで うごかす ほうほう」を 見てね。
     </p>
 
-    <!-- ========== せかい地図 ========== -->
+    <!-- ========== 世界地図 ========== -->
     <section id="map-section" class="panel" aria-labelledby="map-heading">
-      <h2 id="map-heading"><span aria-hidden="true">🌍</span> せかい地図</h2>
+      <h2 id="map-heading"><span aria-hidden="true">🌍</span> 世界地図</h2>
       <p class="hint">
         緑色の国は、ワールドカップ2026に 出た48か国だよ。<br>
         国を タップ(クリック)すると、下の「しあいのけっか」に その国のしあいが ならぶよ。キーボードの
@@ -56,7 +56,7 @@
         <button type="button" id="zoom-reset" class="zoom-btn zoom-reset" aria-label="地図をもとの大きさにもどす">もとにもどす</button>
       </div>
       <div class="map-wrap">
-        <svg id="world-map" role="group" aria-label="せかい地図。ワールドカップに出た国をえらべます。"></svg>
+        <svg id="world-map" role="group" aria-label="世界地図。ワールドカップに出た国をえらべます。"></svg>
       </div>
       <div class="legend" role="img" aria-label="地図のはんれい。緑はワールドカップに出た国、緑の丸は地図にのっていない小さな島国、青はホームの国、赤はアウェイの国、黄色はえらんだ国、点線はたいせんラインです。">
         <span class="legend-item"><span class="chip chip-joined"></span>ワールドカップに出た国</span>
@@ -72,25 +72,24 @@
     <section id="match-section" class="panel" aria-labelledby="match-heading">
       <h2 id="match-heading"><span aria-hidden="true">⚽</span> しあいのけっか</h2>
       <p class="hint">大会ぜんぶで104しあい! 「グループA」などの見出しをおすと、しあいがひらくよ。<br>
-        見たいしあいのボタンをおしてね。地図で国をえらぶと、その国のしあいだけに しぼれるよ。<br>
-        ※ けっしょうトーナメントの一部のしあいは、とくてんの くわしいじょうほうが「かくにん中」だよ。</p>
+        見たいしあいのボタンをおしてね。地図で国をえらぶと、その国のしあいだけに しぼれるよ。</p>
       <h3 id="match-list-heading" class="match-list-heading">ぜんぶのしあい</h3>
       <div id="match-list" class="match-list"></div>
       <article id="match-detail" aria-live="polite"></article>
     </section>
 
-    <!-- ========== 国のじょうほう ========== -->
+    <!-- ========== 国の情報 ========== -->
     <section id="country-section" class="panel" aria-labelledby="country-heading">
-      <h2 id="country-heading"><span aria-hidden="true">🚩</span> 国のじょうほう</h2>
-      <p class="hint">地図で 国をえらぶと、ここに くわしい じょうほうが 出るよ。</p>
+      <h2 id="country-heading"><span aria-hidden="true">🚩</span> 国の情報</h2>
+      <p class="hint">地図で 国をえらぶと、ここに くわしい 情報が 出るよ。</p>
       <div id="country-cards" class="country-cards"></div>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>このページは、小学生の自由研究(じゆうけんきゅう)で作った、ワールドカップ2026の学習アプリです。</p>
-    <p>しあいのデータは、FIFA(国際サッカー連盟)などの公式じょうほうを もとにしています。くわしくは、それぞれのしあいの「じょうほうのもとを見る」を見てね。</p>
-    <p>このページに、名前・住所などの こじんじょうほうは のせていません。</p>
+    <p>しあいのデータは、FIFA(国際サッカー連盟)などの公式情報を もとにしています。くわしくは、それぞれのしあいの「情報源を見る」を見てね。</p>
+    <p>このページに、名前・住所などの 個人情報は のせていません。</p>
   </footer>
 
   <!-- ライブラリ(リポジトリの中に入れてあるので、インターネットのAPIにはアクセスしません) -->
