@@ -191,6 +191,11 @@ kbd {
   cursor: pointer;
 }
 .country.joined:hover { fill: var(--joined-green-light); }
+/* クリックしたときに出るブラウザの黒いわくは消す(キーボードでえらんだときだけ金色のわくを出す) */
+.country:focus,
+.country-marker:focus {
+  outline: none;
+}
 .country.joined:focus-visible {
   outline: none;
   stroke: var(--focus);

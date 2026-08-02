@@ -290,6 +290,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "90+6",
+     "player": "イ・ギヒョク",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -358,7 +366,7 @@
      },
      {
       "number": 26,
-      "name": "B・グティエレス",
+      "name": "ブライアン・グティエレス",
       "position": "MF",
       "row": 3
      },
@@ -378,7 +386,7 @@
     "substitutions": [
      {
       "minute": "66",
-      "playerOut": "B・グティエレス",
+      "playerOut": "ブライアン・グティエレス",
       "playerIn": "ルイス・チャベス"
      },
      {
@@ -394,7 +402,7 @@
      {
       "minute": "76",
       "playerOut": "ヒメネス",
-      "playerIn": "A・ゴンサレス"
+      "playerIn": "アルマンド・ゴンサレス"
      },
      {
       "minute": "79",
@@ -575,6 +583,44 @@
      "home": 1,
      "away": 2
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "17",
+     "player": "モコエナ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "23",
+     "player": "ブライアン・グティエレス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "49",
+     "player": "シトレ",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "74",
+     "player": "シビシ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "84",
+     "player": "ズワネ",
+     "type": "red"
+    },
+    {
+     "team": "home",
+     "minute": "90+2",
+     "player": "モンテス",
+     "type": "red"
+    }
    ]
   },
   {
@@ -655,7 +701,7 @@
      },
      {
       "number": 10,
-      "name": "J・デイビッド",
+      "name": "ジョナタン・デイビッド",
       "position": "FW",
       "row": 3
      }
@@ -668,8 +714,8 @@
      },
      {
       "minute": "61",
-      "playerOut": "J・デイビッド",
-      "playerIn": "P・デイビッド"
+      "playerOut": "ジョナタン・デイビッド",
+      "playerIn": "プロミス・デイビッド"
      },
      {
       "minute": "61",
@@ -865,6 +911,38 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "11",
+     "player": "ジョンストン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45",
+     "player": "デミロビッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45+1",
+     "player": "ルキッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "53",
+     "player": "デ・フージェロール",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "カティッチ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -891,7 +969,7 @@
      },
      {
       "number": 5,
-      "name": "A・ロビンソン",
+      "name": "アントニー・ロビンソン",
       "position": "DF",
       "row": 1
      },
@@ -1168,6 +1246,44 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "10",
+     "player": "カセレス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "53",
+     "player": "アルミロン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "59",
+     "player": "タイラー・アダムズ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "79",
+     "player": "ディエゴ・ゴメス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "88",
+     "player": "アルセ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "アロンソ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -1248,7 +1364,7 @@
      },
      {
       "number": 9,
-      "name": "M・トゥーレ",
+      "name": "モハメド・トゥーレ",
       "position": "FW",
       "row": 3
      }
@@ -1261,7 +1377,7 @@
      },
      {
       "minute": "74",
-      "playerOut": "M・トゥーレ",
+      "playerOut": "モハメド・トゥーレ",
       "playerIn": "イェンギ"
      },
      {
@@ -1457,6 +1573,14 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "86",
+     "player": "アクギュン",
+     "type": "yellow"
     }
    ]
   },
@@ -1748,6 +1872,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "37",
+     "player": "カゼミーロ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "43",
+     "player": "イバニェス",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -2022,6 +2160,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "39",
+     "player": "ベルガルド",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "46",
+     "player": "ヒッキー",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+1",
+     "player": "カーティス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+5",
+     "player": "マクリーン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -2150,7 +2314,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -2232,7 +2396,7 @@
      },
      {
       "minute": "89",
-      "playerOut": "R・ロドリゲス",
+      "playerOut": "リカルド・ロドリゲス",
       "playerIn": "ムハイム"
      }
     ]
@@ -2312,6 +2476,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "16",
+     "player": "アブナダ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "23",
+     "player": "ジャセム・ガベル",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "42",
+     "player": "ザカリア",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -2332,7 +2516,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "Y・フォファナ",
+      "name": "ヤヒア・フォファナ",
       "position": "GK",
       "row": 0
      },
@@ -2356,13 +2540,13 @@
      },
      {
       "number": 17,
-      "name": "G・ドゥエ",
+      "name": "ゲラ・ドゥエ",
       "position": "DF",
       "row": 1
      },
      {
       "number": 24,
-      "name": "B・トゥーレ",
+      "name": "バズマナ・トゥーレ",
       "position": "MF",
       "row": 2
      },
@@ -2380,7 +2564,7 @@
      },
      {
       "number": 11,
-      "name": "Y・ディオマンデ",
+      "name": "ヤン・ディオマンデ",
       "position": "MF",
       "row": 2
      },
@@ -2405,7 +2589,7 @@
      },
      {
       "minute": "56",
-      "playerOut": "B・トゥーレ",
+      "playerOut": "バズマナ・トゥーレ",
       "playerIn": "ディアロ"
      },
      {
@@ -2420,7 +2604,7 @@
      },
      {
       "minute": "89",
-      "playerOut": "G・ドゥエ",
+      "playerOut": "ゲラ・ドゥエ",
       "playerIn": "コスヌ"
      }
     ]
@@ -2518,7 +2702,7 @@
      {
       "minute": "77",
       "playerOut": "エネル・バレンシア",
-      "playerIn": "K・ロドリゲス"
+      "playerIn": "ケビン・ロドリゲス"
      }
     ]
    },
@@ -2590,6 +2774,32 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "28",
+     "player": "セコ・フォファナ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "38",
+     "player": "ケシエ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "40",
+     "player": "ゲラ・ドゥエ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "73",
+     "player": "ポロソ",
+     "type": "yellow"
     }
    ]
   },
@@ -2743,7 +2953,7 @@
      },
      {
       "number": 10,
-      "name": "L・バクナ",
+      "name": "レアンドロ・バクナ",
       "position": "MF",
       "row": 2
      },
@@ -2761,7 +2971,7 @@
      },
      {
       "number": 7,
-      "name": "J・バクナ",
+      "name": "ジュニーニョ・バクナ",
       "position": "MF",
       "row": 3
      },
@@ -2907,7 +3117,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "NED-JPN-2026-06-14",
@@ -3216,6 +3427,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "61",
+     "player": "サマーフィル",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "83",
+     "player": "デパイ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+1",
+     "player": "ファン・デ・フェン",
+     "type": "yellow"
     }
    ]
   },
@@ -3531,6 +3762,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "54",
+     "player": "ラニ・ケディラ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -3821,6 +4060,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "13",
+     "player": "アッティア",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "14",
+     "player": "カスターニュ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "34",
+     "player": "ファトゥ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "75",
+     "player": "デ・カイパー",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -3944,7 +4209,7 @@
      },
      {
       "number": 13,
-      "name": "S・カブラル",
+      "name": "シドニー・カブラル",
       "position": "DF",
       "row": 1
      },
@@ -3962,13 +4227,13 @@
      },
      {
       "number": 22,
-      "name": "S・モレイラ",
+      "name": "スティーヴン・モレイラ",
       "position": "DF",
       "row": 1
      },
      {
       "number": 6,
-      "name": "K・ピナ",
+      "name": "ケビン・ピナ",
       "position": "MF",
       "row": 2
      },
@@ -3986,7 +4251,7 @@
      },
      {
       "number": 15,
-      "name": "L・ドゥアルテ",
+      "name": "ラロス・ドゥアルテ",
       "position": "MF",
       "row": 3
      },
@@ -4007,12 +4272,12 @@
      {
       "minute": "61",
       "playerOut": "ジョヴァネ・カブラル",
-      "playerIn": "W・セメド"
+      "playerIn": "ウィリー・セメド"
      },
      {
       "minute": "61",
-      "playerOut": "L・ドゥアルテ",
-      "playerIn": "D・ドゥアルテ"
+      "playerOut": "ラロス・ドゥアルテ",
+      "playerIn": "デロイ・ドゥアルテ"
      },
      {
       "minute": "61",
@@ -4021,7 +4286,7 @@
      },
      {
       "minute": "76",
-      "playerOut": "S・カブラル",
+      "playerOut": "シドニー・カブラル",
       "playerIn": "ジョアン・パウロ"
      },
      {
@@ -4092,6 +4357,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "16",
+     "player": "シドニー・カブラル",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+3",
+     "player": "ペドリ",
+     "type": "yellow"
     }
    ]
   },
@@ -4390,6 +4669,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "89",
+     "player": "ハジサフィ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -4479,7 +4766,7 @@
      {
       "minute": "63",
       "playerOut": "アル・ジュワイル",
-      "playerIn": "N・アル・ドサリ"
+      "playerIn": "ナセル・アル・ドサリ"
      },
      {
       "minute": "81",
@@ -4530,13 +4817,13 @@
      },
      {
       "number": 3,
-      "name": "S・カセレス",
+      "name": "セバスティアン・カセレス",
       "position": "DF",
       "row": 1
      },
      {
       "number": 13,
-      "name": "G・バレラ",
+      "name": "ギジェルモ・バレラ",
       "position": "DF",
       "row": 1
      },
@@ -4554,7 +4841,7 @@
      },
      {
       "number": 20,
-      "name": "M・アラウホ",
+      "name": "マキシ・アラウホ",
       "position": "MF",
       "row": 3
      },
@@ -4581,7 +4868,7 @@
      {
       "minute": "45",
       "playerOut": "ビーニャ",
-      "playerIn": "J・M・サナブリア"
+      "playerIn": "フアン・マヌエル・サナブリア"
      },
      {
       "minute": "45",
@@ -4595,7 +4882,7 @@
      },
      {
       "minute": "81",
-      "playerOut": "M・アラウホ",
+      "playerOut": "マキシ・アラウホ",
       "playerIn": "ブライアン・ロドリゲス"
      },
      {
@@ -4615,7 +4902,7 @@
     {
      "team": "away",
      "minute": "80",
-     "player": "M・アラウホ",
+     "player": "マキシ・アラウホ",
      "type": "normal"
     }
    ],
@@ -4680,6 +4967,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "44",
+     "player": "アル・アムリ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -4700,7 +4995,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -4976,7 +5271,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "AUT-JOR-2026-06-16",
@@ -4996,7 +5292,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "A・シュラーガー",
+      "name": "アレクサンダー・シュラーガー",
       "position": "GK",
       "row": 0
      },
@@ -5026,7 +5322,7 @@
      },
      {
       "number": 4,
-      "name": "X・シュラーガー",
+      "name": "クサヴァー・シュラーガー",
       "position": "MF",
       "row": 2
      },
@@ -5079,7 +5375,7 @@
      },
      {
       "minute": "59",
-      "playerOut": "X・シュラーガー",
+      "playerOut": "クサヴァー・シュラーガー",
       "playerIn": "チュクエメカ"
      },
      {
@@ -5278,6 +5574,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "77",
+     "player": "ザビッツァー",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -5310,7 +5614,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -5415,7 +5719,7 @@
      },
      {
       "number": 26,
-      "name": "P・ゲイェ",
+      "name": "パプ・ゲイェ",
       "position": "MF",
       "row": 2
      },
@@ -5439,7 +5743,7 @@
      },
      {
       "number": 18,
-      "name": "I・サール",
+      "name": "イスマイラ・サール",
       "position": "MF",
       "row": 3
      },
@@ -5453,7 +5757,7 @@
     "substitutions": [
      {
       "minute": "75",
-      "playerOut": "I・サール",
+      "playerOut": "イスマイラ・サール",
       "playerIn": "ムバイ"
      },
      {
@@ -5463,7 +5767,7 @@
      },
      {
       "minute": "83",
-      "playerOut": "P・ゲイェ",
+      "playerOut": "パプ・ゲイェ",
       "playerIn": "ンディアイ"
      },
      {
@@ -5565,7 +5869,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "IRQ-NOR-2026-06-16",
@@ -5873,6 +6178,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "86",
+     "player": "タハシン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -6049,7 +6362,7 @@
      },
      {
       "number": 17,
-      "name": "P・スチッチ",
+      "name": "ペタル・スチッチ",
       "position": "FW",
       "row": 3
      },
@@ -6187,7 +6500,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "GHA-PAN-2026-06-17",
@@ -6357,7 +6671,7 @@
      },
      {
       "number": 7,
-      "name": "J・L・ロドリゲス",
+      "name": "ホセ・ルイス・ロドリゲス",
       "position": "FW",
       "row": 3
      },
@@ -6369,7 +6683,7 @@
      },
      {
       "number": 6,
-      "name": "C・マルティネス",
+      "name": "クリスティアン・マルティネス",
       "position": "FW",
       "row": 3
      }
@@ -6382,12 +6696,12 @@
      },
      {
       "minute": "63",
-      "playerOut": "C・マルティネス",
+      "playerOut": "クリスティアン・マルティネス",
       "playerIn": "ロンドーニョ"
      },
      {
       "minute": "74",
-      "playerOut": "J・L・ロドリゲス",
+      "playerOut": "ホセ・ルイス・ロドリゲス",
       "playerIn": "イスマエル・ディアス"
      },
      {
@@ -6466,6 +6780,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "16",
+     "player": "イレンキ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "72",
+     "player": "ブラックマン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+9",
+     "player": "ハーベイ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -6504,7 +6838,7 @@
      },
      {
       "number": 4,
-      "name": "T・アラウホ",
+      "name": "トマス・アラウホ",
       "position": "DF",
       "row": 1
      },
@@ -6619,7 +6953,7 @@
      },
      {
       "number": 25,
-      "name": "E・カイエンベ",
+      "name": "エド・カイエンベ",
       "position": "MF",
       "row": 2
      },
@@ -6656,13 +6990,13 @@
      },
      {
       "minute": "74",
-      "playerOut": "E・カイエンベ",
+      "playerOut": "エド・カイエンベ",
       "playerIn": "ピケル"
      },
      {
       "minute": "74",
       "playerOut": "マスアク",
-      "playerIn": "J・カイエンベ"
+      "playerIn": "ジョリス・カイエンベ"
      },
      {
       "minute": "85",
@@ -6750,6 +7084,32 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "13",
+     "player": "ベルナルド・シウバ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "32",
+     "player": "ムベンバ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "88",
+     "player": "ネウソン・セメド",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+2",
+     "player": "トマス・アラウホ",
+     "type": "yellow"
     }
    ]
   },
@@ -6873,7 +7233,7 @@
     "startingPlayers": [
      {
       "number": 12,
-      "name": "C・バルガス",
+      "name": "カミロ・バルガス",
       "position": "GK",
       "row": 0
      },
@@ -6891,7 +7251,7 @@
      },
      {
       "number": 23,
-      "name": "D・サンチェス",
+      "name": "ダビンソン・サンチェス",
       "position": "DF",
       "row": 1
      },
@@ -6903,7 +7263,7 @@
      },
      {
       "number": 11,
-      "name": "J・アリアス",
+      "name": "ジョン・アリアス",
       "position": "MF",
       "row": 2
      },
@@ -6957,11 +7317,11 @@
      {
       "minute": "90+3",
       "playerOut": "ルイス・ディアス",
-      "playerIn": "A・ゴメス"
+      "playerIn": "アンドレス・ゴメス"
      },
      {
       "minute": "90+3",
-      "playerOut": "J・アリアス",
+      "playerOut": "ジョン・アリアス",
       "playerIn": "カスターニョ"
      }
     ]
@@ -7053,6 +7413,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "7",
+     "player": "モヒカ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "34",
+     "player": "フサノフ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -7133,7 +7507,7 @@
      },
      {
       "number": 10,
-      "name": "J・デイビッド",
+      "name": "ジョナタン・デイビッド",
       "position": "FW",
       "row": 3
      }
@@ -7278,13 +7652,13 @@
     {
      "team": "home",
      "minute": "29",
-     "player": "J・デイビッド",
+     "player": "ジョナタン・デイビッド",
      "type": "normal"
     },
     {
      "team": "home",
      "minute": "45+3",
-     "player": "J・デイビッド",
+     "player": "ジョナタン・デイビッド",
      "type": "normal"
     },
     {
@@ -7302,7 +7676,7 @@
     {
      "team": "home",
      "minute": "90+2",
-     "player": "J・デイビッド",
+     "player": "ジョナタン・デイビッド",
      "type": "normal"
     }
    ],
@@ -7367,6 +7741,32 @@
      "home": 0,
      "away": 2
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "9",
+     "player": "コーネリアス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "33",
+     "player": "ホマム・アハメド",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "53",
+     "player": "マディボ",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "62",
+     "player": "ファティ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -7393,7 +7793,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -7675,6 +8075,32 @@
      "home": 0,
      "away": 1
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "59",
+     "player": "デディッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "61",
+     "player": "ジェコ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "65",
+     "player": "エルヴェディ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "80",
+     "player": "ムハレモビッチ",
+     "type": "red"
+    }
    ]
   },
   {
@@ -7955,6 +8381,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "33",
+     "player": "モコエナ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "40",
+     "player": "ムバタ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "75",
+     "player": "クレイチー",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -8017,7 +8463,7 @@
      },
      {
       "number": 26,
-      "name": "B・グティエレス",
+      "name": "ブライアン・グティエレス",
       "position": "MF",
       "row": 2
      },
@@ -8043,7 +8489,7 @@
     "substitutions": [
      {
       "minute": "71",
-      "playerOut": "B・グティエレス",
+      "playerOut": "ブライアン・グティエレス",
       "playerIn": "ピネダ"
      },
      {
@@ -8059,7 +8505,7 @@
      {
       "minute": "80",
       "playerOut": "ヒメネス",
-      "playerIn": "S・ヒメネス"
+      "playerIn": "サンティアゴ・ヒメネス"
      },
      {
       "minute": "84",
@@ -8238,6 +8684,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "4",
+     "player": "イ・ガンイン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "58",
+     "player": "ペク・スンホ",
+     "type": "yellow"
     }
    ]
   },
@@ -8535,6 +8995,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "4",
+     "player": "アルキュス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45+4",
+     "player": "ピエロ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "65",
+     "player": "ドウグラス・サントス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "72",
+     "player": "ジャン・ジャック",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -8813,6 +9299,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "23",
+     "player": "ディオプ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "65",
+     "player": "ロバートソン",
+     "type": "yellow"
     }
    ]
   },
@@ -9098,6 +9598,26 @@
      "home": 0,
      "away": 1
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "4",
+     "player": "ガラルサ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45+3",
+     "player": "アルミロン",
+     "type": "red"
+    },
+    {
+     "team": "home",
+     "minute": "71",
+     "player": "エルマル",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -9142,7 +9662,7 @@
      },
      {
       "number": 5,
-      "name": "A・ロビンソン",
+      "name": "アントニー・ロビンソン",
       "position": "MF",
       "row": 2
      },
@@ -9196,7 +9716,7 @@
      },
      {
       "minute": "80",
-      "playerOut": "A・ロビンソン",
+      "playerOut": "アントニー・ロビンソン",
       "playerIn": "トラスティ"
      },
      {
@@ -9280,7 +9800,7 @@
      },
      {
       "number": 9,
-      "name": "M・トゥーレ",
+      "name": "モハメド・トゥーレ",
       "position": "FW",
       "row": 3
      }
@@ -9298,7 +9818,7 @@
      },
      {
       "minute": "45",
-      "playerOut": "M・トゥーレ",
+      "playerOut": "モハメド・トゥーレ",
       "playerIn": "イランクンダ"
      },
      {
@@ -9387,6 +9907,50 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "16",
+     "player": "ボス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "32",
+     "player": "チルカティ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "56",
+     "player": "アントニー・ロビンソン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "88",
+     "player": "サウター",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "89",
+     "player": "バログン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "89",
+     "player": "イタリアーノ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+3",
+     "player": "リチャーズ",
+     "type": "yellow"
     }
    ]
   },
@@ -9510,7 +10074,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "Y・フォファナ",
+      "name": "ヤヒア・フォファナ",
       "position": "GK",
       "row": 0
      },
@@ -9546,7 +10110,7 @@
      },
      {
       "number": 11,
-      "name": "Y・ディオマンデ",
+      "name": "ヤン・ディオマンデ",
       "position": "MF",
       "row": 3
      },
@@ -9594,11 +10158,11 @@
      {
       "minute": "82",
       "playerOut": "シンゴ",
-      "playerIn": "G・ドゥエ"
+      "playerIn": "ゲラ・ドゥエ"
      },
      {
       "minute": "85",
-      "playerOut": "Y・ディオマンデ",
+      "playerOut": "ヤン・ディオマンデ",
       "playerIn": "ペペ"
      }
     ]
@@ -9684,7 +10248,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "ECU-CUW-2026-06-20",
@@ -9773,7 +10338,7 @@
      {
       "minute": "45",
       "playerOut": "アルシバル",
-      "playerIn": "K・ロドリゲス"
+      "playerIn": "ケビン・ロドリゲス"
      },
      {
       "minute": "70",
@@ -9788,7 +10353,7 @@
      {
       "minute": "89",
       "playerOut": "ジョン・イェボア",
-      "playerIn": "J・カイセド"
+      "playerIn": "ジョルディ・カイセド"
      }
     ]
    },
@@ -9837,13 +10402,13 @@
      },
      {
       "number": 7,
-      "name": "J・バクナ",
+      "name": "ジュニーニョ・バクナ",
       "position": "MF",
       "row": 2
      },
      {
       "number": 10,
-      "name": "L・バクナ",
+      "name": "レアンドロ・バクナ",
       "position": "MF",
       "row": 2
      },
@@ -9869,7 +10434,7 @@
     "substitutions": [
      {
       "minute": "75",
-      "playerOut": "J・バクナ",
+      "playerOut": "ジュニーニョ・バクナ",
       "playerIn": "ゴレ"
      },
      {
@@ -9955,6 +10520,44 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "38",
+     "player": "アルシバル",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "39",
+     "player": "レアンドロ・バクナ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "53",
+     "player": "ジュニーニョ・バクナ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "56",
+     "player": "コメネンシア",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "75",
+     "player": "ガーリ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+1",
+     "player": "カスタネール",
+     "type": "yellow"
     }
    ]
   },
@@ -10270,6 +10873,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "53",
+     "player": "グドムンドソン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "75",
+     "player": "アヤリ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "80",
+     "player": "ベリヴァル",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -10572,7 +11195,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "BEL-IRN-2026-06-21",
@@ -10849,6 +11473,26 @@
      "home": 1,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "3",
+     "player": "ルカク",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "33",
+     "player": "エザトラヒ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "66",
+     "player": "ンゴイ",
+     "type": "red"
+    }
    ]
   },
   {
@@ -11013,7 +11657,7 @@
      },
      {
       "number": 6,
-      "name": "N・アル・ドサリ",
+      "name": "ナセル・アル・ドサリ",
       "position": "MF",
       "row": 2
      },
@@ -11059,7 +11703,7 @@
      },
      {
       "minute": "90",
-      "playerOut": "N・アル・ドサリ",
+      "playerOut": "ナセル・アル・ドサリ",
       "playerIn": "アル・ガンナム"
      }
     ]
@@ -11150,6 +11794,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "30",
+     "player": "サレム・アル・ドサリ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "60",
+     "player": "カンノ",
+     "type": "yellow"
     }
    ]
   },
@@ -11458,6 +12116,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "17",
+     "player": "ラシン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "20",
+     "player": "シン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "34",
+     "player": "マッコーワット",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -11484,7 +12162,7 @@
      },
      {
       "number": 25,
-      "name": "J・M・サナブリア",
+      "name": "フアン・マヌエル・サナブリア",
       "position": "DF",
       "row": 1
      },
@@ -11496,13 +12174,13 @@
      },
      {
       "number": 3,
-      "name": "S・カセレス",
+      "name": "セバスティアン・カセレス",
       "position": "DF",
       "row": 1
      },
      {
       "number": 13,
-      "name": "G・バレラ",
+      "name": "ギジェルモ・バレラ",
       "position": "DF",
       "row": 1
      },
@@ -11514,7 +12192,7 @@
      },
      {
       "number": 20,
-      "name": "M・アラウホ",
+      "name": "マキシ・アラウホ",
       "position": "MF",
       "row": 3
      },
@@ -11556,7 +12234,7 @@
      },
      {
       "minute": "81",
-      "playerOut": "M・アラウホ",
+      "playerOut": "マキシ・アラウホ",
       "playerIn": "ブライアン・ロドリゲス"
      }
     ]
@@ -11576,7 +12254,7 @@
      },
      {
       "number": 13,
-      "name": "S・カブラル",
+      "name": "シドニー・カブラル",
       "position": "DF",
       "row": 1
      },
@@ -11594,13 +12272,13 @@
      },
      {
       "number": 22,
-      "name": "S・モレイラ",
+      "name": "スティーヴン・モレイラ",
       "position": "DF",
       "row": 1
      },
      {
       "number": 6,
-      "name": "K・ピナ",
+      "name": "ケビン・ピナ",
       "position": "MF",
       "row": 2
      },
@@ -11639,7 +12317,7 @@
      {
       "minute": "45",
       "playerOut": "アルカンジョ",
-      "playerIn": "D・ドゥアルテ"
+      "playerIn": "デロイ・ドゥアルテ"
      },
      {
       "minute": "58",
@@ -11653,13 +12331,13 @@
      },
      {
       "minute": "71",
-      "playerOut": "K・ピナ",
-      "playerIn": "L・ドゥアルテ"
+      "playerOut": "ケビン・ピナ",
+      "playerIn": "ラロス・ドゥアルテ"
      },
      {
       "minute": "80",
       "playerOut": "モンテイロ",
-      "playerIn": "Y・セメド"
+      "playerIn": "ヤニック・セメド"
      }
     ]
    },
@@ -11667,13 +12345,13 @@
     {
      "team": "away",
      "minute": "21",
-     "player": "K・ピナ",
+     "player": "ケビン・ピナ",
      "type": "normal"
     },
     {
      "team": "home",
      "minute": "44",
-     "player": "M・アラウホ",
+     "player": "マキシ・アラウホ",
      "type": "normal"
     },
     {
@@ -11750,6 +12428,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "5",
+     "player": "シドニー・カブラル",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "20",
+     "player": "ベンタンクール",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "58",
+     "player": "オリベラ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "ディネイ・ボルジェス",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -11770,7 +12474,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -11872,7 +12576,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "A・シュラーガー",
+      "name": "アレクサンダー・シュラーガー",
       "position": "GK",
       "row": 0
      },
@@ -11902,7 +12606,7 @@
      },
      {
       "number": 4,
-      "name": "X・シュラーガー",
+      "name": "クサヴァー・シュラーガー",
       "position": "MF",
       "row": 2
      },
@@ -12040,6 +12744,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "40",
+     "player": "ポッシュ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "76",
+     "player": "メディナ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "76",
+     "player": "ライマー",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+2",
+     "player": "パレデス",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -12072,7 +12802,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -12335,6 +13065,14 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "6",
+     "player": "アル・アンマリ",
+     "type": "yellow"
     }
    ]
   },
@@ -12632,6 +13370,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "44",
+     "player": "ゼルーキ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "64",
+     "player": "アブ・ダハブ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -12784,7 +13536,7 @@
      },
      {
       "number": 26,
-      "name": "P・ゲイェ",
+      "name": "パプ・ゲイェ",
       "position": "MF",
       "row": 2
      },
@@ -12808,7 +13560,7 @@
      },
      {
       "number": 18,
-      "name": "I・サール",
+      "name": "イスマイラ・サール",
       "position": "MF",
       "row": 3
      },
@@ -12827,7 +13579,7 @@
      },
      {
       "minute": "54",
-      "playerOut": "P・ゲイェ",
+      "playerOut": "パプ・ゲイェ",
       "playerIn": "ムバイ"
      },
      {
@@ -12863,7 +13615,7 @@
     {
      "team": "away",
      "minute": "53",
-     "player": "I・サール",
+     "player": "イスマイラ・サール",
      "type": "normal"
     },
     {
@@ -12875,7 +13627,7 @@
     {
      "team": "away",
      "minute": "90+3",
-     "player": "I・サール",
+     "player": "イスマイラ・サール",
      "type": "normal"
     }
    ],
@@ -12940,7 +13692,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "COL-COD-2026-06-23",
@@ -12960,7 +13713,7 @@
     "startingPlayers": [
      {
       "number": 12,
-      "name": "C・バルガス",
+      "name": "カミロ・バルガス",
       "position": "GK",
       "row": 0
      },
@@ -12978,7 +13731,7 @@
      },
      {
       "number": 23,
-      "name": "D・サンチェス",
+      "name": "ダビンソン・サンチェス",
       "position": "DF",
       "row": 1
      },
@@ -12990,7 +13743,7 @@
      },
      {
       "number": 11,
-      "name": "J・アリアス",
+      "name": "ジョン・アリアス",
       "position": "MF",
       "row": 2
      },
@@ -13038,7 +13791,7 @@
      },
      {
       "minute": "77",
-      "playerOut": "J・アリアス",
+      "playerOut": "ジョン・アリアス",
       "playerIn": "リオス"
      }
     ]
@@ -13088,7 +13841,7 @@
      },
      {
       "number": 25,
-      "name": "E・カイエンベ",
+      "name": "エド・カイエンベ",
       "position": "MF",
       "row": 2
      },
@@ -13131,11 +13884,11 @@
      {
       "minute": "72",
       "playerOut": "マスアク",
-      "playerIn": "J・カイエンベ"
+      "playerIn": "ジョリス・カイエンベ"
      },
      {
       "minute": "72",
-      "playerOut": "E・カイエンベ",
+      "playerOut": "エド・カイエンベ",
       "playerIn": "ピケル"
      },
      {
@@ -13213,6 +13966,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "56",
+     "player": "ルクミ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "ピケル",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+4",
+     "player": "レルマ",
+     "type": "yellow"
     }
    ]
   },
@@ -13486,6 +14259,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "41",
+     "player": "ライス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "60",
+     "player": "イニャキ・ウィリアムズ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -13542,7 +14329,7 @@
      },
      {
       "number": 7,
-      "name": "J・L・ロドリゲス",
+      "name": "ホセ・ルイス・ロドリゲス",
       "position": "MF",
       "row": 2
      },
@@ -13560,7 +14347,7 @@
      },
      {
       "number": 6,
-      "name": "C・マルティネス",
+      "name": "クリスティアン・マルティネス",
       "position": "MF",
       "row": 2
      },
@@ -13590,7 +14377,7 @@
      {
       "minute": "90",
       "playerOut": "バルセナス",
-      "playerIn": "T・ロドリゲス"
+      "playerIn": "トマス・ロドリゲス"
      }
     ]
    },
@@ -13682,12 +14469,12 @@
      {
       "minute": "72",
       "playerOut": "マルコ・パシャリッチ",
-      "playerIn": "L・スチッチ"
+      "playerIn": "ルカ・スチッチ"
      },
      {
       "minute": "72",
       "playerOut": "コバチッチ",
-      "playerIn": "P・スチッチ"
+      "playerIn": "ペタル・スチッチ"
      },
      {
       "minute": "81",
@@ -13764,6 +14551,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "61",
+     "player": "バルセナス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+2",
+     "player": "ペタル・スチッチ",
+     "type": "yellow"
     }
    ]
   },
@@ -14073,6 +14874,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "14",
+     "player": "ハムロベコフ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "68",
+     "player": "レナト・ヴェイガ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -14375,6 +15190,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "78",
+     "player": "ファティ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "82",
+     "player": "マフミッチ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -14401,7 +15230,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -14557,7 +15386,7 @@
      },
      {
       "number": 10,
-      "name": "J・デイビッド",
+      "name": "ジョナタン・デイビッド",
       "position": "FW",
       "row": 3
      }
@@ -14581,7 +15410,7 @@
      {
       "minute": "74",
       "playerOut": "ブキャナン",
-      "playerIn": "P・デイビッド"
+      "playerIn": "プロミス・デイビッド"
      },
      {
       "minute": "83",
@@ -14606,7 +15435,7 @@
     {
      "team": "away",
      "minute": "76",
-     "player": "P・デイビッド",
+     "player": "プロミス・デイビッド",
      "type": "normal"
     }
    ],
@@ -14670,6 +15499,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "32",
+     "player": "ラリン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "32",
+     "player": "ジャカ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "87",
+     "player": "ミラー",
+     "type": "yellow"
     }
    ]
   },
@@ -14799,7 +15648,7 @@
      },
      {
       "number": 20,
-      "name": "M・チャベス",
+      "name": "マテオ・チャベス",
       "position": "DF",
       "row": 1
      },
@@ -14847,7 +15696,7 @@
      },
      {
       "number": 22,
-      "name": "G・マルティネス",
+      "name": "ギジェルモ・マルティネス",
       "position": "FW",
       "row": 3
      },
@@ -14861,8 +15710,8 @@
     "substitutions": [
      {
       "minute": "63",
-      "playerOut": "G・マルティネス",
-      "playerIn": "S・ヒメネス"
+      "playerOut": "ギジェルモ・マルティネス",
+      "playerIn": "サンティアゴ・ヒメネス"
      },
      {
       "minute": "63",
@@ -14881,7 +15730,7 @@
      },
      {
       "minute": "78",
-      "playerOut": "M・チャベス",
+      "playerOut": "マテオ・チャベス",
       "playerIn": "ガジャルド"
      }
     ]
@@ -14890,7 +15739,7 @@
     {
      "team": "away",
      "minute": "55",
-     "player": "M・チャベス",
+     "player": "マテオ・チャベス",
      "type": "normal"
     },
     {
@@ -14966,6 +15815,14 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "64",
+     "player": "エドソン・アルバレス",
+     "type": "yellow"
     }
    ]
   },
@@ -15281,6 +16138,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "79",
+     "player": "プラシド",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "80",
+     "player": "ナゾン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "カジミール",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -15577,6 +16454,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "62",
+     "player": "ダニーロ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "82",
+     "player": "ファビーニョ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "89",
+     "player": "クリスティ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -15851,6 +16748,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "73",
+     "player": "モディバ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "79",
+     "player": "チョ・ギュソン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -15907,13 +16818,13 @@
      },
      {
       "number": 7,
-      "name": "J・バクナ",
+      "name": "ジュニーニョ・バクナ",
       "position": "MF",
       "row": 2
      },
      {
       "number": 10,
-      "name": "L・バクナ",
+      "name": "レアンドロ・バクナ",
       "position": "MF",
       "row": 2
      },
@@ -15973,7 +16884,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "Y・フォファナ",
+      "name": "ヤヒア・フォファナ",
       "position": "GK",
       "row": 0
      },
@@ -15985,7 +16896,7 @@
      },
      {
       "number": 2,
-      "name": "O・ディオマンデ",
+      "name": "ウスマン・ディオマンデ",
       "position": "DF",
       "row": 1
      },
@@ -15997,7 +16908,7 @@
      },
      {
       "number": 17,
-      "name": "G・ドゥエ",
+      "name": "ゲラ・ドゥエ",
       "position": "DF",
       "row": 1
      },
@@ -16015,7 +16926,7 @@
      },
      {
       "number": 11,
-      "name": "Y・ディオマンデ",
+      "name": "ヤン・ディオマンデ",
       "position": "MF",
       "row": 3
      },
@@ -16056,8 +16967,8 @@
      },
      {
       "minute": "67",
-      "playerOut": "Y・ディオマンデ",
-      "playerIn": "B・トゥーレ"
+      "playerOut": "ヤン・ディオマンデ",
+      "playerIn": "バズマナ・トゥーレ"
      },
      {
       "minute": "77",
@@ -16140,6 +17051,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "35",
+     "player": "ペペ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "75",
+     "player": "ジュニーニョ・バクナ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "83",
+     "player": "カスタネール",
+     "type": "yellow"
     }
    ]
   },
@@ -16230,7 +17161,7 @@
      {
       "minute": "64",
       "playerOut": "エネル・バレンシア",
-      "playerIn": "K・ロドリゲス"
+      "playerIn": "ケビン・ロドリゲス"
      },
      {
       "minute": "64",
@@ -16245,12 +17176,12 @@
      {
       "minute": "85",
       "playerOut": "ジョン・イェボア",
-      "playerIn": "F・トーレス"
+      "playerIn": "フェリックス・トーレス"
      },
      {
       "minute": "85",
       "playerOut": "アングロ",
-      "playerIn": "J・カイセド"
+      "playerIn": "ジョルディ・カイセド"
      }
     ]
    },
@@ -16436,6 +17367,32 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "43",
+     "player": "インカピエ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "44",
+     "player": "パブロビッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "50",
+     "player": "アラン・フランコ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "89",
+     "player": "プラタ",
+     "type": "yellow"
     }
    ]
   },
@@ -16731,6 +17688,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "32",
+     "player": "ヒエン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "77",
+     "player": "谷口彰悟",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "85",
+     "player": "ギョケレシュ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -16997,6 +17974,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "46",
+     "player": "アーバイン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "77",
+     "player": "ディエゴ・ゴメス",
+     "type": "yellow"
     }
    ]
   },
@@ -17304,7 +18295,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "TUR-USA-2026-06-25",
@@ -17444,7 +18436,7 @@
      },
      {
       "number": 12,
-      "name": "M・ロビンソン",
+      "name": "マイルズ・ロビンソン",
       "position": "DF",
       "row": 1
      },
@@ -17612,6 +18604,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "19",
+     "player": "バーホルター",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -17656,19 +18656,19 @@
      },
      {
       "number": 24,
-      "name": "W・ピナ",
+      "name": "ワグネル・ピナ",
       "position": "DF",
       "row": 1
      },
      {
       "number": 6,
-      "name": "K・ピナ",
+      "name": "ケビン・ピナ",
       "position": "MF",
       "row": 2
      },
      {
       "number": 17,
-      "name": "W・セメド",
+      "name": "ウィリー・セメド",
       "position": "MF",
       "row": 3
      },
@@ -17680,7 +18680,7 @@
      },
      {
       "number": 14,
-      "name": "D・ドゥアルテ",
+      "name": "デロイ・ドゥアルテ",
       "position": "MF",
       "row": 3
      },
@@ -17705,13 +18705,13 @@
      },
      {
       "minute": "61",
-      "playerOut": "W・セメド",
+      "playerOut": "ウィリー・セメド",
       "playerIn": "ヴァレラ"
      },
      {
       "minute": "71",
       "playerOut": "モンテイロ",
-      "playerIn": "L・ドゥアルテ"
+      "playerIn": "ラロス・ドゥアルテ"
      },
      {
       "minute": "71",
@@ -17720,8 +18720,8 @@
      },
      {
       "minute": "90+4",
-      "playerOut": "W・ピナ",
-      "playerIn": "S・モレイラ"
+      "playerOut": "ワグネル・ピナ",
+      "playerIn": "スティーヴン・モレイラ"
      }
     ]
    },
@@ -17770,7 +18770,7 @@
      },
      {
       "number": 6,
-      "name": "N・アル・ドサリ",
+      "name": "ナセル・アル・ドサリ",
       "position": "MF",
       "row": 2
      },
@@ -17888,6 +18888,32 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "4",
+     "player": "アブドゥルハミド",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "8",
+     "player": "ワグネル・ピナ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "67",
+     "player": "ナセル・アル・ドサリ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "アル・ブリカン",
+     "type": "yellow"
     }
    ]
   },
@@ -18168,6 +19194,50 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "19",
+     "player": "カナニ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "20",
+     "player": "サベル",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "42",
+     "player": "ヤセル・イブラヒム",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "43",
+     "player": "ネマティ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "79",
+     "player": "エザトラヒ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+2",
+     "player": "ラシン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+4",
+     "player": "ハリルザデ",
+     "type": "yellow"
     }
    ]
   },
@@ -18476,6 +19546,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "10",
+     "player": "ベルグ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "74",
+     "player": "チュアメニ",
+     "type": "yellow"
     }
    ]
   },
@@ -18791,6 +19875,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "46",
+     "player": "スタメニッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "56",
+     "player": "ジャスト",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -18865,7 +19963,7 @@
      },
      {
       "number": 18,
-      "name": "I・サール",
+      "name": "イスマイラ・サール",
       "position": "FW",
       "row": 3
      },
@@ -18890,7 +19988,7 @@
      {
       "minute": "57",
       "playerOut": "ディアラ",
-      "playerIn": "P・ゲイェ"
+      "playerIn": "パプ・ゲイェ"
      },
      {
       "minute": "58",
@@ -18899,7 +19997,7 @@
      },
      {
       "minute": "81",
-      "playerOut": "I・サール",
+      "playerOut": "イスマイラ・サール",
       "playerIn": "アサン・ディアオ"
      }
     ]
@@ -19016,19 +20114,19 @@
     {
      "team": "home",
      "minute": "56",
-     "player": "I・サール",
+     "player": "イスマイラ・サール",
      "type": "normal"
     },
     {
      "team": "home",
      "minute": "59",
-     "player": "P・ゲイェ",
+     "player": "パプ・ゲイェ",
      "type": "normal"
     },
     {
      "team": "home",
      "minute": "71",
-     "player": "P・ゲイェ",
+     "player": "パプ・ゲイェ",
      "type": "normal"
     },
     {
@@ -19099,6 +20197,38 @@
      "home": 0,
      "away": 1
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "13",
+     "player": "スラカ",
+     "type": "red"
+    },
+    {
+     "team": "home",
+     "minute": "18",
+     "player": "セック",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "75",
+     "player": "アル・アンマリ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "81",
+     "player": "パプ・ゲイェ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90",
+     "player": "ドスキ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -19125,7 +20255,7 @@
      },
      {
       "number": 25,
-      "name": "J・M・サナブリア",
+      "name": "フアン・マヌエル・サナブリア",
       "position": "DF",
       "row": 1
      },
@@ -19137,13 +20267,13 @@
      },
      {
       "number": 3,
-      "name": "S・カセレス",
+      "name": "セバスティアン・カセレス",
       "position": "DF",
       "row": 1
      },
      {
       "number": 13,
-      "name": "G・バレラ",
+      "name": "ギジェルモ・バレラ",
       "position": "DF",
       "row": 1
      },
@@ -19155,7 +20285,7 @@
      },
      {
       "number": 20,
-      "name": "M・アラウホ",
+      "name": "マキシ・アラウホ",
       "position": "MF",
       "row": 3
      },
@@ -19202,7 +20332,7 @@
      },
      {
       "minute": "70",
-      "playerOut": "J・M・サナブリア",
+      "playerOut": "フアン・マヌエル・サナブリア",
       "playerIn": "ブライアン・ロドリゲス"
      }
     ]
@@ -19378,6 +20508,38 @@
      "home": 1,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "46",
+     "player": "バエナ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "54",
+     "player": "フアン・マヌエル・サナブリア",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "58",
+     "player": "ギジェルモ・バレラ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+3",
+     "player": "デ・ラ・クルス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+5",
+     "player": "カノビオ",
+     "type": "red"
+    }
    ]
   },
   {
@@ -19487,7 +20649,7 @@
      {
       "minute": "83",
       "playerOut": "マスアク",
-      "playerIn": "J・カイエンベ"
+      "playerIn": "ジョリス・カイエンベ"
      }
     ]
    },
@@ -19680,6 +20842,38 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "21",
+     "player": "サディキ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "43",
+     "player": "フサノフ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "45+5",
+     "player": "ムブク",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "48",
+     "player": "ナスルラエフ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "62",
+     "player": "ムトゥサミ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -19700,7 +20894,7 @@
     "startingPlayers": [
      {
       "number": 12,
-      "name": "C・バルガス",
+      "name": "カミロ・バルガス",
       "position": "GK",
       "row": 0
      },
@@ -19718,13 +20912,13 @@
      },
      {
       "number": 23,
-      "name": "D・サンチェス",
+      "name": "ダビンソン・サンチェス",
       "position": "DF",
       "row": 1
      },
      {
       "number": 4,
-      "name": "S・アリアス",
+      "name": "サンティアゴ・アリアス",
       "position": "DF",
       "row": 1
      },
@@ -19742,7 +20936,7 @@
      },
      {
       "number": 11,
-      "name": "J・アリアス",
+      "name": "ジョン・アリアス",
       "position": "MF",
       "row": 2
      },
@@ -19778,7 +20972,7 @@
      },
      {
       "minute": "76",
-      "playerOut": "J・アリアス",
+      "playerOut": "ジョン・アリアス",
       "playerIn": "カスターニョ"
      },
      {
@@ -19788,7 +20982,7 @@
      },
      {
       "minute": "87",
-      "playerOut": "S・アリアス",
+      "playerOut": "サンティアゴ・アリアス",
       "playerIn": "ムニョス"
      }
     ]
@@ -19957,6 +21151,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "86",
+     "player": "プエルタ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -20074,7 +21276,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "A・シュラーガー",
+      "name": "アレクサンダー・シュラーガー",
       "position": "GK",
       "row": 0
      },
@@ -20104,7 +21306,7 @@
      },
      {
       "number": 4,
-      "name": "X・シュラーガー",
+      "name": "クサヴァー・シュラーガー",
       "position": "MF",
       "row": 2
      },
@@ -20147,7 +21349,7 @@
      },
      {
       "minute": "45",
-      "playerOut": "X・シュラーガー",
+      "playerOut": "クサヴァー・シュラーガー",
       "playerIn": "グリリッチ"
      },
      {
@@ -20266,6 +21468,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "11",
+     "player": "アルナウトビッチ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -20334,7 +21544,7 @@
      },
      {
       "number": 17,
-      "name": "P・スチッチ",
+      "name": "ペタル・スチッチ",
       "position": "MF",
       "row": 3
      },
@@ -20480,7 +21690,7 @@
     {
      "team": "home",
      "minute": "31",
-     "player": "P・スチッチ",
+     "player": "ペタル・スチッチ",
      "type": "normal"
     },
     {
@@ -20556,6 +21766,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "68",
+     "player": "ペリシッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+4",
+     "player": "オポン",
+     "type": "yellow"
     }
    ]
   },
@@ -20679,7 +21903,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -20768,7 +21992,7 @@
      {
       "minute": "82",
       "playerOut": "フリアン・アルバレス",
-      "playerIn": "J・M・ロペス"
+      "playerIn": "ホセ・マヌエル・ロペス"
      }
     ]
    },
@@ -20859,6 +22083,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "17",
+     "player": "アブ・タハ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "64",
+     "player": "アル・アラブ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+4",
+     "player": "アブ・ズライク",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -20885,7 +22129,7 @@
      },
      {
       "number": 26,
-      "name": "J・グティエレス",
+      "name": "ホルヘ・グティエレス",
       "position": "DF",
       "row": 1
      },
@@ -20915,7 +22159,7 @@
      },
      {
       "number": 7,
-      "name": "J・L・ロドリゲス",
+      "name": "ホセ・ルイス・ロドリゲス",
       "position": "MF",
       "row": 2
      },
@@ -20933,13 +22177,13 @@
      },
      {
       "number": 6,
-      "name": "C・マルティネス",
+      "name": "クリスティアン・マルティネス",
       "position": "MF",
       "row": 2
      },
      {
       "number": 9,
-      "name": "T・ロドリゲス",
+      "name": "トマス・ロドリゲス",
       "position": "FW",
       "row": 3
      }
@@ -20947,7 +22191,7 @@
     "substitutions": [
      {
       "minute": "45",
-      "playerOut": "T・ロドリゲス",
+      "playerOut": "トマス・ロドリゲス",
       "playerIn": "ファハルド"
      },
      {
@@ -20957,17 +22201,17 @@
      },
      {
       "minute": "71",
-      "playerOut": "J・L・ロドリゲス",
+      "playerOut": "ホセ・ルイス・ロドリゲス",
       "playerIn": "ロンドーニョ"
      },
      {
       "minute": "88",
       "playerOut": "ハーベイ",
-      "playerIn": "A・キンテロ"
+      "playerIn": "アルベルト・キンテロ"
      },
      {
       "minute": "88",
-      "playerOut": "J・グティエレス",
+      "playerOut": "ホルヘ・グティエレス",
       "playerIn": "エリック・デイビス"
      }
     ]
@@ -21065,7 +22309,7 @@
      {
       "minute": "84",
       "playerOut": "エリオット・アンダーソン",
-      "playerIn": "J・ヘンダーソン"
+      "playerIn": "ジョーダン・ヘンダーソン"
      },
      {
       "minute": "84",
@@ -21148,6 +22392,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "53",
+     "player": "ファハルド",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "60",
+     "player": "クアンサ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "84",
+     "player": "アンドラーデ",
+     "type": "yellow"
     }
    ]
   },
@@ -21321,7 +22585,7 @@
      },
      {
       "number": 10,
-      "name": "J・デイビッド",
+      "name": "ジョナタン・デイビッド",
       "position": "FW",
       "row": 3
      }
@@ -21340,7 +22604,7 @@
      {
       "minute": "70",
       "playerOut": "オルワセイ",
-      "playerIn": "P・デイビッド"
+      "playerIn": "プロミス・デイビッド"
      },
      {
       "minute": "70",
@@ -21426,6 +22690,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "54",
+     "player": "サリバ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "67",
+     "player": "シグール",
+     "type": "yellow"
     }
    ]
   },
@@ -21721,6 +22999,38 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "12",
+     "player": "佐野海舟",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "14",
+     "player": "カゼミーロ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45",
+     "player": "鎌田大地",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "48",
+     "player": "ダニーロ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "84",
+     "player": "鈴木淳之介",
+     "type": "yellow"
     }
    ]
   },
@@ -22031,6 +23341,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "65",
+     "player": "クバス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "106",
+     "player": "ハフェルツ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "115",
+     "player": "ムシアラ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "117",
+     "player": "ガラルサ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -22339,6 +23675,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "47",
+     "player": "ディオプ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -22359,7 +23703,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "Y・フォファナ",
+      "name": "ヤヒア・フォファナ",
       "position": "GK",
       "row": 0
      },
@@ -22383,7 +23727,7 @@
      },
      {
       "number": 17,
-      "name": "G・ドゥエ",
+      "name": "ゲラ・ドゥエ",
       "position": "DF",
       "row": 1
      },
@@ -22395,7 +23739,7 @@
      },
      {
       "number": 11,
-      "name": "Y・ディオマンデ",
+      "name": "ヤン・ディオマンデ",
       "position": "MF",
       "row": 3
      },
@@ -22442,13 +23786,13 @@
      },
      {
       "minute": "90+3",
-      "playerOut": "Y・ディオマンデ",
+      "playerOut": "ヤン・ディオマンデ",
       "playerIn": "ゲサン"
      },
      {
       "minute": "90+3",
       "playerOut": "コナン",
-      "playerIn": "B・トゥーレ"
+      "playerIn": "バズマナ・トゥーレ"
      }
     ]
    },
@@ -22629,6 +23973,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "45+1",
+     "player": "ヌサ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -22661,7 +24013,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -22929,7 +24281,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "MEX-ECU-2026-06-30",
@@ -23018,7 +24371,7 @@
      {
       "minute": "58",
       "playerOut": "モラ",
-      "playerIn": "B・グティエレス"
+      "playerIn": "ブライアン・グティエレス"
      },
      {
       "minute": "73",
@@ -23028,7 +24381,7 @@
      {
       "minute": "74",
       "playerOut": "ヒメネス",
-      "playerIn": "S・ヒメネス"
+      "playerIn": "サンティアゴ・ヒメネス"
      },
      {
       "minute": "80",
@@ -23125,17 +24478,17 @@
      {
       "minute": "45",
       "playerOut": "アラン・フランコ",
-      "playerIn": "Y・メディナ"
+      "playerIn": "ヤイマル・メディナ"
      },
      {
       "minute": "59",
       "playerOut": "エネル・バレンシア",
-      "playerIn": "K・ロドリゲス"
+      "playerIn": "ケビン・ロドリゲス"
      },
      {
       "minute": "79",
       "playerOut": "ジョン・イェボア",
-      "playerIn": "J・カイセド"
+      "playerIn": "ジョルディ・カイセド"
      },
      {
       "minute": "79",
@@ -23222,6 +24575,32 @@
      "label": "レッドカード",
      "home": 0,
      "away": 1
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "45+1",
+     "player": "アラン・フランコ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "パエス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+5",
+     "player": "インカピエ",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "90+9",
+     "player": "モイセス・カイセド",
+     "type": "yellow"
     }
    ]
   },
@@ -23380,7 +24759,7 @@
      },
      {
       "number": 26,
-      "name": "P・ゲイェ",
+      "name": "パプ・ゲイェ",
       "position": "MF",
       "row": 2
      },
@@ -23404,7 +24783,7 @@
      },
      {
       "number": 18,
-      "name": "I・サール",
+      "name": "イスマイラ・サール",
       "position": "FW",
       "row": 3
      },
@@ -23418,7 +24797,7 @@
     "substitutions": [
      {
       "minute": "66",
-      "playerOut": "P・ゲイェ",
+      "playerOut": "パプ・ゲイェ",
       "playerIn": "カマラ"
      },
      {
@@ -23444,7 +24823,7 @@
      {
       "minute": "96",
       "playerOut": "イドリサ・ゲイェ",
-      "playerIn": "B・ンディアイ"
+      "playerIn": "バラ・ンディアイ"
      }
     ]
    },
@@ -23458,7 +24837,7 @@
     {
      "team": "away",
      "minute": "51",
-     "player": "I・サール",
+     "player": "イスマイラ・サール",
      "type": "normal"
     },
     {
@@ -23545,6 +24924,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "64",
+     "player": "メケレ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "67",
+     "player": "カマラ",
+     "type": "yellow"
     }
    ]
   },
@@ -23742,12 +25135,12 @@
      {
       "minute": "76",
       "playerOut": "ムカウ",
-      "playerIn": "E・カイエンベ"
+      "playerIn": "エド・カイエンベ"
      },
      {
       "minute": "89",
       "playerOut": "マスアク",
-      "playerIn": "J・カイエンベ"
+      "playerIn": "ジョリス・カイエンベ"
      },
      {
       "minute": "89",
@@ -23841,6 +25234,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "19",
+     "player": "ベリンガム",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "28",
+     "player": "サディキ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -23867,7 +25274,7 @@
      },
      {
       "number": 5,
-      "name": "A・ロビンソン",
+      "name": "アントニー・ロビンソン",
       "position": "DF",
       "row": 1
      },
@@ -24125,6 +25532,20 @@
      "home": 1,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "64",
+     "player": "バログン",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "80",
+     "player": "ラデリッチ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -24151,7 +25572,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -24419,6 +25840,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "36",
+     "player": "シャイビ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "72",
+     "player": "ブダウイ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -24541,7 +25976,7 @@
     "startingPlayers": [
      {
       "number": 1,
-      "name": "A・シュラーガー",
+      "name": "アレクサンダー・シュラーガー",
       "position": "GK",
       "row": 0
      },
@@ -24571,7 +26006,7 @@
      },
      {
       "number": 4,
-      "name": "X・シュラーガー",
+      "name": "クサヴァー・シュラーガー",
       "position": "MF",
       "row": 2
      },
@@ -24609,7 +26044,7 @@
     "substitutions": [
      {
       "minute": "45",
-      "playerOut": "X・シュラーガー",
+      "playerOut": "クサヴァー・シュラーガー",
       "playerIn": "グリリッチ"
      },
      {
@@ -24718,6 +26153,14 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "83",
+     "player": "ポッシュ",
+     "type": "yellow"
     }
    ]
   },
@@ -24889,7 +26332,7 @@
      },
      {
       "number": 17,
-      "name": "P・スチッチ",
+      "name": "ペタル・スチッチ",
       "position": "MF",
       "row": 3
      },
@@ -25014,6 +26457,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "17",
+     "player": "ルベン・ディアス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "59",
+     "player": "モドリッチ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+8",
+     "player": "ペリシッチ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -25034,7 +26497,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -25142,7 +26605,7 @@
      },
      {
       "number": 13,
-      "name": "S・カブラル",
+      "name": "シドニー・カブラル",
       "position": "DF",
       "row": 1
      },
@@ -25160,13 +26623,13 @@
      },
      {
       "number": 22,
-      "name": "S・モレイラ",
+      "name": "スティーヴン・モレイラ",
       "position": "DF",
       "row": 1
      },
      {
       "number": 6,
-      "name": "K・ピナ",
+      "name": "ケビン・ピナ",
       "position": "MF",
       "row": 2
      },
@@ -25178,13 +26641,13 @@
      },
      {
       "number": 14,
-      "name": "D・ドゥアルテ",
+      "name": "デロイ・ドゥアルテ",
       "position": "MF",
       "row": 3
      },
      {
       "number": 15,
-      "name": "L・ドゥアルテ",
+      "name": "ラロス・ドゥアルテ",
       "position": "MF",
       "row": 3
      },
@@ -25204,7 +26667,7 @@
     "substitutions": [
      {
       "minute": "67",
-      "playerOut": "L・ドゥアルテ",
+      "playerOut": "ラロス・ドゥアルテ",
       "playerIn": "モンテイロ"
      },
      {
@@ -25215,7 +26678,7 @@
      {
       "minute": "80",
       "playerOut": "ライアン・メンデス",
-      "playerIn": "W・セメド"
+      "playerIn": "ウィリー・セメド"
      },
      {
       "minute": "80",
@@ -25224,12 +26687,12 @@
      },
      {
       "minute": "100",
-      "playerOut": "D・ドゥアルテ",
-      "playerIn": "Y・セメド"
+      "playerOut": "デロイ・ドゥアルテ",
+      "playerIn": "ヤニック・セメド"
      },
      {
       "minute": "100",
-      "playerOut": "K・ピナ",
+      "playerOut": "ケビン・ピナ",
       "playerIn": "ベンシモル"
      }
     ]
@@ -25244,7 +26707,7 @@
     {
      "team": "away",
      "minute": "59",
-     "player": "D・ドゥアルテ",
+     "player": "デロイ・ドゥアルテ",
      "type": "normal"
     },
     {
@@ -25256,7 +26719,7 @@
     {
      "team": "away",
      "minute": "103",
-     "player": "S・カブラル",
+     "player": "シドニー・カブラル",
      "type": "normal"
     },
     {
@@ -25331,6 +26794,20 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "68",
+     "player": "ケビン・ピナ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "115",
+     "player": "モンティエル",
+     "type": "yellow"
     }
    ]
   },
@@ -25431,7 +26908,7 @@
      {
       "minute": "74",
       "playerOut": "イランクンダ",
-      "playerIn": "M・トゥーレ"
+      "playerIn": "モハメド・トゥーレ"
      },
      {
       "minute": "90",
@@ -25636,6 +27113,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "105",
+     "player": "ハイセム・ハサン",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "120",
+     "player": "ヤセル・イブラヒム",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -25656,7 +27147,7 @@
     "startingPlayers": [
      {
       "number": 12,
-      "name": "C・バルガス",
+      "name": "カミロ・バルガス",
       "position": "GK",
       "row": 0
      },
@@ -25674,7 +27165,7 @@
      },
      {
       "number": 23,
-      "name": "D・サンチェス",
+      "name": "ダビンソン・サンチェス",
       "position": "DF",
       "row": 1
      },
@@ -25686,7 +27177,7 @@
      },
      {
       "number": 11,
-      "name": "J・アリアス",
+      "name": "ジョン・アリアス",
       "position": "MF",
       "row": 2
      },
@@ -25734,7 +27225,7 @@
      },
      {
       "minute": "73",
-      "playerOut": "J・アリアス",
+      "playerOut": "ジョン・アリアス",
       "playerIn": "キンテロ"
      },
      {
@@ -25850,7 +27341,7 @@
     {
      "team": "home",
      "minute": "14",
-     "player": "J・アリアス",
+     "player": "ジョン・アリアス",
      "type": "normal"
     }
    ],
@@ -25918,6 +27409,38 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "12",
+     "player": "ジョン・アリアス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "49",
+     "player": "イレンキ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "66",
+     "player": "イサハク",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "76",
+     "player": "セイドゥ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "78",
+     "player": "リオス",
+     "type": "yellow"
     }
    ]
   },
@@ -25999,7 +27522,7 @@
      },
      {
       "number": 10,
-      "name": "J・デイビッド",
+      "name": "ジョナタン・デイビッド",
       "position": "FW",
       "row": 3
      }
@@ -26013,7 +27536,7 @@
      {
       "minute": "78",
       "playerOut": "アリ・アハメド",
-      "playerIn": "P・デイビッド"
+      "playerIn": "プロミス・デイビッド"
      },
      {
       "minute": "78",
@@ -26223,6 +27746,56 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "20",
+     "player": "ハルハル",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "40",
+     "player": "ハキミ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "40",
+     "player": "ラリエア",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "43",
+     "player": "ジョナタン・デイビッド",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45",
+     "player": "ウナヒ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "45+6",
+     "player": "エル・ハヌス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "49",
+     "player": "デ・フージェロール",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "67",
+     "player": "ラリン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -26352,7 +27925,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -26494,6 +28067,26 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "19",
+     "player": "バルコラ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "81",
+     "player": "マヌ・コネ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+7",
+     "player": "オリーズ",
+     "type": "yellow"
     }
    ]
   },
@@ -26793,6 +28386,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "90+6",
+     "player": "ネイマール",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -26887,12 +28488,12 @@
      {
       "minute": "61",
       "playerOut": "モラ",
-      "playerIn": "S・ヒメネス"
+      "playerIn": "サンティアゴ・ヒメネス"
      },
      {
       "minute": "61",
       "playerOut": "ロモ",
-      "playerIn": "B・グティエレス"
+      "playerIn": "ブライアン・グティエレス"
      },
      {
       "minute": "79",
@@ -26902,7 +28503,7 @@
      {
       "minute": "81",
       "playerOut": "キニョネス",
-      "playerIn": "G・マルティネス"
+      "playerIn": "ギジェルモ・マルティネス"
      }
     ]
    },
@@ -27104,6 +28705,50 @@
      "label": "レッドカード",
      "home": 0,
      "away": 1
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "1",
+     "player": "ライス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "54",
+     "player": "クアンサ",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "68",
+     "player": "グエイ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "71",
+     "player": "ホルヘ・サンチェス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "72",
+     "player": "オライリー",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+8",
+     "player": "バスケス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+8",
+     "player": "ジョーダン・ヘンダーソン",
+     "type": "yellow"
     }
    ]
   },
@@ -27392,6 +29037,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "89",
+     "player": "ベルナルド・シウバ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+4",
+     "player": "レナト・ヴェイガ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+8",
+     "player": "フェラン・トーレス",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -27418,7 +29083,7 @@
      },
      {
       "number": 5,
-      "name": "A・ロビンソン",
+      "name": "アントニー・ロビンソン",
       "position": "DF",
       "row": 1
      },
@@ -27495,7 +29160,7 @@
      },
      {
       "minute": "90+2",
-      "playerOut": "A・ロビンソン",
+      "playerOut": "アントニー・ロビンソン",
       "playerIn": "アーフステン"
      },
      {
@@ -27708,6 +29373,20 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "35",
+     "player": "マッケニー",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "69",
+     "player": "ティルマン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -27728,7 +29407,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -28019,6 +29698,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "シュビル",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+4",
+     "player": "ファティ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+8",
+     "player": "アッティア",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+12",
+     "player": "ハイセム・ハサン",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -28045,7 +29750,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -28112,7 +29817,7 @@
      },
      {
       "minute": "71",
-      "playerOut": "R・ロドリゲス",
+      "playerOut": "リカルド・ロドリゲス",
       "playerIn": "ムハイム"
      },
      {
@@ -28146,7 +29851,7 @@
     "startingPlayers": [
      {
       "number": 12,
-      "name": "C・バルガス",
+      "name": "カミロ・バルガス",
       "position": "GK",
       "row": 0
      },
@@ -28164,7 +29869,7 @@
      },
      {
       "number": 23,
-      "name": "D・サンチェス",
+      "name": "ダビンソン・サンチェス",
       "position": "DF",
       "row": 1
      },
@@ -28188,7 +29893,7 @@
      },
      {
       "number": 11,
-      "name": "J・アリアス",
+      "name": "ジョン・アリアス",
       "position": "MF",
       "row": 2
      },
@@ -28219,7 +29924,7 @@
      },
      {
       "minute": "66",
-      "playerOut": "J・アリアス",
+      "playerOut": "ジョン・アリアス",
       "playerIn": "カンパス"
      },
      {
@@ -28318,6 +30023,38 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "51",
+     "player": "ジャカ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "59",
+     "player": "ザカリア",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "60",
+     "player": "ルイス・スアレス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "95",
+     "player": "ダビンソン・サンチェス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "105",
+     "player": "ムハイム",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -28350,7 +30087,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -28606,6 +30343,14 @@
      "label": "レッドカード",
      "home": 0,
      "away": 0
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "63",
+     "player": "ディオプ",
+     "type": "yellow"
     }
    ]
   },
@@ -28902,6 +30647,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "43",
+     "player": "クバルシ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "85",
+     "player": "デ・ブライネ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+3",
+     "player": "ラポルト",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+5",
+     "player": "ヴィツェル",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -28922,7 +30693,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -29016,7 +30787,7 @@
      {
       "minute": "110",
       "playerOut": "パレデス",
-      "playerIn": "J・M・ロペス"
+      "playerIn": "ホセ・マヌエル・ロペス"
      }
     ]
    },
@@ -29035,7 +30806,7 @@
      },
      {
       "number": 13,
-      "name": "R・ロドリゲス",
+      "name": "リカルド・ロドリゲス",
       "position": "DF",
       "row": 1
      },
@@ -29112,7 +30883,7 @@
      },
      {
       "minute": "90+5",
-      "playerOut": "R・ロドリゲス",
+      "playerOut": "リカルド・ロドリゲス",
       "playerIn": "コメルト"
      },
      {
@@ -29218,6 +30989,38 @@
      "label": "レッドカード",
      "home": 0,
      "away": 1
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "44",
+     "player": "エンボロ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "72",
+     "player": "エンボロ",
+     "type": "red"
+    },
+    {
+     "team": "home",
+     "minute": "97",
+     "player": "アルマダ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "98",
+     "player": "ラウタロ・マルティネス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "114",
+     "player": "ホセ・マヌエル・ロペス",
+     "type": "yellow"
     }
    ]
   },
@@ -29530,6 +31333,14 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "117",
+     "player": "アイェル",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -29562,7 +31373,7 @@
      },
      {
       "number": 17,
-      "name": "W・サリバ",
+      "name": "ウィリアム・サリバ",
       "position": "DF",
       "row": 1
      },
@@ -29618,7 +31429,7 @@
     "substitutions": [
      {
       "minute": "30",
-      "playerOut": "W・サリバ",
+      "playerOut": "ウィリアム・サリバ",
       "playerIn": "ラクロワ"
      },
      {
@@ -29824,6 +31635,26 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "home",
+     "minute": "9",
+     "player": "ラビオ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "31",
+     "player": "ククレジャ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "86",
+     "player": "エムバペ",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -29844,7 +31675,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -30124,6 +31955,32 @@
      "home": 0,
      "away": 0
     }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "37",
+     "player": "エリオット・アンダーソン",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "42",
+     "player": "リサンドロ・マルティネス",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "51",
+     "player": "ロメロ",
+     "type": "yellow"
+    },
+    {
+     "team": "home",
+     "minute": "90+4",
+     "player": "デ・パウル",
+     "type": "yellow"
+    }
    ]
   },
   {
@@ -30246,7 +32103,7 @@
     "startingPlayers": [
      {
       "number": 13,
-      "name": "D・ヘンダーソン",
+      "name": "ディーン・ヘンダーソン",
       "position": "GK",
       "row": 0
      },
@@ -30462,7 +32319,8 @@
      "home": 0,
      "away": 0
     }
-   ]
+   ],
+   "cards": []
   },
   {
    "id": "ESP-ARG-2026-07-19",
@@ -30589,7 +32447,7 @@
     "startingPlayers": [
      {
       "number": 23,
-      "name": "E・マルティネス",
+      "name": "エミリアーノ・マルティネス",
       "position": "GK",
       "row": 0
      },
@@ -30756,6 +32614,44 @@
      "label": "レッドカード",
      "home": 0,
      "away": 1
+    }
+   ],
+   "cards": [
+    {
+     "team": "away",
+     "minute": "41",
+     "player": "リサンドロ・マルティネス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "52",
+     "player": "パレデス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "82",
+     "player": "エンソ・フェルナンデス",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+2",
+     "player": "ロメロ",
+     "type": "yellow"
+    },
+    {
+     "team": "away",
+     "minute": "90+3",
+     "player": "エンソ・フェルナンデス",
+     "type": "red"
+    },
+    {
+     "team": "away",
+     "minute": "111",
+     "player": "マカリスター",
+     "type": "yellow"
     }
    ]
   }

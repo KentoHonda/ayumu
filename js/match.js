@@ -170,19 +170,33 @@ const MatchView = (() => {
     const homeCountry = countriesById.get(home.countryId);
     const awayCountry = countriesById.get(away.countryId);
 
-    const homeGoals = match.goals.filter((g) => g.team === "home");
-    const awayGoals = match.goals.filter((g) => g.team === "away");
-    const sortByMinute = (a, b) => minuteValue(a.minute) - minuteValue(b.minute);
-
     const goalRow = (g) =>
       `<p class="goal-row"><span class="minute">${escapeHtml(g.minute)}分</span> ` +
       `${escapeHtml(g.player || "(かくにん中)")}` +
       `<span class="goal-type">${goalTypeText(g.type)}</span> <span aria-hidden="true">⚽</span></p>`;
 
-    // ゴールのリスト。数がスコアより少ないときは「かくにん中」と出す(うそのデータでうめない)
-    const goalsHtml = (goals, teamScore) => {
-      if (!goals.length && teamScore === 0) return `<p class="no-data">ゴールなし</p>`;
-      let html = goals.slice().sort(sortByMinute).map(goalRow).join("");
+    const cardRow = (c) => {
+      const icon = c.type === "red" ? "🟥" : "🟨";
+      const label = c.type === "red" ? "レッドカード" : "イエローカード";
+      return (
+        `<p class="goal-row"><span class="minute">${escapeHtml(c.minute)}分</span> ` +
+        `${escapeHtml(c.player)} <span aria-hidden="true">${icon}</span>` +
+        `<span class="visually-hidden">${label}</span></p>`
+      );
+    };
+
+    // ゴールとカードをまとめて、時間のじゅんにならべる
+    const eventsHtml = (side, teamScore) => {
+      const goals = match.goals
+        .filter((g) => g.team === side)
+        .map((g) => ({ sortKey: minuteValue(g.minute), html: goalRow(g) }));
+      const cards = (match.cards || [])
+        .filter((c) => c.team === side)
+        .map((c) => ({ sortKey: minuteValue(c.minute), html: cardRow(c) }));
+      if (!goals.length && !cards.length && teamScore === 0) {
+        return `<p class="no-data">ゴールもカードもなし</p>`;
+      }
+      let html = [...goals, ...cards].sort((a, b) => a.sortKey - b.sortKey).map((r) => r.html).join("");
       if (goals.length < teamScore) {
         html += `<p class="no-data">(とくてんの くわしい 情報は かくにん中)</p>`;
       }
@@ -270,15 +284,16 @@ const MatchView = (() => {
       </div>
 
       <div class="match-part">
-        <h4><span aria-hidden="true">⚽</span> とくてん(ゴール)</h4>
+        <h4><span aria-hidden="true">⚽</span> とくてん(ゴール)と カード</h4>
+        <p class="stat-side-note">⚽=ゴール 🟨=イエローカード 🟥=レッドカード</p>
         <div class="two-cols">
           <div class="col-home">
             <p class="col-head">ホーム:${escapeHtml(home.nameJa)}</p>
-            ${goalsHtml(homeGoals, home.score)}
+            ${eventsHtml("home", home.score)}
           </div>
           <div class="col-away">
             <p class="col-head">アウェイ:${escapeHtml(away.nameJa)}</p>
-            ${goalsHtml(awayGoals, away.score)}
+            ${eventsHtml("away", away.score)}
           </div>
         </div>
       </div>
@@ -303,9 +318,8 @@ const MatchView = (() => {
   }
 
   /**
-   * 1チームぶんの箱:コート(先発)+ とちゅうから出たせんしゅ
-   * コートの上では、交代で下がったせんしゅに「(○分OUT)」と出す。
-   * コートの下に、交代で出たせんしゅを「名前(○分IN・だれと交代)」で出す。
+   * 1チームぶんの箱:コート(先発)
+   * コートの上では、交代で下がったせんしゅに「(○分 かわりに出たせんしゅ)」と出す。
    */
   function teamLineupBox(team, side) {
     if (!team.startingPlayers.length) {
@@ -316,25 +330,12 @@ const MatchView = (() => {
         </div>`;
     }
 
-    const subs = team.substitutions.slice().sort((a, b) => minuteValue(a.minute) - minuteValue(b.minute));
-    const subsHtml = subs.length
-      ? `<p class="col-head sub-list-head">とちゅうから出たせんしゅ</p>` +
-        subs
-          .map(
-            (s) =>
-              `<p class="sub-row">${escapeHtml(s.playerIn)}` +
-              `<span class="sub-inout">(<span class="minute">${escapeHtml(s.minute)}分</span>IN・${escapeHtml(s.playerOut)} と交代)</span></p>`
-          )
-          .join("")
-      : `<p class="no-data">交代の 情報は かくにん中です</p>`;
-
     return `
       <div class="pitch-box">
         <p class="pitch-title">${escapeHtml(team.nameJa)}
           <span class="formation-name">${escapeHtml(team.formation || "")}</span>
         </p>
         ${pitchSvg(team, side)}
-        <div class="sub-list">${subsHtml}</div>
       </div>`;
   }
 
