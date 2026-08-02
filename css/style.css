@@ -190,7 +190,11 @@ kbd {
   fill: var(--joined-green);
   cursor: pointer;
 }
-.country.joined:hover { fill: var(--joined-green-light); }
+/* マウスをのせたときの色は、まだえらばれていない国だけにつける。
+   こうしないと、クリックしたしゅんかんに黄色にならない */
+.country.joined:not(.selected):not(.home-team):not(.away-team):hover {
+  fill: var(--joined-green-light);
+}
 /* クリックしたときに出るブラウザの黒いわくは消す(キーボードでえらんだときだけ金色のわくを出す) */
 .country:focus,
 .country-marker:focus {
@@ -213,7 +217,9 @@ kbd {
   cursor: pointer;
   vector-effect: non-scaling-stroke; /* ズームしても、わく線は太くしない */
 }
-.country-marker:hover { fill: var(--joined-green-light); }
+.country-marker:not(.selected):not(.home-team):not(.away-team):hover {
+  fill: var(--joined-green-light);
+}
 .country-marker:focus-visible {
   outline: none;
   stroke: var(--focus);
