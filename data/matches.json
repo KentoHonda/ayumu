@@ -1,5 +1,5 @@
 {
- "note": "2026年ワールドカップ本大会(ほんたいかい)の104しあいをのせています。公式(こうしき)の情報でかくにんできたデータだけを入れます。スコアと得点はFIFA・Wikipedia・ESPNなど複数の情報源でかくにんし、先発メンバーと選手交代はESPNの試合データをもとにしています。せんしゅのならび(row)は、とうろくポジションから計算したおおよそのならびです。えんちょうせんは extraTime、PKせんは penaltyShootout に入れます。",
+ "note": "2026年ワールドカップ本大会(ほんたいかい)の104試合をのせています。公式(こうしき)の情報でかくにんできたデータだけを入れます。スコアと得点はFIFA・Wikipedia・ESPNなど複数の情報源でかくにんし、先発メンバーと選手交代はESPNの試合データをもとにしています。せんしゅのならび(row)は、とうろくポジションから計算したおおよそのならびです。えんちょうせんは extraTime、PKせんは penaltyShootout に入れます。",
  "matches": [
   {
    "id": "KOR-CZE-2026-06-11",
@@ -238,6 +238,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760414"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 61.5,
+     "away": 38.5
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 541,
+     "away": 327
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -470,6 +522,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760415"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 60.5,
+     "away": 39.5
+    },
+    {
+     "label": "シュート",
+     "home": 16,
+     "away": 3
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 520,
+     "away": 334
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 1,
+     "away": 2
     }
    ]
   },
@@ -708,6 +812,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760416"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 61.1,
+     "away": 38.9
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 421,
+     "away": 271
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 20
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -960,6 +1116,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760417"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 65.3,
+     "away": 34.7
+    },
+    {
+     "label": "シュート",
+     "home": 16,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 598,
+     "away": 319
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 17
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -1197,6 +1405,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760421"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 28.4,
+     "away": 71.6
+    },
+    {
+     "label": "シュート",
+     "home": 9,
+     "away": 30
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 8
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 271,
+     "away": 704
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 4
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -1436,6 +1696,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760419"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 51.4,
+     "away": 48.6
+    },
+    {
+     "label": "シュート",
+     "home": 12,
+     "away": 14
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 514,
+     "away": 486
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 16,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -1657,6 +1969,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760418"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.7,
+     "away": 46.3
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 431,
+     "away": 374
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 23,
+     "away": 21
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -1896,6 +2260,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760420"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 32,
+     "away": 68
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 26
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 10
+    },
+    {
+     "label": "パスの数",
+     "home": 278,
+     "away": 576
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -2122,6 +2538,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760423"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 48.4,
+     "away": 51.6
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 470,
+     "away": 492
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -2387,6 +2855,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760422"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 64.6,
+     "away": 35.4
+    },
+    {
+     "label": "シュート",
+     "home": 26,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 12,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 637,
+     "away": 343
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 18,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -2645,7 +3165,59 @@
     }
    ],
    "stageType": "group",
-   "stageOrder": 0
+   "stageOrder": 0,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 59.8,
+     "away": 40.2
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 524,
+     "away": 341
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "SWE-TUN-2026-06-14",
@@ -2907,6 +3479,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760424"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 48.7,
+     "away": 51.3
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 356,
+     "away": 371
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 6
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -3145,6 +3769,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760426"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.6,
+     "away": 46.4
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 14
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 455,
+     "away": 398
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 15,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -3364,6 +4040,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760428"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 74.3,
+     "away": 25.7
+    },
+    {
+     "label": "シュート",
+     "home": 27,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 11,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 800,
+     "away": 278
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 7
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 1
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -3610,6 +4338,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760427"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 48.5,
+     "away": 51.5
+    },
+    {
+     "label": "シュート",
+     "home": 17,
+     "away": 14
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 8
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 409,
+     "away": 446
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -3847,6 +4627,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760429"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 33.2,
+     "away": 66.8
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 27
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 10
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 14
+    },
+    {
+     "label": "パスの数",
+     "home": 322,
+     "away": 612
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 9,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 6
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -4091,6 +4923,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760433"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 47.8,
+     "away": 52.2
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 561,
+     "away": 609
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -4342,6 +5226,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760431"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 63.2,
+     "away": 36.8
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 580,
+     "away": 332
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -4576,6 +5512,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760432"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.4,
+     "away": 46.6
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 575,
+     "away": 502
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 5,
+     "away": 9
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -4832,6 +5820,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760430"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 38.7,
+     "away": 61.3
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 334,
+     "away": 537
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -5095,6 +6135,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760437"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 51.7,
+     "away": 48.3
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 11,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 474,
+     "away": 443
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -5321,6 +6413,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760434"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 38,
+     "away": 62
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 352,
+     "away": 583
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -5554,6 +6698,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760435"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 75.4,
+     "away": 24.6
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 783,
+     "away": 249
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -5804,6 +7000,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760436"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 38.6,
+     "away": 61.4
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 15
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 319,
+     "away": 519
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -6067,6 +7315,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760440"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 79,
+     "away": 21
+    },
+    {
+     "label": "シュート",
+     "home": 32,
+     "away": 2
+    },
+    {
+     "label": "わく内シュート",
+     "home": 10,
+     "away": 0
+    },
+    {
+     "label": "コーナーキック",
+     "home": 19,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 567,
+     "away": 162
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 2
+    }
    ]
   },
   {
@@ -6323,6 +7623,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760439"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 62.3,
+     "away": 37.7
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 586,
+     "away": 354
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 18
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
+    }
    ]
   },
   {
@@ -6550,6 +7902,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760438"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 38.3,
+     "away": 61.7
+    },
+    {
+     "label": "シュート",
+     "home": 14,
+     "away": 17
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 341,
+     "away": 563
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -6782,6 +8186,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760441"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 42.4,
+     "away": 57.6
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 427,
+     "away": 578
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 6
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -7027,6 +8483,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760444"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 56.7,
+     "away": 43.3
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 525,
+     "away": 399
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 8,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -7253,6 +8761,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760445"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 41.1,
+     "away": 58.9
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 456,
+     "away": 670
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -7485,6 +9045,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760443"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 78.5,
+     "away": 21.5
+    },
+    {
+     "label": "シュート",
+     "home": 32,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 12,
+     "away": 0
+    },
+    {
+     "label": "パスの数",
+     "home": 629,
+     "away": 178
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
     }
    ]
   },
@@ -7723,6 +9335,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760442"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 61.9,
+     "away": 38.1
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 523,
+     "away": 310
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -7968,6 +9632,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760448"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 59.5,
+     "away": 40.5
+    },
+    {
+     "label": "シュート",
+     "home": 16,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 624,
+     "away": 431
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 5,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -8187,6 +9903,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760446"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 74.6,
+     "away": 25.4
+    },
+    {
+     "label": "シュート",
+     "home": 27,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 15,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 0
+    },
+    {
+     "label": "パスの数",
+     "home": 644,
+     "away": 227
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 15
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -8450,7 +10218,59 @@
     }
    ],
    "stageType": "group",
-   "stageOrder": 0
+   "stageOrder": 0,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 50.9,
+     "away": 49.1
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 16
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 8
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 449,
+     "away": 425
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "TUN-JPN-2026-06-20",
@@ -8700,7 +10520,59 @@
     }
    ],
    "stageType": "group",
-   "stageOrder": 0
+   "stageOrder": 0,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 37.9,
+     "away": 62.1
+    },
+    {
+     "label": "シュート",
+     "home": 2,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 0,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 354,
+     "away": 583
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 8,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "BEL-IRN-2026-06-21",
@@ -8924,6 +10796,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760451"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 70.1,
+     "away": 29.9
+    },
+    {
+     "label": "シュート",
+     "home": 23,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 621,
+     "away": 270
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 9
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 1,
+     "away": 0
     }
    ]
   },
@@ -9174,6 +11098,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760453"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 67.1,
+     "away": 32.9
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 3
+    },
+    {
+     "label": "わく内シュート",
+     "home": 8,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 726,
+     "away": 364
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 2
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -9430,6 +11406,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760452"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 44.4,
+     "away": 55.6
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 19
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 421,
+     "away": 526
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -9670,6 +11698,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760450"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 65.2,
+     "away": 34.8
+    },
+    {
+     "label": "シュート",
+     "home": 17,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 11,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 511,
+     "away": 278
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 4
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -9907,6 +11987,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760456"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.6,
+     "away": 46.4
+    },
+    {
+     "label": "シュート",
+     "home": 12,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 554,
+     "away": 468
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -10152,6 +12284,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760457"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 55.6,
+     "away": 44.4
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 4
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 0
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 603,
+     "away": 481
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 8,
+     "away": 4
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -10395,6 +12579,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760455"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 27.9,
+     "away": 72.1
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 17
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 8
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 10
+    },
+    {
+     "label": "パスの数",
+     "home": 251,
+     "away": 641
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 6,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -10652,6 +12888,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760454"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 41.7,
+     "away": 58.3
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 16
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 353,
+     "away": 489
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 5
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -10874,6 +13162,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760459"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 63.5,
+     "away": 36.5
+    },
+    {
+     "label": "シュート",
+     "home": 20,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 9,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 541,
+     "away": 299
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 8
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 7,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -11093,6 +13433,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760458"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 78.9,
+     "away": 21.1
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 2
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 633,
+     "away": 172
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 24
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -11320,6 +13712,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760460"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 42,
+     "away": 58
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 352,
+     "away": 512
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 19,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -11577,6 +14021,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760461"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 65.9,
+     "away": 34.1
+    },
+    {
+     "label": "シュート",
+     "home": 17,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 9,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 624,
+     "away": 327
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -11827,6 +14323,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760462"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 54.4,
+     "away": 45.6
+    },
+    {
+     "label": "シュート",
+     "home": 14,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 515,
+     "away": 434
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -12071,6 +14619,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760463"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 55.3,
+     "away": 44.7
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 13
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 443,
+     "away": 339
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 19,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -12314,6 +14914,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760467"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 51.9,
+     "away": 48.1
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 398,
+     "away": 386
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -12577,6 +15229,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760464"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 69.1,
+     "away": 30.9
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 11,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 541,
+     "away": 247
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 8
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 18
+    },
+    {
+     "label": "オフサイド",
+     "home": 5,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -12821,6 +15525,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760465"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 46,
+     "away": 54
+    },
+    {
+     "label": "シュート",
+     "home": 14,
+     "away": 21
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 9
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 500,
+     "away": 605
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -13042,6 +15798,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760466"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 31.6,
+     "away": 68.4
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 340,
+     "away": 719
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 9
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -13280,6 +16088,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760473"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 36.7,
+     "away": 63.3
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 355,
+     "away": 624
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -13525,6 +16385,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760468"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 38.9,
+     "away": 61.1
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 378,
+     "away": 592
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 15,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -13767,7 +16679,59 @@
     }
    ],
    "stageType": "group",
-   "stageOrder": 0
+   "stageOrder": 0,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 52.3,
+     "away": 47.7
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 445,
+     "away": 395
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 20,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "PRY-AUS-2026-06-25",
@@ -13981,6 +16945,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760469"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 44,
+     "away": 56
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 426,
+     "away": 537
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -14236,7 +17252,59 @@
     }
    ],
    "stageType": "group",
-   "stageOrder": 0
+   "stageOrder": 0,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 28.6,
+     "away": 71.4
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 20
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 258,
+     "away": 647
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "TUR-USA-2026-06-25",
@@ -14492,6 +17560,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760470"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 47.4,
+     "away": 52.6
+    },
+    {
+     "label": "シュート",
+     "home": 9,
+     "away": 18
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 9
+    },
+    {
+     "label": "パスの数",
+     "home": 434,
+     "away": 471
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -14716,6 +17836,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760478"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 51,
+     "away": 49
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 451,
+     "away": 444
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -14944,6 +18116,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760476"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 61.4,
+     "away": 38.6
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 13
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 589,
+     "away": 367
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -15200,6 +18424,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760475"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 43.3,
+     "away": 56.7
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 18
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 9
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 421,
+     "away": 555
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -15463,6 +18739,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760477"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 45.5,
+     "away": 54.5
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 35
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 10
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 436,
+     "away": 525
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -15719,6 +19047,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760474"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 69.2,
+     "away": 30.8
+    },
+    {
+     "label": "シュート",
+     "home": 28,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 12,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 12,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 590,
+     "away": 266
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 7
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
+    }
    ]
   },
   {
@@ -15945,6 +19325,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760479"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 33.1,
+     "away": 66.9
+    },
+    {
+     "label": "シュート",
+     "home": 5,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 301,
+     "away": 622
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 1,
+     "away": 0
     }
    ]
   },
@@ -16196,6 +19628,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760482"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 57.6,
+     "away": 42.4
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 3
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 485,
+     "away": 355
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 6,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -16420,6 +19904,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760481"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 54.6,
+     "away": 45.4
+    },
+    {
+     "label": "シュート",
+     "home": 24,
+     "away": 13
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 544,
+     "away": 446
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 6
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -16678,6 +20214,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760484"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 65,
+     "away": 35
+    },
+    {
+     "label": "シュート",
+     "home": 12,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 754,
+     "away": 396
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -16916,6 +20504,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760480"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.3,
+     "away": 46.7
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 523,
+     "away": 455
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -17167,6 +20807,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760483"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 26.7,
+     "away": 73.3
+    },
+    {
+     "label": "シュート",
+     "home": 5,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 285,
+     "away": 801
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -17405,6 +21097,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760485"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 32.9,
+     "away": 67.1
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 17
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 6
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 268,
+     "away": 558
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 16,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -17630,6 +21374,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760486"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 58.4,
+     "away": 41.6
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 12
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 554,
+     "away": 379
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 16
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -17874,7 +21670,59 @@
     }
    ],
    "stageType": "knockout",
-   "stageOrder": 1
+   "stageOrder": 1,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 68.6,
+     "away": 31.4
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 682,
+     "away": 313
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 4,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "DEU-PRY-2026-06-29",
@@ -18131,7 +21979,59 @@
    "penaltyShootout": {
     "home": 3,
     "away": 4
-   }
+   },
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 75.6,
+     "away": 24.4
+    },
+    {
+     "label": "シュート",
+     "home": 21,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 6,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 16,
+     "away": 6
+    },
+    {
+     "label": "パスの数",
+     "home": 805,
+     "away": 255
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 6
+    },
+    {
+     "label": "ファウル",
+     "home": 18,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "NED-MAR-2026-06-29",
@@ -18387,7 +22287,59 @@
     }
    ],
    "stageType": "knockout",
-   "stageOrder": 1
+   "stageOrder": 1,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 29.9,
+     "away": 70.1
+    },
+    {
+     "label": "シュート",
+     "home": 6,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 371,
+     "away": 879
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 18,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "CIV-NOR-2026-06-30",
@@ -18624,6 +22576,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760490"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 47,
+     "away": 53
+    },
+    {
+     "label": "シュート",
+     "home": 14,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 14,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 401,
+     "away": 474
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 6,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -18873,6 +22877,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760492"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 61,
+     "away": 39
+    },
+    {
+     "label": "シュート",
+     "home": 25,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 12,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 551,
+     "away": 350
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 9
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -19114,6 +23170,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760491"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 42.8,
+     "away": 57.2
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 316,
+     "away": 410
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
     }
    ]
   },
@@ -19386,7 +23494,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760493"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 52.3,
+     "away": 47.7
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 19
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 701,
+     "away": 639
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 22,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "ENG-COD-2026-07-01",
@@ -19629,6 +23789,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760495"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 59.7,
+     "away": 40.3
+    },
+    {
+     "label": "シュート",
+     "home": 16,
+     "away": 7
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 517,
+     "away": 365
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -19860,6 +24072,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760494"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 48.4,
+     "away": 51.6
+    },
+    {
+     "label": "シュート",
+     "home": 8,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "パスの数",
+     "home": 415,
+     "away": 447
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 1,
+     "away": 0
     }
    ]
   },
@@ -20102,6 +24366,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760498"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 44.5,
+     "away": 55.5
+    },
+    {
+     "label": "シュート",
+     "home": 11,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 438,
+     "away": 563
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -20351,6 +24667,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760497"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 64.4,
+     "away": 35.6
+    },
+    {
+     "label": "シュート",
+     "home": 23,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 10,
+     "away": 0
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 0
+    },
+    {
+     "label": "パスの数",
+     "home": 629,
+     "away": 347
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 6
+    },
+    {
+     "label": "ファウル",
+     "home": 8,
+     "away": 15
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 5
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -20593,6 +24961,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760496"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 60.4,
+     "away": 39.6
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 13
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 6
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 585,
+     "away": 370
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 6,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -20860,7 +25280,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760500"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 63.6,
+     "away": 36.4
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 16
+    },
+    {
+     "label": "わく内シュート",
+     "home": 10,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 8
+    },
+    {
+     "label": "パスの数",
+     "home": 850,
+     "away": 476
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 8
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "AUS-EGY-2026-07-03",
@@ -21112,7 +25584,59 @@
    "penaltyShootout": {
     "home": 2,
     "away": 4
-   }
+   },
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 41.7,
+     "away": 58.3
+    },
+    {
+     "label": "シュート",
+     "home": 16,
+     "away": 14
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 4,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 505,
+     "away": 722
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 12,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "COL-GHA-2026-07-03",
@@ -21342,6 +25866,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760501"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 60.7,
+     "away": 39.3
+    },
+    {
+     "label": "シュート",
+     "home": 20,
+     "away": 8
+    },
+    {
+     "label": "わく内シュート",
+     "home": 8,
+     "away": 0
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 586,
+     "away": 376
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 7
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 10
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -21595,6 +26171,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760502"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 44.7,
+     "away": 55.3
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "コーナーキック",
+     "home": 11,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 359,
+     "away": 473
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 24,
+     "away": 14
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -21814,6 +26442,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760503"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 24.1,
+     "away": 75.9
+    },
+    {
+     "label": "シュート",
+     "home": 5,
+     "away": 15
+    },
+    {
+     "label": "わく内シュート",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 2,
+     "away": 12
+    },
+    {
+     "label": "パスの数",
+     "home": 183,
+     "away": 569
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -22060,6 +26740,58 @@
     {
      "name": "ESPN 日程・結果まとめ(英語)",
      "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 33.6,
+     "away": 66.4
+    },
+    {
+     "label": "シュート",
+     "home": 14,
+     "away": 9
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 331,
+     "away": 681
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 7,
+     "away": 6
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -22321,7 +27053,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760505"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 66.9,
+     "away": 33.1
+    },
+    {
+     "label": "シュート",
+     "home": 20,
+     "away": 6
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 12,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 453,
+     "away": 244
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 7
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
+    }
+   ]
   },
   {
    "id": "PRT-ESP-2026-07-06",
@@ -22555,6 +27339,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760506"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 44.6,
+     "away": 55.4
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 15
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 6
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 427,
+     "away": 530
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 9,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -22820,6 +27656,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760507"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 55.9,
+     "away": 44.1
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 15
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 7
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 527,
+     "away": 414
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 9
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -23079,6 +27967,58 @@
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760509"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 63.6,
+     "away": 36.4
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 602,
+     "away": 349
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -23326,7 +28266,59 @@
    "penaltyShootout": {
     "home": 4,
     "away": 3
-   }
+   },
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 53.4,
+     "away": 46.6
+    },
+    {
+     "label": "シュート",
+     "home": 7,
+     "away": 15
+    },
+    {
+     "label": "わく内シュート",
+     "home": 2,
+     "away": 3
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 7
+    },
+    {
+     "label": "パスの数",
+     "home": 631,
+     "away": 547
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "ファウル",
+     "home": 22,
+     "away": 21
+    },
+    {
+     "label": "オフサイド",
+     "home": 5,
+     "away": 4
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "FRA-MAR-2026-07-09",
@@ -23562,6 +28554,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760510"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 48,
+     "away": 52
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 8,
+     "away": 1
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 5
+    },
+    {
+     "label": "パスの数",
+     "home": 486,
+     "away": 526
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 6
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 13
+    },
+    {
+     "label": "オフサイド",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -23805,6 +28849,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760511"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 67.9,
+     "away": 32.1
+    },
+    {
+     "label": "シュート",
+     "home": 17,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 5,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 664,
+     "away": 312
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 6
+    },
+    {
+     "label": "ファウル",
+     "home": 13,
+     "away": 18
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 2
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -24071,7 +29167,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760513"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 59,
+     "away": 41
+    },
+    {
+     "label": "シュート",
+     "home": 22,
+     "away": 11
+    },
+    {
+     "label": "わく内シュート",
+     "home": 7,
+     "away": 5
+    },
+    {
+     "label": "コーナーキック",
+     "home": 8,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 691,
+     "away": 474
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 4
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 18
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
+    }
+   ]
   },
   {
    "id": "NOR-ENG-2026-07-11",
@@ -24330,7 +29478,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760512"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 47.6,
+     "away": 52.4
+    },
+    {
+     "label": "シュート",
+     "home": 13,
+     "away": 14
+    },
+    {
+     "label": "わく内シュート",
+     "home": 4,
+     "away": 8
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 577,
+     "away": 628
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 6,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 10,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 1,
+     "away": 5
+    },
+    {
+     "label": "イエローカード",
+     "home": 1,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
+   ]
   },
   {
    "id": "FRA-ESP-2026-07-14",
@@ -24571,6 +29771,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760514"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 49.1,
+     "away": 50.9
+    },
+    {
+     "label": "シュート",
+     "home": 10,
+     "away": 10
+    },
+    {
+     "label": "わく内シュート",
+     "home": 3,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 7,
+     "away": 1
+    },
+    {
+     "label": "パスの数",
+     "home": 472,
+     "away": 502
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 11,
+     "away": 12
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 5
+    },
+    {
+     "label": "イエローカード",
+     "home": 2,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -24819,6 +30071,58 @@
     {
      "name": "ESPN 試合データ(先発・交代)(英語)",
      "url": "https://www.espn.com/soccer/match/_/gameId/760515"
+    }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 64.2,
+     "away": 35.8
+    },
+    {
+     "label": "シュート",
+     "home": 15,
+     "away": 5
+    },
+    {
+     "label": "わく内シュート",
+     "home": 5,
+     "away": 2
+    },
+    {
+     "label": "コーナーキック",
+     "home": 6,
+     "away": 2
+    },
+    {
+     "label": "パスの数",
+     "home": 588,
+     "away": 325
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 1,
+     "away": 3
+    },
+    {
+     "label": "ファウル",
+     "home": 15,
+     "away": 11
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 3,
+     "away": 1
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
     }
    ]
   },
@@ -25106,6 +30410,58 @@
      "name": "FIFA 公式 試合レポート(英語)",
      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final"
     }
+   ],
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 45.9,
+     "away": 54.1
+    },
+    {
+     "label": "シュート",
+     "home": 19,
+     "away": 19
+    },
+    {
+     "label": "わく内シュート",
+     "home": 9,
+     "away": 11
+    },
+    {
+     "label": "コーナーキック",
+     "home": 3,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 445,
+     "away": 518
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 4,
+     "away": 5
+    },
+    {
+     "label": "ファウル",
+     "home": 14,
+     "away": 8
+    },
+    {
+     "label": "オフサイド",
+     "home": 3,
+     "away": 3
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 0
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 0
+    }
    ]
   },
   {
@@ -25349,7 +30705,59 @@
      "url": "https://www.espn.com/soccer/match/_/gameId/760517"
     }
    ],
-   "extraTime": true
+   "extraTime": true,
+   "teamStats": [
+    {
+     "label": "ボール支配率(%)",
+     "home": 65.1,
+     "away": 34.9
+    },
+    {
+     "label": "シュート",
+     "home": 20,
+     "away": 2
+    },
+    {
+     "label": "わく内シュート",
+     "home": 12,
+     "away": 0
+    },
+    {
+     "label": "コーナーキック",
+     "home": 9,
+     "away": 4
+    },
+    {
+     "label": "パスの数",
+     "home": 853,
+     "away": 464
+    },
+    {
+     "label": "キーパーのセーブ",
+     "home": 0,
+     "away": 11
+    },
+    {
+     "label": "ファウル",
+     "home": 21,
+     "away": 25
+    },
+    {
+     "label": "オフサイド",
+     "home": 4,
+     "away": 1
+    },
+    {
+     "label": "イエローカード",
+     "home": 0,
+     "away": 4
+    },
+    {
+     "label": "レッドカード",
+     "home": 0,
+     "away": 1
+    }
+   ]
   }
  ]
 }

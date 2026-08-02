@@ -1,6 +1,6 @@
 /* =========================================================
-   match.js : しあいのけっかを表示するプログラム
-   - しあいのボタンのリスト(国でしぼりこみもできる)
+   match.js : 試合の結果を表示するプログラム
+   - 試合のボタンのリスト(国でしぼりこみもできる)
    - スコアボード(ホームは左、アウェイは右。PKせんにも対応)
    - とくてん(ゴール)
    - さいしょに出るメンバー(先発)と 選手交代(まとめて表示)
@@ -8,15 +8,21 @@
    ========================================================= */
 
 const MatchView = (() => {
-  let listEl;      // しあいボタンをならべる場所
-  let headingEl;   // しあいリストの見出し
-  let detailEl;    // しあいのくわしい中身を出す場所
-  let matchButtons = new Map(); // しあいID → ボタン(えらび直しに使う)
+  let listEl;      // 試合ボタンをならべる場所
+  let headingEl;   // 試合リストの見出し
+  let detailEl;    // 試合のくわしい中身を出す場所
+  let currentOnSelect = null;   // ボタンがおされたときによぶ関数
+  let currentSelectedId = null; // いまえらんでいる試合ID
 
   function init() {
     listEl = document.getElementById("match-list");
     headingEl = document.getElementById("match-list-heading");
     detailEl = document.getElementById("match-detail");
+    // クリックはリスト全体で1回だけ受け取る(ボタン104個に1つずつ付けるより速い)
+    listEl.addEventListener("click", (event) => {
+      const btn = event.target.closest(".match-btn");
+      if (btn && currentOnSelect) currentOnSelect(btn.dataset.matchId);
+    });
   }
 
   /** 「45+2」のような時間も、じゅんばんにならべられるように数字にする */
@@ -56,17 +62,17 @@ const MatchView = (() => {
   }
 
   /**
-   * しあいをえらぶボタンのリストをつくる
-   * - しあいは1つずつ、たてにならべる
+   * 試合をえらぶボタンのリストをつくる
+   * - 試合は1つずつ、たてにならべる
    * - 「グループA」「ラウンド32」などのステージごとに、ひらいたり
    *   とじたりできる箱(details)に分けて、分かりやすくする
-   * options.heading : リストの上に出す見出し(例「日本のしあい」)
+   * options.heading : リストの上に出す見出し(例「日本の試合」)
    * options.openAll : true なら、ぜんぶの箱をひらいた状態にする(国でしぼったとき用)
    */
   function renderMatchList(matches, selectedId, onSelect, countriesById, options = {}) {
-    headingEl.textContent = `${options.heading || "ぜんぶのしあい"}(${matches.length}しあい)`;
-    listEl.innerHTML = "";
-    matchButtons = new Map();
+    currentOnSelect = onSelect;
+    currentSelectedId = selectedId;
+    headingEl.textContent = `${options.heading || "ぜんぶの試合"}(${matches.length}試合)`;
 
     const sorted = matches
       .slice()
@@ -88,49 +94,37 @@ const MatchView = (() => {
       sections[sections.length - 1].matches.push(match);
     });
 
+    // HTMLをぜんぶ文字列で組み立てて、さいごに1回だけ画面に入れる(この方が速い)
+    let html = "";
     let lastType = null;
     sections.forEach((section) => {
       // 「グループリーグ」と「決勝トーナメント」の大きな見出し
       if (section.stageType !== lastType) {
-        const big = document.createElement("h4");
-        big.className = "stage-type-heading";
-        big.textContent =
+        const heading =
           section.stageType === "group"
             ? "🏁 グループリーグ(1回せんリーグ)"
             : "🏆 決勝トーナメント(かったら つぎにすすめる)";
-        listEl.appendChild(big);
+        html += `<h4 class="stage-type-heading">${heading}</h4>`;
         lastType = section.stageType;
       }
-
-      const details = document.createElement("details");
-      details.className = "stage-box";
-      // 国でしぼったとき・えらんだしあいがある箱・決勝の箱は、ひらいておく
-      if (
+      // 国でしぼったとき・えらんだ試合がある箱・決勝の箱は、ひらいておく
+      const open =
         options.openAll ||
         section.matches.some((m) => m.id === selectedId) ||
         section.stage === "決勝"
-      ) {
-        details.open = true;
-      }
-      const summary = document.createElement("summary");
-      summary.innerHTML = `${escapeHtml(section.stage)} <span class="stage-count">(${section.matches.length}しあい)</span>`;
-      details.appendChild(summary);
-
-      const box = document.createElement("div");
-      box.className = "stage-matches";
+          ? " open"
+          : "";
+      html += `<details class="stage-box"${open}><summary>${escapeHtml(section.stage)} <span class="stage-count">(${section.matches.length}試合)</span></summary><div class="stage-matches">`;
       section.matches.forEach((match) => {
-        const btn = buildMatchButton(match, countriesById, onSelect);
-        btn.setAttribute("aria-pressed", String(match.id === selectedId));
-        matchButtons.set(match.id, btn);
-        box.appendChild(btn);
+        html += matchButtonHtml(match, countriesById, selectedId);
       });
-      details.appendChild(box);
-      listEl.appendChild(details);
+      html += `</div></details>`;
     });
+    listEl.innerHTML = html;
   }
 
-  /** 1つのしあいのボタンをつくる(ホームは左、アウェイは右) */
-  function buildMatchButton(match, countriesById, onSelect) {
+  /** 1つの試合のボタンのHTML(ホームは左、アウェイは右) */
+  function matchButtonHtml(match, countriesById, selectedId) {
     const home = countriesById.get(match.homeTeam.countryId);
     const away = countriesById.get(match.awayTeam.countryId);
     let noteText = "";
@@ -139,38 +133,37 @@ const MatchView = (() => {
     } else if (match.extraTime) {
       noteText = "・えんちょうせん";
     }
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "match-btn";
-    btn.innerHTML =
+    return (
+      `<button type="button" class="match-btn" data-match-id="${escapeHtml(match.id)}" aria-pressed="${match.id === selectedId}">` +
       `<span class="match-btn-date">${escapeHtml(match.dateJa)}${noteText ? escapeHtml(noteText) : ""}</span>` +
       `<span class="match-btn-card">` +
       `<span class="mb-team mb-home">${escapeHtml(match.homeTeam.nameJa)}<img class="mb-flag" src="${escapeHtml(home.flag)}" alt="" loading="lazy"></span>` +
       `<span class="mb-score">${match.homeTeam.score} - ${match.awayTeam.score}</span>` +
       `<span class="mb-team mb-away"><img class="mb-flag" src="${escapeHtml(away.flag)}" alt="" loading="lazy">${escapeHtml(match.awayTeam.nameJa)}</span>` +
-      `</span>`;
-    btn.addEventListener("click", () => onSelect(match.id));
-    return btn;
+      `</span></button>`
+    );
   }
 
-  /** えらんでいるしあいのしるしを、つけかえる(リストは作りなおさない) */
+  /** えらんでいる試合のしるしを、つけかえる(前とあとの2つのボタンだけさわるので速い) */
   function updateSelected(selectedId) {
-    matchButtons.forEach((btn, id) => {
-      const isOn = id === selectedId;
-      btn.setAttribute("aria-pressed", String(isOn));
-      if (isOn) {
-        const details = btn.closest("details");
-        if (details) details.open = true;
-      }
-    });
+    if (currentSelectedId === selectedId) return;
+    const prev = listEl.querySelector(`.match-btn[data-match-id="${currentSelectedId}"]`);
+    if (prev) prev.setAttribute("aria-pressed", "false");
+    const next = listEl.querySelector(`.match-btn[data-match-id="${selectedId}"]`);
+    if (next) {
+      next.setAttribute("aria-pressed", "true");
+      const details = next.closest("details");
+      if (details) details.open = true;
+    }
+    currentSelectedId = selectedId;
   }
 
-  /** 「しあいをえらんでね」のプレースホルダ */
+  /** 「試合をえらんでね」のプレースホルダ */
   function renderDetailPlaceholder() {
-    detailEl.innerHTML = `<p class="no-data">上のボタンから しあいをえらぶと、ここに くわしいけっかが 出るよ。</p>`;
+    detailEl.innerHTML = `<p class="no-data">上のボタンから 試合をえらぶと、ここに くわしい結果が 出るよ。</p>`;
   }
 
-  /** しあいのくわしい中身をぜんぶかく */
+  /** 試合のくわしい中身をぜんぶかく */
   function renderMatchDetail(match, countriesById) {
     const home = match.homeTeam;
     const away = match.awayTeam;
@@ -202,6 +195,29 @@ const MatchView = (() => {
       const pk = match.penaltyShootout;
       extraHtml = `<div class="sb-extra">えんちょうせんでも ${home.score} - ${away.score}。PKせんは ${pk.home} - ${pk.away} だったよ</div>`;
     }
+
+    // チームスタッツ(ボール支配率など)。青いバーがホームの分
+    const statsRows = (match.teamStats || [])
+      .map((s) => {
+        const total = s.home + s.away;
+        const homePct = total > 0 ? (s.home / total) * 100 : 50;
+        return (
+          `<div class="stat-row">` +
+          `<span class="stat-num">${s.home}</span>` +
+          `<span class="stat-label">${escapeHtml(s.label)}</span>` +
+          `<span class="stat-num">${s.away}</span>` +
+          `</div>` +
+          `<div class="stat-bar" aria-hidden="true"><div class="stat-bar-home" style="width:${homePct}%"></div></div>`
+        );
+      })
+      .join("");
+    const statsSection = statsRows
+      ? `<div class="match-part">
+          <h4><span aria-hidden="true">📊</span> チームスタッツ</h4>
+          <p class="stat-side-note">左の数字と青いバーがホーム(${escapeHtml(home.nameJa)})、右の数字と赤いバーがアウェイ(${escapeHtml(away.nameJa)})だよ</p>
+          <div class="stats-box">${statsRows}</div>
+        </div>`
+      : "";
 
     // フォーメーションが「公式でかくにんできたか」で、ことわり書きを出す
     const hasLineup = home.startingPlayers.length || away.startingPlayers.length;
@@ -266,6 +282,8 @@ const MatchView = (() => {
           </div>
         </div>
       </div>
+
+      ${statsSection}
 
       <div class="match-part">
         <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)と 選手交代</h4>

@@ -1,10 +1,10 @@
 /* =========================================================
    app.js : アプリぜんたいをうごかすプログラム
-   1. data フォルダの JSON(地図・国・しあい)をよみこむ
+   1. data フォルダの JSON(地図・国・試合)をよみこむ
    2. 地図とそれぞれの画面をつくる
    3. うごきのながれ:
-      - 国をえらぶ → その国のしあいが ぜんぶリストに出る
-      - しあいをえらぶ → 国の情報と、しあいのくわしいけっかが出る
+      - 国をえらぶ → その国の試合が ぜんぶリストに出る
+      - 試合をえらぶ → 国の情報と、試合のくわしい結果が出る
    ========================================================= */
 
 (() => {
@@ -14,8 +14,8 @@
   let countriesById = new Map();
 
   // いまの画面の状態
-  let filteredCountryIds = null; // どの国のしあいにしぼっているか(null = ぜんぶ)
-  let selectedMatchId = null;    // いまえらんでいるしあい
+  let filteredCountryIds = null; // どの国の試合にしぼっているか(null = ぜんぶ)
+  let selectedMatchId = null;    // いまえらんでいる試合
 
   /** JSONファイルをよみこむ(GitHub Pagesのサブフォルダでもうごくように、相対パスをつかう) */
   async function fetchJson(path) {
@@ -26,10 +26,10 @@
     return res.json();
   }
 
-  /** いまの状態(しぼりこみ・えらんだしあい)で、しあいリストをかきなおす */
+  /** いまの状態(しぼりこみ・えらんだ試合)で、試合リストをかきなおす */
   function renderMatchList() {
     let shownMatches = matches;
-    let heading = "ぜんぶのしあい";
+    let heading = "ぜんぶの試合";
     let openAll = false;
 
     if (filteredCountryIds) {
@@ -41,7 +41,7 @@
       const names = filteredCountryIds
         .map((id) => countriesById.get(id).nameJa)
         .join("と");
-      heading = `${names}のしあい`;
+      heading = `${names}の試合`;
       openAll = true; // 国でしぼったときは、ぜんぶの箱をひらいておく
     }
 
@@ -61,11 +61,14 @@
 
     WorldMap.highlightCountries(selected);   // 地図:えらんだ国を黄色に
     CountryView.render(selected);            // 国の情報カード
-    renderMatchList();                       // その国のしあいだけをリストに出す
-    MatchView.renderDetailPlaceholder();     // くわしいけっかは「しあいをえらんでね」に
+    // 試合リストの作りなおしは少しあとにまわして、先に黄色をぬってしまう(はんのうを速くするため)
+    setTimeout(() => {
+      renderMatchList();                     // その国の試合だけをリストに出す
+      MatchView.renderDetailPlaceholder();   // くわしい結果は「試合をえらんでね」に
+    }, 0);
   }
 
-  /** しあいがえらばれたとき */
+  /** 試合がえらばれたとき */
   function selectMatch(matchId) {
     const match = matches.find((m) => m.id === matchId);
     if (!match) return;
@@ -76,7 +79,7 @@
 
     WorldMap.showMatch(match, home, away);            // 地図:色つけ+たいせんライン
     MatchView.updateSelected(matchId);                // ボタンの「えらんでいる」しるしをつけかえる
-    MatchView.renderMatchDetail(match, countriesById); // しあいのくわしい中身
+    MatchView.renderMatchDetail(match, countriesById); // 試合のくわしい中身
     CountryView.render([home, away]);                 // 2つの国の情報
   }
 
@@ -97,7 +100,7 @@
       MatchView.init();
       CountryView.init();
 
-      // さいしょは、48か国が緑色の地図と、ぜんぶのしあいリストを見せる
+      // さいしょは、48か国が緑色の地図と、ぜんぶの試合リストを見せる
       renderMatchList();
       MatchView.renderDetailPlaceholder();
     } catch (error) {
