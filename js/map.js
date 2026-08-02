@@ -198,37 +198,22 @@ const WorldMap = (() => {
     paintCountry(homeCountry.id, "home-team");
     paintCountry(awayCountry.id, "away-team");
 
+    // 2つの国を、上にふくらんだ1本のアーチでむすぶ。
+    // 地球の反対がわどうし(日本×ブラジルなど)でも、線が地図の右はしと
+    // 左はしに分かれないように、かならず地図の中を通る1本の線でかく。
+    // ※ カーブのてっぺんは「もち上げる高さ」の半分しか上がらないので、2倍しておく
     const a = projection(homeCountry.anchorLngLat);
     const b = projection(awayCountry.anchorLngLat);
-    const lngDiff = Math.abs(homeCountry.anchorLngLat[0] - awayCountry.anchorLngLat[0]);
-    let badgeXY;
-
-    if (lngDiff > 150) {
-      // 地球の反対がわどうし(日本×ブラジルなど)は、地球の上のいちばん短い道
-      // (大圏コース)でむすぶ。日付変更線をまたいでも、へんに長い線にならない。
-      const interpolate = d3.geoInterpolate(homeCountry.anchorLngLat, awayCountry.anchorLngLat);
-      const points = d3.range(0, 1.0001, 1 / 60).map(interpolate);
-      lineLayer
-        .append("path")
-        .datum({ type: "LineString", coordinates: points })
-        .attr("class", "match-line")
-        .attr("d", geoPath);
-      badgeXY = projection(interpolate(0.5));
-    } else {
-      // ふつうは、上にふくらんだアーチでむすぶ。
-      // 近い国どうしでも、線とスコアが国名と重ならないようにするため。
-      // ※ カーブのてっぺんは「もち上げる高さ」の半分しか上がらないので、2倍しておく
-      const dist = Math.hypot(b[0] - a[0], b[1] - a[1]);
-      const lift = Math.min(Math.max(40, dist * 0.22), 90);
-      const cx = (a[0] + b[0]) / 2;
-      const cy = Math.max((a[1] + b[1]) / 2 - lift * 2, 18); // 地図の上からはみ出さないようにする
-      lineLayer
-        .append("path")
-        .attr("class", "match-line")
-        .attr("d", `M ${a[0]} ${a[1]} Q ${cx} ${cy} ${b[0]} ${b[1]}`);
-      // アーチのてっぺん(まん中)の場所
-      badgeXY = [(a[0] + 2 * cx + b[0]) / 4, (a[1] + 2 * cy + b[1]) / 4];
-    }
+    const dist = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const lift = Math.min(Math.max(40, dist * 0.22), 90);
+    const cx = (a[0] + b[0]) / 2;
+    const cy = Math.max((a[1] + b[1]) / 2 - lift * 2, 18); // 地図の上からはみ出さないようにする
+    lineLayer
+      .append("path")
+      .attr("class", "match-line")
+      .attr("d", `M ${a[0]} ${a[1]} Q ${cx} ${cy} ${b[0]} ${b[1]}`);
+    // アーチのてっぺん(まん中)の場所に、スコアのふだを出す
+    const badgeXY = [(a[0] + 2 * cx + b[0]) / 4, (a[1] + 2 * cy + b[1]) / 4];
 
     // スコアのふだを出す(PKせんがあれば、それも出す)
     let scoreText = `${match.homeTeam.score} - ${match.awayTeam.score}`;
