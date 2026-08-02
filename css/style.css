@@ -513,6 +513,11 @@ kbd {
   font-size: 0.95rem;
   margin-bottom: 12px;
 }
+.sub-hint {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+}
 .pitches {
   display: grid;
   grid-template-columns: 1fr 1fr;

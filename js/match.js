@@ -210,6 +210,13 @@ const MatchView = (() => {
         ? `<p class="formation-note">※ 公式のならびが かくにんできていないため、せんしゅの とうろくポジションをもとにした、おおよその ならびです。</p>`
         : "";
 
+    // こうたいの見方のせつめい(先発とこうたいの両方があるときだけ出す)
+    const hasSubs = home.substitutions.length || away.substitutions.length;
+    const subHint =
+      hasLineup && hasSubs
+        ? `<p class="sub-hint">せんしゅの下の 黄色い「(66分 ○○)」は、その時間に ○○せんしゅと こうたいして 下がった という意味だよ。</p>`
+        : "";
+
     const sourcesHtml = match.sources.length
       ? `<ul class="sources-list">` +
         match.sources
@@ -263,6 +270,7 @@ const MatchView = (() => {
       <div class="match-part">
         <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)と せんしゅこうたい</h4>
         ${formationNote}
+        ${subHint}
         <div class="pitches">
           ${teamLineupBox(home, "home")}
           ${teamLineupBox(away, "away")}
@@ -345,15 +353,15 @@ const MatchView = (() => {
   /**
    * サッカーコートの上に先発メンバーをならべたSVGをつくる
    * - row 0 がゴールキーパー(いちばん下)、数字が大きいほど前(上)
-   * - こうたいで下がったせんしゅには「(○分OUT)」と出す
+   * - こうたいで下がったせんしゅには「(○分 かわりに出たせんしゅ)」と出す
    */
   function pitchSvg(team, side) {
     const W = 400;
     const H = 515;
     const teamColor = side === "home" ? "#4da3ff" : "#ff6b6b";
 
-    // 「この先発せんしゅは何分にOUTしたか」をしらべられるようにしておく
-    const outMinuteByName = new Map(team.substitutions.map((s) => [s.playerOut, s.minute]));
+    // 「この先発せんしゅは、何分にだれと交代したか」をしらべられるようにしておく
+    const subByOutName = new Map(team.substitutions.map((s) => [s.playerOut, s]));
 
     // 選手を row(れつ)ごとにまとめる
     const rows = new Map();
@@ -371,6 +379,9 @@ const MatchView = (() => {
     rowKeys.forEach((rowKey, rowIndex) => {
       const rowPlayers = rows.get(rowKey);
       const y = bottomY - rowIndex * stepY;
+      // 同じれつの、となりの選手との間かく。文字はこの中におさめる
+      const spacing = W / (rowPlayers.length + 1);
+      const maxTextWidth = Math.min(96, spacing - 8);
       rowPlayers.forEach((p, i) => {
         const x = (W * (i + 1)) / (rowPlayers.length + 1);
         const isGk = p.position === "GK";
@@ -381,16 +392,27 @@ const MatchView = (() => {
         const nameText = nameLines
           .map((line, li) => {
             const fontSize = line.length >= 7 ? 10 : 11.5;
-            return `<tspan x="${x}" y="${y + 31 + li * 12}" font-size="${fontSize}">${escapeHtml(line)}</tspan>`;
+            const tl =
+              line.length * fontSize > maxTextWidth
+                ? ` textLength="${maxTextWidth}" lengthAdjust="spacingAndGlyphs"`
+                : "";
+            return `<tspan x="${x}" y="${y + 31 + li * 12}" font-size="${fontSize}"${tl}>${escapeHtml(line)}</tspan>`;
           })
           .join("");
 
-        // こうたいで下がった選手には「(○分OUT)」と出す
-        const outMinute = outMinuteByName.get(p.name);
-        const outText = outMinute
-          ? `<text x="${x}" y="${y + 31 + nameLines.length * 12}" text-anchor="middle" font-size="9.5"
-               fill="#ffd166" stroke="#0b3d22" stroke-width="3" paint-order="stroke">(${escapeHtml(outMinute)}分OUT)</text>`
-          : "";
+        // こうたいで下がった選手には「(○分 かわりに出たせんしゅ)」と出す
+        const sub = subByOutName.get(p.name);
+        let outText = "";
+        if (sub) {
+          const subLabel = `(${sub.minute}分 ${sub.playerIn})`;
+          // 長いときは、よこの選手と重ならないように、間かくの中におしこめる
+          const tl =
+            subLabel.length * 9.5 > maxTextWidth
+              ? ` textLength="${maxTextWidth}" lengthAdjust="spacingAndGlyphs"`
+              : "";
+          outText = `<text x="${x}" y="${y + 31 + nameLines.length * 12}" text-anchor="middle" font-size="9.5"
+               fill="#ffd166" stroke="#0b3d22" stroke-width="3" paint-order="stroke"${tl}>${escapeHtml(subLabel)}</text>`;
+        }
 
         players += `
           <g>

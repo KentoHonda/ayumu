@@ -587,7 +587,7 @@
           },
           {
             "number": 14,
-            "name": "レイナース",
+            "name": "レインデルス",
             "position": "MF",
             "row": 2
           },
@@ -605,7 +605,7 @@
           },
           {
             "number": 11,
-            "name": "ハクポ",
+            "name": "ガクポ",
             "position": "FW",
             "row": 3
           }
@@ -623,7 +623,7 @@
           },
           {
             "minute": "70",
-            "playerOut": "レイナース",
+            "playerOut": "レインデルス",
             "playerIn": "ティンバー"
           },
           {
@@ -633,7 +633,7 @@
           },
           {
             "minute": "85",
-            "playerOut": "ハクポ",
+            "playerOut": "ガクポ",
             "playerIn": "ブロビー"
           }
         ]
@@ -2056,13 +2056,13 @@
         {
           "team": "home",
           "minute": "47",
-          "player": "ハクポ",
+          "player": "ガクポ",
           "type": "normal"
         },
         {
           "team": "home",
           "minute": "54",
-          "player": "ハクポ",
+          "player": "ガクポ",
           "type": "normal"
         },
         {
@@ -3634,7 +3634,7 @@
         {
           "team": "away",
           "minute": "90+4",
-          "player": "サーレマーケルス",
+          "player": "サレマーカース",
           "type": "normal"
         }
       ],
@@ -4329,7 +4329,7 @@
         {
           "team": "home",
           "minute": "90+5",
-          "player": "マルチネッリ",
+          "player": "マルティネッリ",
           "type": "normal"
         }
       ],
@@ -4441,7 +4441,7 @@
         {
           "team": "home",
           "minute": "72",
-          "player": "ハクポ",
+          "player": "ガクポ",
           "type": "normal"
         },
         {
