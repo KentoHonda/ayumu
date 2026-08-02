@@ -1,0 +1,321 @@
+{
+ "note": "選手ランキングです。ESPNの試合データの選手スタッツを、大会全104試合ぶんたし合わせて作っています。得点にオウンゴールはふくみません。同じ数の選手は同じ順位です。",
+ "goals": [
+  {
+   "player": "エムバペ",
+   "countryId": "FRA",
+   "value": 10
+  },
+  {
+   "player": "メッシ",
+   "countryId": "ARG",
+   "value": 8
+  },
+  {
+   "player": "ハーランド",
+   "countryId": "NOR",
+   "value": 7
+  },
+  {
+   "player": "ベリンガム",
+   "countryId": "ENG",
+   "value": 7
+  },
+  {
+   "player": "ケイン",
+   "countryId": "ENG",
+   "value": 6
+  },
+  {
+   "player": "デンベレ",
+   "countryId": "FRA",
+   "value": 6
+  },
+  {
+   "player": "オヤルサバル",
+   "countryId": "ESP",
+   "value": 5
+  },
+  {
+   "player": "イスマイラ・サール",
+   "countryId": "SEN",
+   "value": 4
+  },
+  {
+   "player": "キニョネス",
+   "countryId": "MEX",
+   "value": 4
+  },
+  {
+   "player": "ヴィニシウス・ジュニオール",
+   "countryId": "BRA",
+   "value": 4
+  }
+ ],
+ "assists": [
+  {
+   "player": "オリーズ",
+   "countryId": "FRA",
+   "value": 7
+  },
+  {
+   "player": "ウーデゴール",
+   "countryId": "NOR",
+   "value": 4
+  },
+  {
+   "player": "エムバペ",
+   "countryId": "FRA",
+   "value": 4
+  },
+  {
+   "player": "ブラヒム・ディアス",
+   "countryId": "MAR",
+   "value": 4
+  },
+  {
+   "player": "ブルーノ・ギマランイス",
+   "countryId": "BRA",
+   "value": 4
+  },
+  {
+   "player": "メッシ",
+   "countryId": "ARG",
+   "value": 4
+  },
+  {
+   "player": "アルバラード",
+   "countryId": "MEX",
+   "value": 3
+  },
+  {
+   "player": "イサク",
+   "countryId": "SWE",
+   "value": 3
+  },
+  {
+   "player": "ゴードン",
+   "countryId": "ENG",
+   "value": 3
+  },
+  {
+   "player": "サカ",
+   "countryId": "ENG",
+   "value": 3
+  },
+  {
+   "player": "シェルデルプ",
+   "countryId": "NOR",
+   "value": 3
+  },
+  {
+   "player": "ヴィルツ",
+   "countryId": "DEU",
+   "value": 3
+  }
+ ],
+ "yellowCards": [
+  {
+   "player": "ディオプ",
+   "countryId": "MAR",
+   "value": 3
+  },
+  {
+   "player": "アッティア",
+   "countryId": "EGY",
+   "value": 2
+  },
+  {
+   "player": "アラン・フランコ",
+   "countryId": "ECU",
+   "value": 2
+  },
+  {
+   "player": "アル・アンマリ",
+   "countryId": "IRQ",
+   "value": 2
+  },
+  {
+   "player": "イレンキ",
+   "countryId": "GHA",
+   "value": 2
+  },
+  {
+   "player": "エザトラヒ",
+   "countryId": "IRN",
+   "value": 2
+  },
+  {
+   "player": "カスタネール",
+   "countryId": "CUW",
+   "value": 2
+  },
+  {
+   "player": "カゼミーロ",
+   "countryId": "BRA",
+   "value": 2
+  },
+  {
+   "player": "ガラルサ",
+   "countryId": "PRY",
+   "value": 2
+  },
+  {
+   "player": "サディキ",
+   "countryId": "COD",
+   "value": 2
+  },
+  {
+   "player": "ザカリア",
+   "countryId": "CHE",
+   "value": 2
+  },
+  {
+   "player": "シドニー・カブラル",
+   "countryId": "CPV",
+   "value": 2
+  },
+  {
+   "player": "ジャカ",
+   "countryId": "CHE",
+   "value": 2
+  },
+  {
+   "player": "ジュニーニョ・バクナ",
+   "countryId": "CUW",
+   "value": 2
+  },
+  {
+   "player": "ダニーロ",
+   "countryId": "BRA",
+   "value": 2
+  },
+  {
+   "player": "ディエゴ・ゴメス",
+   "countryId": "PRY",
+   "value": 2
+  },
+  {
+   "player": "デ・フージェロール",
+   "countryId": "CAN",
+   "value": 2
+  },
+  {
+   "player": "ハイセム・ハサン",
+   "countryId": "EGY",
+   "value": 2
+  },
+  {
+   "player": "パレデス",
+   "countryId": "ARG",
+   "value": 2
+  },
+  {
+   "player": "ファティ",
+   "countryId": "QAT",
+   "value": 2
+  },
+  {
+   "player": "フサノフ",
+   "countryId": "UZB",
+   "value": 2
+  },
+  {
+   "player": "ベルナルド・シウバ",
+   "countryId": "PRT",
+   "value": 2
+  },
+  {
+   "player": "ペリシッチ",
+   "countryId": "HRV",
+   "value": 2
+  },
+  {
+   "player": "ポッシュ",
+   "countryId": "AUT",
+   "value": 2
+  },
+  {
+   "player": "モコエナ",
+   "countryId": "ZAF",
+   "value": 2
+  }
+ ],
+ "redCards": [
+  {
+   "player": "アルミロン",
+   "countryId": "PRY",
+   "value": 1
+  },
+  {
+   "player": "インカピエ",
+   "countryId": "ECU",
+   "value": 1
+  },
+  {
+   "player": "エンソ・フェルナンデス",
+   "countryId": "ARG",
+   "value": 1
+  },
+  {
+   "player": "エンボロ",
+   "countryId": "CHE",
+   "value": 1
+  },
+  {
+   "player": "カノビオ",
+   "countryId": "URY",
+   "value": 1
+  },
+  {
+   "player": "クアンサ",
+   "countryId": "ENG",
+   "value": 1
+  },
+  {
+   "player": "シトレ",
+   "countryId": "ZAF",
+   "value": 1
+  },
+  {
+   "player": "スラカ",
+   "countryId": "IRQ",
+   "value": 1
+  },
+  {
+   "player": "ズワネ",
+   "countryId": "ZAF",
+   "value": 1
+  },
+  {
+   "player": "バログン",
+   "countryId": "USA",
+   "value": 1
+  },
+  {
+   "player": "ホマム・アハメド",
+   "countryId": "QAT",
+   "value": 1
+  },
+  {
+   "player": "マディボ",
+   "countryId": "QAT",
+   "value": 1
+  },
+  {
+   "player": "ムハレモビッチ",
+   "countryId": "BIH",
+   "value": 1
+  },
+  {
+   "player": "モンテス",
+   "countryId": "MEX",
+   "value": 1
+  },
+  {
+   "player": "ンゴイ",
+   "countryId": "BEL",
+   "value": 1
+  }
+ ]
+}

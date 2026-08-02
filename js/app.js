@@ -111,10 +111,11 @@
   async function start() {
     setupBackToTop();
     try {
-      const [worldTopo, countriesData, matchesData] = await Promise.all([
+      const [worldTopo, countriesData, matchesData, rankingsData] = await Promise.all([
         fetchJson("data/world-110m.json"),
         fetchJson("data/countries.json"),
         fetchJson("data/matches.json"),
+        fetchJson("data/rankings.json"),
       ]);
 
       countries = countriesData.countries;
@@ -124,6 +125,11 @@
       WorldMap.init(worldTopo, countries, selectCountries, resetAll);
       MatchView.init();
       CountryView.init();
+      // ランキング:選手の行をタップすると、その国を地図でえらんで、地図まで上がる
+      RankingView.init(rankingsData, countriesById, (countryId) => {
+        selectCountries([countryId]);
+        document.getElementById("map-section").scrollIntoView({ behavior: "smooth" });
+      });
 
       // さいしょは、48か国が緑色の地図と、ぜんぶの試合リストを見せる
       renderMatchList();

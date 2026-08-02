@@ -31,6 +31,7 @@
       <nav class="main-nav" aria-label="ページの中のメニュー">
         <a href="#map-section">世界地図</a>
         <a href="#match-section">試合の結果</a>
+        <a href="#ranking-section">ランキング</a>
         <a href="#country-section">国の情報</a>
       </nav>
     </div>
@@ -78,6 +79,15 @@
       <article id="match-detail" aria-live="polite"></article>
     </section>
 
+    <!-- ========== 選手ランキング ========== -->
+    <section id="ranking-section" class="panel" aria-labelledby="ranking-heading">
+      <h2 id="ranking-heading"><span aria-hidden="true">🏅</span> 選手ランキング</h2>
+      <p class="hint">大会104試合ぜんぶから集計したランキングだよ。<br>
+        選手の行をタップすると、上の世界地図で その選手の国が光って、その国の試合にしぼれるよ。</p>
+      <div id="ranking-tabs" class="rank-tabs" role="group" aria-label="ランキングの種類をえらぶ"></div>
+      <div id="ranking-list" class="rank-list"></div>
+    </section>
+
     <!-- ========== 国の情報 ========== -->
     <section id="country-section" class="panel" aria-labelledby="country-heading">
       <h2 id="country-heading"><span aria-hidden="true">🚩</span> 国の情報</h2>
@@ -104,6 +114,7 @@
   <script src="js/map.js"></script>
   <script src="js/match.js"></script>
   <script src="js/country.js"></script>
+  <script src="js/ranking.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -599,6 +599,106 @@ kbd {
 .sources-list a { color: #9cc7ff; font-weight: bold; }
 .sources-list a:hover { color: var(--gold); }
 
+/* ---------- 選手ランキング ---------- */
+.rank-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.rank-tab {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+  background: var(--panel-light);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  min-height: 48px;
+  cursor: pointer;
+}
+.rank-tab:hover { border-color: var(--gold); background: #24457e; }
+.rank-tab[aria-pressed="true"] {
+  background: var(--gold);
+  color: #082042;
+  border-color: #b8860b;
+}
+.rank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.rank-row {
+  display: grid;
+  grid-template-columns: 52px 30px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--panel-light);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+  text-align: left;
+}
+.rank-row:hover { border-color: var(--gold); background: #24457e; }
+.rank-row.rank-top3 { background: #1d3a6b; }
+.rank-pos {
+  font-weight: bold;
+  font-size: 1.15rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.rank-row:not(.rank-top3) .rank-pos { font-size: 0.92rem; color: var(--text-soft); }
+.rank-flag {
+  width: 28px;
+  height: 21px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  object-fit: cover;
+}
+.rank-main { min-width: 0; }
+.rank-name {
+  display: block;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+.rank-country {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+.rank-bar {
+  display: block;
+  height: 7px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  margin-top: 4px;
+}
+.rank-bar span {
+  display: block;
+  height: 100%;
+  background: var(--gold);
+  border-radius: 4px;
+}
+.rank-value {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.rank-value small {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin-left: 2px;
+}
+
 /* ---------- 国のじょうほうカード ---------- */
 .country-cards {
   display: grid;
