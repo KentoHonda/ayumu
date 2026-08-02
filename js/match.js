@@ -11,6 +11,7 @@ const MatchView = (() => {
   let listEl;      // しあいボタンをならべる場所
   let headingEl;   // しあいリストの見出し
   let detailEl;    // しあいのくわしい中身を出す場所
+  let matchButtons = new Map(); // しあいID → ボタン(えらび直しに使う)
 
   function init() {
     listEl = document.getElementById("match-list");
@@ -56,42 +57,112 @@ const MatchView = (() => {
 
   /**
    * しあいをえらぶボタンのリストをつくる
-   * options.heading  : リストの上に出す見出し(例「日本のしあい」)
-   * options.onShowAll: 「ぜんぶのしあいを見る」がおされたときによばれる関数(null なら出さない)
+   * - しあいは1つずつ、たてにならべる
+   * - 「グループA」「ラウンド32」などのステージごとに、ひらいたり
+   *   とじたりできる箱(details)に分けて、分かりやすくする
+   * options.heading : リストの上に出す見出し(例「日本のしあい」)
+   * options.openAll : true なら、ぜんぶの箱をひらいた状態にする(国でしぼったとき用)
    */
-  function renderMatchList(matches, selectedId, onSelect, options = {}) {
-    headingEl.textContent = options.heading || "ぜんぶのしあい";
+  function renderMatchList(matches, selectedId, onSelect, countriesById, options = {}) {
+    headingEl.textContent = `${options.heading || "ぜんぶのしあい"}(${matches.length}しあい)`;
     listEl.innerHTML = "";
+    matchButtons = new Map();
 
-    const sorted = matches.slice().sort((a, b) => a.date.localeCompare(b.date));
+    const sorted = matches
+      .slice()
+      .sort(
+        (a, b) =>
+          a.stageOrder - b.stageOrder ||
+          a.stage.localeCompare(b.stage, "ja") ||
+          a.date.localeCompare(b.date) ||
+          a.id.localeCompare(b.id)
+      );
+
+    // 「グループA」「ラウンド32」などのステージごとにまとめる
+    const sections = [];
     sorted.forEach((match) => {
-      let scoreText = `${match.homeTeam.score} - ${match.awayTeam.score}`;
-      if (match.penaltyShootout) {
-        scoreText += ` (PK ${match.penaltyShootout.home}-${match.penaltyShootout.away})`;
+      const last = sections[sections.length - 1];
+      if (!last || last.stage !== match.stage) {
+        sections.push({ stage: match.stage, stageType: match.stageType, matches: [] });
       }
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "match-btn";
-      btn.setAttribute("aria-pressed", String(match.id === selectedId));
-      btn.innerHTML =
-        `<span class="match-btn-date">${escapeHtml(match.dateJa)}・${escapeHtml(match.stage)}</span>` +
-        `${escapeHtml(match.homeTeam.nameJa)} ${scoreText} ${escapeHtml(match.awayTeam.nameJa)}`;
-      btn.addEventListener("click", () => onSelect(match.id));
-      listEl.appendChild(btn);
+      sections[sections.length - 1].matches.push(match);
     });
 
-    if (matches.length === 0) {
-      listEl.innerHTML = `<p class="no-data">このチームのしあいデータは、まだ入っていないよ。すこしずつ ふやしていくよ。</p>`;
-    }
+    let lastType = null;
+    sections.forEach((section) => {
+      // 「グループリーグ」と「けっしょうトーナメント」の大きな見出し
+      if (section.stageType !== lastType) {
+        const big = document.createElement("h4");
+        big.className = "stage-type-heading";
+        big.textContent =
+          section.stageType === "group"
+            ? "🏁 グループリーグ(1回せんリーグ)"
+            : "🏆 けっしょうトーナメント(かったら つぎにすすめる)";
+        listEl.appendChild(big);
+        lastType = section.stageType;
+      }
 
-    if (options.onShowAll) {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "match-btn show-all-btn";
-      btn.textContent = "ぜんぶのしあいを見る";
-      btn.addEventListener("click", options.onShowAll);
-      listEl.appendChild(btn);
+      const details = document.createElement("details");
+      details.className = "stage-box";
+      // 国でしぼったとき・えらんだしあいがある箱・けっしょうの箱は、ひらいておく
+      if (
+        options.openAll ||
+        section.matches.some((m) => m.id === selectedId) ||
+        section.stage === "けっしょう(決勝)"
+      ) {
+        details.open = true;
+      }
+      const summary = document.createElement("summary");
+      summary.innerHTML = `${escapeHtml(section.stage)} <span class="stage-count">(${section.matches.length}しあい)</span>`;
+      details.appendChild(summary);
+
+      const box = document.createElement("div");
+      box.className = "stage-matches";
+      section.matches.forEach((match) => {
+        const btn = buildMatchButton(match, countriesById, onSelect);
+        btn.setAttribute("aria-pressed", String(match.id === selectedId));
+        matchButtons.set(match.id, btn);
+        box.appendChild(btn);
+      });
+      details.appendChild(box);
+      listEl.appendChild(details);
+    });
+  }
+
+  /** 1つのしあいのボタンをつくる(ホームは左、アウェイは右) */
+  function buildMatchButton(match, countriesById, onSelect) {
+    const home = countriesById.get(match.homeTeam.countryId);
+    const away = countriesById.get(match.awayTeam.countryId);
+    let noteText = "";
+    if (match.penaltyShootout) {
+      noteText = `・PKせん ${match.penaltyShootout.home}-${match.penaltyShootout.away}`;
+    } else if (match.extraTime) {
+      noteText = "・えんちょうせん";
     }
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "match-btn";
+    btn.innerHTML =
+      `<span class="match-btn-date">${escapeHtml(match.dateJa)}${noteText ? escapeHtml(noteText) : ""}</span>` +
+      `<span class="match-btn-card">` +
+      `<span class="mb-team mb-home">${escapeHtml(match.homeTeam.nameJa)}<img class="mb-flag" src="${escapeHtml(home.flag)}" alt=""></span>` +
+      `<span class="mb-score">${match.homeTeam.score} - ${match.awayTeam.score}</span>` +
+      `<span class="mb-team mb-away"><img class="mb-flag" src="${escapeHtml(away.flag)}" alt="">${escapeHtml(match.awayTeam.nameJa)}</span>` +
+      `</span>`;
+    btn.addEventListener("click", () => onSelect(match.id));
+    return btn;
+  }
+
+  /** えらんでいるしあいのしるしを、つけかえる(リストは作りなおさない) */
+  function updateSelected(selectedId) {
+    matchButtons.forEach((btn, id) => {
+      const isOn = id === selectedId;
+      btn.setAttribute("aria-pressed", String(isOn));
+      if (isOn) {
+        const details = btn.closest("details");
+        if (details) details.open = true;
+      }
+    });
   }
 
   /** 「しあいをえらんでね」のプレースホルダ */
@@ -348,5 +419,5 @@ const MatchView = (() => {
       </svg>`;
   }
 
-  return { init, renderMatchList, renderMatchDetail, renderDetailPlaceholder };
+  return { init, renderMatchList, updateSelected, renderMatchDetail, renderDetailPlaceholder };
 })();

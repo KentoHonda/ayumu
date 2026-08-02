@@ -1,6 +1,534 @@
 {
-  "note": "2026年ワールドカップ本大会(ほんたいかい)のしあいだけをのせています。公式(こうしき)のじょうほうでかくにんできたデータだけを入れます。わからないところは空(から)のままにして、すいそくでうめません(画面には「かくにん中」と出ます)。formationConfirmed が false のしあいは、せんしゅのならびが「おおよそ」であることを画面に表示します。えんちょうせんは extraTime、PKせんは penaltyShootout に入れます。",
+  "note": "2026年ワールドカップ本大会(ほんたいかい)の104しあいをのせています。公式(こうしき)のじょうほうでかくにんできたデータだけを入れます。わからないところは空(から)のままにして、すいそくでうめません(画面には「かくにん中」と出ます)。けっしょうトーナメントの一部のしあいは、とくてんしゃがまだ「かくにん中」です。stageType はグループリーグ(group)かけっしょうトーナメント(knockout)か、stageOrder はならべるじゅんばんです。えんちょうせんは extraTime、PKせんは penaltyShootout に入れます。",
   "matches": [
+    {
+      "id": "KOR-CZE-2026-06-11",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-11",
+      "dateJa": "2026年6月11日",
+      "venue": "エスタディオ・アクロン(メキシコ・グアダラハラ近郊)",
+      "homeTeam": {
+        "countryId": "KOR",
+        "nameJa": "韓国",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CZE",
+        "nameJa": "チェコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "59",
+          "player": "クレイチー",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "67",
+          "player": "ファン・インボム",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "80",
+          "player": "オ・ヒョンギュ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "MEX-ZAF-2026-06-11",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-11",
+      "dateJa": "2026年6月11日",
+      "venue": "エスタディオ・アステカ(メキシコ・メキシコシティ)",
+      "homeTeam": {
+        "countryId": "MEX",
+        "nameJa": "メキシコ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ZAF",
+        "nameJa": "南アフリカ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "9",
+          "player": "キニョネス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "67",
+          "player": "ヒメネス",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "CAN-BIH-2026-06-12",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-12",
+      "dateJa": "2026年6月12日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "CAN",
+        "nameJa": "カナダ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BIH",
+        "nameJa": "ボスニア・ヘルツェゴビナ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "21",
+          "player": "ルキッチ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "78",
+          "player": "ラリン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "USA-PRY-2026-06-12",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-12",
+      "dateJa": "2026年6月12日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "USA",
+        "nameJa": "アメリカ",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "PRY",
+        "nameJa": "パラグアイ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "7",
+          "player": "ボバディジャ",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "31",
+          "player": "バログン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+5",
+          "player": "バログン",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "73",
+          "player": "マウリシオ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+8",
+          "player": "レイナ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
+      ]
+    },
+    {
+      "id": "AUS-TUR-2026-06-13",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-13",
+      "dateJa": "2026年6月13日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "AUS",
+        "nameJa": "オーストラリア",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "TUR",
+        "nameJa": "トルコ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "27",
+          "player": "イランクンダ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "75",
+          "player": "メトカーフ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
+      ]
+    },
+    {
+      "id": "BRA-MAR-2026-06-13",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-13",
+      "dateJa": "2026年6月13日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "BRA",
+        "nameJa": "ブラジル",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "32",
+          "player": "ヴィニシウス・ジュニオール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "21",
+          "player": "サイバリ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "HTI-SCO-2026-06-13",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-13",
+      "dateJa": "2026年6月13日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "HTI",
+        "nameJa": "ハイチ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SCO",
+        "nameJa": "スコットランド",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "28",
+          "player": "マッギン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "QAT-CHE-2026-06-13",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-13",
+      "dateJa": "2026年6月13日",
+      "venue": "リーバイス・スタジアム(アメリカ・カリフォルニア州サンタクララ)",
+      "homeTeam": {
+        "countryId": "QAT",
+        "nameJa": "カタール",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "17",
+          "player": "エンボロ",
+          "type": "pk"
+        },
+        {
+          "team": "home",
+          "minute": "90+4",
+          "player": "ムハイム",
+          "type": "og"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "CIV-ECU-2026-06-14",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-14",
+      "dateJa": "2026年6月14日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "CIV",
+        "nameJa": "コートジボワール",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ECU",
+        "nameJa": "エクアドル",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "90",
+          "player": "ディアロ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
+      ]
+    },
+    {
+      "id": "DEU-CUW-2026-06-14",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-14",
+      "dateJa": "2026年6月14日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "DEU",
+        "nameJa": "ドイツ",
+        "score": 7,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CUW",
+        "nameJa": "キュラソー",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "6",
+          "player": "ンメチャ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "38",
+          "player": "シュロッターベック",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+5",
+          "player": "ハフェルツ",
+          "type": "pk"
+        },
+        {
+          "team": "home",
+          "minute": "47",
+          "player": "ムシアラ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "68",
+          "player": "ブラウン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "78",
+          "player": "ウンダフ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "88",
+          "player": "ハフェルツ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "21",
+          "player": "コメネンシア",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
+      ]
+    },
     {
       "id": "NED-JPN-2026-06-14",
       "competition": "2026 FIFAワールドカップ",
@@ -15,24 +543,99 @@
         "formation": "4-3-3",
         "formationConfirmed": false,
         "startingPlayers": [
-          { "number": 1, "name": "フェルブルッヘン", "position": "GK", "row": 0 },
-          { "number": 22, "name": "ダンフリース", "position": "DF", "row": 1 },
-          { "number": 6, "name": "ファン・ヘッケ", "position": "DF", "row": 1 },
-          { "number": 4, "name": "ファン・ダイク", "position": "DF", "row": 1 },
-          { "number": 15, "name": "ファン・デ・フェン", "position": "DF", "row": 1 },
-          { "number": 8, "name": "フラーフェンベルフ", "position": "MF", "row": 2 },
-          { "number": 21, "name": "デ・ヨング", "position": "MF", "row": 2 },
-          { "number": 14, "name": "レイナース", "position": "MF", "row": 2 },
-          { "number": 24, "name": "サマーフィル", "position": "FW", "row": 3 },
-          { "number": 18, "name": "マレン", "position": "FW", "row": 3 },
-          { "number": 11, "name": "ハクポ", "position": "FW", "row": 3 }
+          {
+            "number": 1,
+            "name": "フェルブルッヘン",
+            "position": "GK",
+            "row": 0
+          },
+          {
+            "number": 22,
+            "name": "ダンフリース",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 6,
+            "name": "ファン・ヘッケ",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 4,
+            "name": "ファン・ダイク",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 15,
+            "name": "ファン・デ・フェン",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 8,
+            "name": "フラーフェンベルフ",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 21,
+            "name": "デ・ヨング",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 14,
+            "name": "レイナース",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 24,
+            "name": "サマーフィル",
+            "position": "FW",
+            "row": 3
+          },
+          {
+            "number": 18,
+            "name": "マレン",
+            "position": "FW",
+            "row": 3
+          },
+          {
+            "number": 11,
+            "name": "ハクポ",
+            "position": "FW",
+            "row": 3
+          }
         ],
         "substitutions": [
-          { "minute": "70", "playerOut": "マレン", "playerIn": "デパイ" },
-          { "minute": "70", "playerOut": "サマーフィル", "playerIn": "コープマイネルス" },
-          { "minute": "70", "playerOut": "レイナース", "playerIn": "ティンバー" },
-          { "minute": "81", "playerOut": "フラーフェンベルフ", "playerIn": "アケ" },
-          { "minute": "85", "playerOut": "ハクポ", "playerIn": "ブロビー" }
+          {
+            "minute": "70",
+            "playerOut": "マレン",
+            "playerIn": "デパイ"
+          },
+          {
+            "minute": "70",
+            "playerOut": "サマーフィル",
+            "playerIn": "コープマイネルス"
+          },
+          {
+            "minute": "70",
+            "playerOut": "レイナース",
+            "playerIn": "ティンバー"
+          },
+          {
+            "minute": "81",
+            "playerOut": "フラーフェンベルフ",
+            "playerIn": "アケ"
+          },
+          {
+            "minute": "85",
+            "playerOut": "ハクポ",
+            "playerIn": "ブロビー"
+          }
         ]
       },
       "awayTeam": {
@@ -42,46 +645,157 @@
         "formation": "3-4-2-1",
         "formationConfirmed": false,
         "startingPlayers": [
-          { "number": 1, "name": "鈴木彩艶", "position": "GK", "row": 0 },
-          { "number": 16, "name": "渡辺剛", "position": "DF", "row": 1 },
-          { "number": 3, "name": "谷口彰悟", "position": "DF", "row": 1 },
-          { "number": 21, "name": "伊藤洋輝", "position": "DF", "row": 1 },
-          { "number": 10, "name": "堂安律", "position": "MF", "row": 2 },
-          { "number": 24, "name": "佐野海舟", "position": "MF", "row": 2 },
-          { "number": 15, "name": "鎌田大地", "position": "MF", "row": 2 },
-          { "number": 13, "name": "中村敬斗", "position": "MF", "row": 2 },
-          { "number": 8, "name": "久保建英", "position": "MF", "row": 3 },
-          { "number": 11, "name": "前田大然", "position": "MF", "row": 3 },
-          { "number": 18, "name": "上田綺世", "position": "FW", "row": 4 }
+          {
+            "number": 1,
+            "name": "鈴木彩艶",
+            "position": "GK",
+            "row": 0
+          },
+          {
+            "number": 16,
+            "name": "渡辺剛",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 3,
+            "name": "谷口彰悟",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 21,
+            "name": "伊藤洋輝",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 10,
+            "name": "堂安律",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 24,
+            "name": "佐野海舟",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 15,
+            "name": "鎌田大地",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 13,
+            "name": "中村敬斗",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 8,
+            "name": "久保建英",
+            "position": "MF",
+            "row": 3
+          },
+          {
+            "number": 11,
+            "name": "前田大然",
+            "position": "MF",
+            "row": 3
+          },
+          {
+            "number": 18,
+            "name": "上田綺世",
+            "position": "FW",
+            "row": 4
+          }
         ],
         "substitutions": [
-          { "minute": "66", "playerOut": "前田大然", "playerIn": "伊東純也" },
-          { "minute": "75", "playerOut": "久保建英", "playerIn": "小川航基" },
-          { "minute": "75", "playerOut": "堂安律", "playerIn": "菅原由勢" },
-          { "minute": "75", "playerOut": "渡辺剛", "playerIn": "冨安健洋" },
-          { "minute": "84", "playerOut": "上田綺世", "playerIn": "塩貝健人" }
+          {
+            "minute": "66",
+            "playerOut": "前田大然",
+            "playerIn": "伊東純也"
+          },
+          {
+            "minute": "75",
+            "playerOut": "久保建英",
+            "playerIn": "小川航基"
+          },
+          {
+            "minute": "75",
+            "playerOut": "堂安律",
+            "playerIn": "菅原由勢"
+          },
+          {
+            "minute": "75",
+            "playerOut": "渡辺剛",
+            "playerIn": "冨安健洋"
+          },
+          {
+            "minute": "84",
+            "playerOut": "上田綺世",
+            "playerIn": "塩貝健人"
+          }
         ]
       },
       "goals": [
-        { "team": "home", "minute": "51", "player": "ファン・ダイク", "type": "normal" },
-        { "team": "away", "minute": "57", "player": "中村敬斗", "type": "normal" },
-        { "team": "home", "minute": "64", "player": "サマーフィル", "type": "normal" },
-        { "team": "away", "minute": "89", "player": "鎌田大地", "type": "normal" }
+        {
+          "team": "home",
+          "minute": "51",
+          "player": "ファン・ダイク",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "57",
+          "player": "中村敬斗",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "64",
+          "player": "サマーフィル",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "89",
+          "player": "鎌田大地",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "FIFA 公式 試合ページ(英語)", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470" },
-        { "name": "FIFA 公式 試合レポート(英語)", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-japan-highlights-match-report" },
-        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands" },
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
-      ]
+        {
+          "name": "FIFA 公式 試合ページ(英語)",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470"
+        },
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-japan-highlights-match-report"
+        },
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        }
+      ],
+      "stageType": "group",
+      "stageOrder": 0
     },
     {
       "id": "SWE-TUN-2026-06-14",
       "competition": "2026 FIFAワールドカップ",
       "stage": "グループF",
+      "stageType": "group",
+      "stageOrder": 0,
       "date": "2026-06-14",
       "dateJa": "2026年6月14日",
-      "venue": "",
+      "venue": "エスタディオBBVA(メキシコ・モンテレイ近郊)",
       "homeTeam": {
         "countryId": "SWE",
         "nameJa": "スウェーデン",
@@ -100,9 +814,1205 @@
         "startingPlayers": [],
         "substitutions": []
       },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "7",
+          "player": "アヤリ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "30",
+          "player": "イサク",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "43",
+          "player": "レキク",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "59",
+          "player": "ギョケレシュ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "84",
+          "player": "スヴァンベリ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+6",
+          "player": "アヤリ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        }
+      ]
+    },
+    {
+      "id": "BEL-EGY-2026-06-15",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-15",
+      "dateJa": "2026年6月15日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "EGY",
+        "nameJa": "エジプト",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "66",
+          "player": "ハニ",
+          "type": "og"
+        },
+        {
+          "team": "away",
+          "minute": "19",
+          "player": "アシュール",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "ESP-CPV-2026-06-15",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-15",
+      "dateJa": "2026年6月15日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CPV",
+        "nameJa": "カーボベルデ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
       "goals": [],
       "sources": [
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "IRN-NZL-2026-06-15",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-15",
+      "dateJa": "2026年6月15日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "IRN",
+        "nameJa": "イラン",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "NZL",
+        "nameJa": "ニュージーランド",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "32",
+          "player": "レザイアン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "64",
+          "player": "モヘビ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "7",
+          "player": "ジャスト",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "54",
+          "player": "ジャスト",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "SAU-URY-2026-06-15",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-15",
+      "dateJa": "2026年6月15日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "SAU",
+        "nameJa": "サウジアラビア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "URY",
+        "nameJa": "ウルグアイ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "41",
+          "player": "アル・アムリ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "80",
+          "player": "M・アラウホ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "ARG-DZA-2026-06-16",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-16",
+      "dateJa": "2026年6月16日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "DZA",
+        "nameJa": "アルジェリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "17",
+          "player": "メッシ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "60",
+          "player": "メッシ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "76",
+          "player": "メッシ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "AUT-JOR-2026-06-16",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-16",
+      "dateJa": "2026年6月16日",
+      "venue": "リーバイス・スタジアム(アメリカ・カリフォルニア州サンタクララ)",
+      "homeTeam": {
+        "countryId": "AUT",
+        "nameJa": "オーストリア",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "JOR",
+        "nameJa": "ヨルダン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "20",
+          "player": "シュミット",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "50",
+          "player": "オルワン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "76",
+          "player": "アル・アラブ",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "90+12",
+          "player": "アルナウトビッチ",
+          "type": "pk"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "FRA-SEN-2026-06-16",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-16",
+      "dateJa": "2026年6月16日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SEN",
+        "nameJa": "セネガル",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "66",
+          "player": "エムバペ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "82",
+          "player": "バルコラ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+5",
+          "player": "ムバイ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+6",
+          "player": "エムバペ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "IRQ-NOR-2026-06-16",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-16",
+      "dateJa": "2026年6月16日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "IRQ",
+        "nameJa": "イラク",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "39",
+          "player": "フセイン",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "29",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "43",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "76",
+          "player": "エスティガード",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+6",
+          "player": "フセイン",
+          "type": "og"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "ENG-HRV-2026-06-17",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-17",
+      "dateJa": "2026年6月17日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "HRV",
+        "nameJa": "クロアチア",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "12",
+          "player": "ケイン",
+          "type": "pk"
+        },
+        {
+          "team": "away",
+          "minute": "36",
+          "player": "バトゥリナ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "42",
+          "player": "ケイン",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "45+5",
+          "player": "ムサ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "47",
+          "player": "ベリンガム",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "85",
+          "player": "ラッシュフォード",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "GHA-PAN-2026-06-17",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-17",
+      "dateJa": "2026年6月17日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "GHA",
+        "nameJa": "ガーナ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "PAN",
+        "nameJa": "パナマ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "90+5",
+          "player": "イレンキ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "PRT-COD-2026-06-17",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-17",
+      "dateJa": "2026年6月17日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "PRT",
+        "nameJa": "ポルトガル",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "COD",
+        "nameJa": "コンゴ民主共和国",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "6",
+          "player": "ジョアン・ネヴェス",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "45+5",
+          "player": "ウィサ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "UZB-COL-2026-06-17",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-17",
+      "dateJa": "2026年6月17日",
+      "venue": "エスタディオ・アステカ(メキシコ・メキシコシティ)",
+      "homeTeam": {
+        "countryId": "UZB",
+        "nameJa": "ウズベキスタン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "COL",
+        "nameJa": "コロンビア",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "40",
+          "player": "ムニョス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "60",
+          "player": "ファイズラエフ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "65",
+          "player": "ルイス・ディアス",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+9",
+          "player": "カンパス",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "CAN-QAT-2026-06-18",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-18",
+      "dateJa": "2026年6月18日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "CAN",
+        "nameJa": "カナダ",
+        "score": 6,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "QAT",
+        "nameJa": "カタール",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "16",
+          "player": "ラリン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "29",
+          "player": "J・デイビッド",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+3",
+          "player": "J・デイビッド",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "64",
+          "player": "サリバ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "75",
+          "player": "マナイ",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "90+2",
+          "player": "J・デイビッド",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "CHE-BIH-2026-06-18",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-18",
+      "dateJa": "2026年6月18日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BIH",
+        "nameJa": "ボスニア・ヘルツェゴビナ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "74",
+          "player": "マンザンビ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "84",
+          "player": "バルガス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90",
+          "player": "マンザンビ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+3",
+          "player": "マフミッチ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+7",
+          "player": "ジャカ",
+          "type": "pk"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "CZE-ZAF-2026-06-18",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-18",
+      "dateJa": "2026年6月18日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "CZE",
+        "nameJa": "チェコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ZAF",
+        "nameJa": "南アフリカ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "6",
+          "player": "サディーレク",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "83",
+          "player": "モコエナ",
+          "type": "pk"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "MEX-KOR-2026-06-18",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-18",
+      "dateJa": "2026年6月18日",
+      "venue": "エスタディオ・アクロン(メキシコ・グアダラハラ近郊)",
+      "homeTeam": {
+        "countryId": "MEX",
+        "nameJa": "メキシコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "KOR",
+        "nameJa": "韓国",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "50",
+          "player": "ロモ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "BRA-HTI-2026-06-19",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-19",
+      "dateJa": "2026年6月19日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "BRA",
+        "nameJa": "ブラジル",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "HTI",
+        "nameJa": "ハイチ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "23",
+          "player": "マテウス・クーニャ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "36",
+          "player": "マテウス・クーニャ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+3",
+          "player": "ヴィニシウス・ジュニオール",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "SCO-MAR-2026-06-19",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-19",
+      "dateJa": "2026年6月19日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "SCO",
+        "nameJa": "スコットランド",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "2",
+          "player": "サイバリ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "TUR-PRY-2026-06-19",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-19",
+      "dateJa": "2026年6月19日",
+      "venue": "リーバイス・スタジアム(アメリカ・カリフォルニア州サンタクララ)",
+      "homeTeam": {
+        "countryId": "TUR",
+        "nameJa": "トルコ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "PRY",
+        "nameJa": "パラグアイ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "2",
+          "player": "ガラルサ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
+      ]
+    },
+    {
+      "id": "USA-AUS-2026-06-19",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-19",
+      "dateJa": "2026年6月19日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "USA",
+        "nameJa": "アメリカ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "AUS",
+        "nameJa": "オーストラリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "11",
+          "player": "バージェス",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "43",
+          "player": "フリーマン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
+      ]
+    },
+    {
+      "id": "DEU-CIV-2026-06-20",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-20",
+      "dateJa": "2026年6月20日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "DEU",
+        "nameJa": "ドイツ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CIV",
+        "nameJa": "コートジボワール",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "68",
+          "player": "ウンダフ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+4",
+          "player": "ウンダフ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "30",
+          "player": "ケシエ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
+      ]
+    },
+    {
+      "id": "ECU-CUW-2026-06-20",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-20",
+      "dateJa": "2026年6月20日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "ECU",
+        "nameJa": "エクアドル",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CUW",
+        "nameJa": "キュラソー",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
       ]
     },
     {
@@ -131,16 +2041,51 @@
         "substitutions": []
       },
       "goals": [
-        { "team": "home", "minute": "5", "player": "ブロビー", "type": "normal" },
-        { "team": "home", "minute": "17", "player": "ブロビー", "type": "normal" },
-        { "team": "home", "minute": "47", "player": "ハクポ", "type": "normal" },
-        { "team": "home", "minute": "54", "player": "ハクポ", "type": "normal" },
-        { "team": "away", "minute": "59", "player": "エランガ", "type": "normal" },
-        { "team": "home", "minute": "89", "player": "サマーフィル", "type": "normal" }
+        {
+          "team": "home",
+          "minute": "5",
+          "player": "ブロビー",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "17",
+          "player": "ブロビー",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "47",
+          "player": "ハクポ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "54",
+          "player": "ハクポ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "59",
+          "player": "エランガ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "89",
+          "player": "サマーフィル",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
-      ]
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        }
+      ],
+      "stageType": "group",
+      "stageOrder": 0
     },
     {
       "id": "TUN-JPN-2026-06-20",
@@ -168,13 +2113,1098 @@
         "substitutions": []
       },
       "goals": [
-        { "team": "away", "minute": "4", "player": "鎌田大地", "type": "normal" },
-        { "team": "away", "minute": "31", "player": "上田綺世", "type": "normal" },
-        { "team": "away", "minute": "69", "player": "伊東純也", "type": "normal" },
-        { "team": "away", "minute": "83", "player": "上田綺世", "type": "normal" }
+        {
+          "team": "away",
+          "minute": "4",
+          "player": "鎌田大地",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "31",
+          "player": "上田綺世",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "69",
+          "player": "伊東純也",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "83",
+          "player": "上田綺世",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        }
+      ],
+      "stageType": "group",
+      "stageOrder": 0
+    },
+    {
+      "id": "BEL-IRN-2026-06-21",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-21",
+      "dateJa": "2026年6月21日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "IRN",
+        "nameJa": "イラン",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "ESP-SAU-2026-06-21",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-21",
+      "dateJa": "2026年6月21日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SAU",
+        "nameJa": "サウジアラビア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "10",
+          "player": "ヤマル",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "21",
+          "player": "オヤルサバル",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "24",
+          "player": "オヤルサバル",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "49",
+          "player": "アル・タンバクティ",
+          "type": "og"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "NZL-EGY-2026-06-21",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-21",
+      "dateJa": "2026年6月21日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "NZL",
+        "nameJa": "ニュージーランド",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "EGY",
+        "nameJa": "エジプト",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "15",
+          "player": "サーマン",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "58",
+          "player": "ジコ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "67",
+          "player": "サラー",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "82",
+          "player": "トレゼゲ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "URY-CPV-2026-06-21",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-21",
+      "dateJa": "2026年6月21日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "URY",
+        "nameJa": "ウルグアイ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CPV",
+        "nameJa": "カーボベルデ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "21",
+          "player": "K・ピナ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "44",
+          "player": "M・アラウホ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+6",
+          "player": "カノビオ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "61",
+          "player": "ヴァレラ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "ARG-AUT-2026-06-22",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-22",
+      "dateJa": "2026年6月22日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "AUT",
+        "nameJa": "オーストリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "38",
+          "player": "メッシ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+5",
+          "player": "メッシ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "FRA-IRQ-2026-06-22",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-22",
+      "dateJa": "2026年6月22日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "IRQ",
+        "nameJa": "イラク",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "14",
+          "player": "エムバペ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "54",
+          "player": "エムバペ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "66",
+          "player": "デンベレ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "JOR-DZA-2026-06-22",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-22",
+      "dateJa": "2026年6月22日",
+      "venue": "リーバイス・スタジアム(アメリカ・カリフォルニア州サンタクララ)",
+      "homeTeam": {
+        "countryId": "JOR",
+        "nameJa": "ヨルダン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "DZA",
+        "nameJa": "アルジェリア",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "36",
+          "player": "アル・ラシュダン",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "69",
+          "player": "ベンブアリ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "82",
+          "player": "グイリ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "NOR-SEN-2026-06-22",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-22",
+      "dateJa": "2026年6月22日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SEN",
+        "nameJa": "セネガル",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "43",
+          "player": "ペデルセン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "48",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "53",
+          "player": "I・サール",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "58",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+3",
+          "player": "I・サール",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "COL-COD-2026-06-23",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-23",
+      "dateJa": "2026年6月23日",
+      "venue": "エスタディオ・アクロン(メキシコ・グアダラハラ近郊)",
+      "homeTeam": {
+        "countryId": "COL",
+        "nameJa": "コロンビア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "COD",
+        "nameJa": "コンゴ民主共和国",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "76",
+          "player": "ムニョス",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "ENG-GHA-2026-06-23",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-23",
+      "dateJa": "2026年6月23日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "GHA",
+        "nameJa": "ガーナ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "PAN-HRV-2026-06-23",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-23",
+      "dateJa": "2026年6月23日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "PAN",
+        "nameJa": "パナマ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "HRV",
+        "nameJa": "クロアチア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "54",
+          "player": "ブディミル",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "PRT-UZB-2026-06-23",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-23",
+      "dateJa": "2026年6月23日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "PRT",
+        "nameJa": "ポルトガル",
+        "score": 5,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "UZB",
+        "nameJa": "ウズベキスタン",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "6",
+          "player": "クリスティアーノ・ロナウド",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "17",
+          "player": "ヌーノ・メンデス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "39",
+          "player": "クリスティアーノ・ロナウド",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "60",
+          "player": "ネマトフ",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "87",
+          "player": "レオン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "BIH-QAT-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "BIH",
+        "nameJa": "ボスニア・ヘルツェゴビナ",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "QAT",
+        "nameJa": "カタール",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "29",
+          "player": "アライベゴビッチ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "34",
+          "player": "アブナダ",
+          "type": "og"
+        },
+        {
+          "team": "away",
+          "minute": "42",
+          "player": "アル・ハイドス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "80",
+          "player": "マフミッチ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "CHE-CAN-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループB",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CAN",
+        "nameJa": "カナダ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "46",
+          "player": "バルガス",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "57",
+          "player": "マンザンビ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "76",
+          "player": "P・デイビッド",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group B(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B"
+        }
+      ]
+    },
+    {
+      "id": "CZE-MEX-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "エスタディオ・アステカ(メキシコ・メキシコシティ)",
+      "homeTeam": {
+        "countryId": "CZE",
+        "nameJa": "チェコ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MEX",
+        "nameJa": "メキシコ",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "55",
+          "player": "M・チャベス",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "61",
+          "player": "キニョネス",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+4",
+          "player": "フィダルゴ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "MAR-HTI-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "HTI",
+        "nameJa": "ハイチ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "10",
+          "player": "ボノ",
+          "type": "og"
+        },
+        {
+          "team": "home",
+          "minute": "39",
+          "player": "ハキミ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "43",
+          "player": "イジドール",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45+1",
+          "player": "サイバリ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "78",
+          "player": "ラヒミ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "89",
+          "player": "ヤシン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "SCO-BRA-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループC",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "SCO",
+        "nameJa": "スコットランド",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BRA",
+        "nameJa": "ブラジル",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "7",
+          "player": "ヴィニシウス・ジュニオール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "45+3",
+          "player": "ヴィニシウス・ジュニオール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "60",
+          "player": "マテウス・クーニャ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group C(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C"
+        }
+      ]
+    },
+    {
+      "id": "ZAF-KOR-2026-06-24",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループA",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-24",
+      "dateJa": "2026年6月24日",
+      "venue": "エスタディオBBVA(メキシコ・モンテレイ近郊)",
+      "homeTeam": {
+        "countryId": "ZAF",
+        "nameJa": "南アフリカ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "KOR",
+        "nameJa": "韓国",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "63",
+          "player": "マセコ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group A(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A"
+        }
+      ]
+    },
+    {
+      "id": "CUW-CIV-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "CUW",
+        "nameJa": "キュラソー",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CIV",
+        "nameJa": "コートジボワール",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "7",
+          "player": "ペペ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "64",
+          "player": "ペペ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
+      ]
+    },
+    {
+      "id": "ECU-DEU-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループE",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "ECU",
+        "nameJa": "エクアドル",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "DEU",
+        "nameJa": "ドイツ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "9",
+          "player": "アングロ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "77",
+          "player": "プラタ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "2",
+          "player": "サネ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group E(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E"
+        }
       ]
     },
     {
@@ -203,12 +3233,65 @@
         "substitutions": []
       },
       "goals": [
-        { "team": "home", "minute": "56", "player": "前田大然", "type": "normal" },
-        { "team": "away", "minute": "62", "player": "エランガ", "type": "normal" }
+        {
+          "team": "home",
+          "minute": "56",
+          "player": "前田大然",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "62",
+          "player": "エランガ",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" },
-        { "name": "ESPN 試合レポート(英語)", "url": "https://www.espn.com/soccer/story/_/id/49179242/japan-sweden-live-world-cup-2026-latest-updates-commentary-score-result" }
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        },
+        {
+          "name": "ESPN 試合レポート(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/49179242/japan-sweden-live-world-cup-2026-latest-updates-commentary-score-result"
+        }
+      ],
+      "stageType": "group",
+      "stageOrder": 0
+    },
+    {
+      "id": "PRY-AUS-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "",
+      "homeTeam": {
+        "countryId": "PRY",
+        "nameJa": "パラグアイ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "AUS",
+        "nameJa": "オーストラリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
       ]
     },
     {
@@ -237,20 +3320,818 @@
         "substitutions": []
       },
       "goals": [
-        { "team": "away", "minute": "3", "player": "スヒリ", "type": "og" },
-        { "team": "away", "minute": "7", "player": "ブロビー", "type": "normal" },
-        { "team": "home", "minute": "54", "player": "マストゥリ", "type": "normal" },
-        { "team": "away", "minute": "62", "player": "ファン・ヘッケ", "type": "normal" }
+        {
+          "team": "away",
+          "minute": "3",
+          "player": "スヒリ",
+          "type": "og"
+        },
+        {
+          "team": "away",
+          "minute": "7",
+          "player": "ブロビー",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "54",
+          "player": "マストゥリ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "62",
+          "player": "ファン・ヘッケ",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" },
-        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/26/netherlands-beat-tunisia-3-1-enter-world-cup-knockouts-as-group-winners" }
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        },
+        {
+          "name": "Al Jazeera 試合レポート(英語)",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/netherlands-beat-tunisia-3-1-enter-world-cup-knockouts-as-group-winners"
+        }
+      ],
+      "stageType": "group",
+      "stageOrder": 0
+    },
+    {
+      "id": "TUR-USA-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループD",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "TUR",
+        "nameJa": "トルコ",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "USA",
+        "nameJa": "アメリカ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "10",
+          "player": "ギュレル",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "31",
+          "player": "ユルマズ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "3",
+          "player": "トラスティ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "49",
+          "player": "バーホルター",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+8",
+          "player": "アイハン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group D(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D"
+        }
+      ]
+    },
+    {
+      "id": "CPV-SAU-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "CPV",
+        "nameJa": "カーボベルデ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SAU",
+        "nameJa": "サウジアラビア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "EGY-IRN-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "EGY",
+        "nameJa": "エジプト",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "IRN",
+        "nameJa": "イラン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "5",
+          "player": "サベル",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "14",
+          "player": "レザイアン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "NOR-FRA-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "21",
+          "player": "オースゴール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "7",
+          "player": "デンベレ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "20",
+          "player": "デンベレ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "32",
+          "player": "デンベレ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+4",
+          "player": "ドゥエ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "NZL-BEL-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループG",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "NZL",
+        "nameJa": "ニュージーランド",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 5,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "84",
+          "player": "ジャスト",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "28",
+          "player": "トロサール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "50",
+          "player": "トロサール",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "66",
+          "player": "デ・ブライネ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "86",
+          "player": "ルカク",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+4",
+          "player": "サーレマーケルス",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group G(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G"
+        }
+      ]
+    },
+    {
+      "id": "SEN-IRQ-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループI",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "SEN",
+        "nameJa": "セネガル",
+        "score": 5,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "IRQ",
+        "nameJa": "イラク",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "4",
+          "player": "ディアラ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "56",
+          "player": "I・サール",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "59",
+          "player": "P・ゲイェ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "71",
+          "player": "P・ゲイェ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "82",
+          "player": "ンディアイ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group I(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I"
+        }
+      ]
+    },
+    {
+      "id": "URY-ESP-2026-06-26",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループH",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-26",
+      "dateJa": "2026年6月26日",
+      "venue": "エスタディオ・アクロン(メキシコ・グアダラハラ近郊)",
+      "homeTeam": {
+        "countryId": "URY",
+        "nameJa": "ウルグアイ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "42",
+          "player": "バエナ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group H(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H"
+        }
+      ]
+    },
+    {
+      "id": "COD-UZB-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "COD",
+        "nameJa": "コンゴ民主共和国",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "UZB",
+        "nameJa": "ウズベキスタン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "10",
+          "player": "ショムロドフ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "68",
+          "player": "ウィサ",
+          "type": "pk"
+        },
+        {
+          "team": "home",
+          "minute": "78",
+          "player": "マイェレ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+1",
+          "player": "ウィサ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "COL-PRT-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループK",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "COL",
+        "nameJa": "コロンビア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "PRT",
+        "nameJa": "ポルトガル",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group K(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K"
+        }
+      ]
+    },
+    {
+      "id": "DZA-AUT-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "DZA",
+        "nameJa": "アルジェリア",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "AUT",
+        "nameJa": "オーストリア",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "28",
+          "player": "アルナウトビッチ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "45",
+          "player": "ベルガリ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "55",
+          "player": "ザビッツァー",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "60",
+          "player": "マフレズ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+3",
+          "player": "マフレズ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+6",
+          "player": "カライジッチ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "HRV-GHA-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "HRV",
+        "nameJa": "クロアチア",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "GHA",
+        "nameJa": "ガーナ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "31",
+          "player": "P・スチッチ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "73",
+          "player": "ルカッセン",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "83",
+          "player": "ヴラシッチ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "JOR-ARG-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループJ",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "JOR",
+        "nameJa": "ヨルダン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "19",
+          "player": "ロ・チェルソ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "31",
+          "player": "ラウタロ・マルティネス",
+          "type": "pk"
+        },
+        {
+          "team": "home",
+          "minute": "55",
+          "player": "アル・タアマリ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "80",
+          "player": "メッシ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group J(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J"
+        }
+      ]
+    },
+    {
+      "id": "PAN-ENG-2026-06-27",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループL",
+      "stageType": "group",
+      "stageOrder": 0,
+      "date": "2026-06-27",
+      "dateJa": "2026年6月27日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "PAN",
+        "nameJa": "パナマ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "62",
+          "player": "ベリンガム",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "67",
+          "player": "ケイン",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group L(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L"
+        }
+      ]
+    },
+    {
+      "id": "ZAF-CAN-2026-06-28",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-06-28",
+      "dateJa": "2026年6月28日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "ZAF",
+        "nameJa": "南アフリカ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CAN",
+        "nameJa": "カナダ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "90+2",
+          "player": "エウスタキオ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
       ]
     },
     {
       "id": "BRA-JPN-2026-06-29",
       "competition": "2026 FIFAワールドカップ",
-      "stage": "けっしょうトーナメント ラウンド32",
+      "stage": "ラウンド32",
       "date": "2026-06-29",
       "dateJa": "2026年6月29日",
       "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
@@ -261,17 +4142,72 @@
         "formation": "4-3-3",
         "formationConfirmed": false,
         "startingPlayers": [
-          { "number": 1, "name": "アリソン", "position": "GK", "row": 0 },
-          { "number": 4, "name": "マルキーニョス", "position": "DF", "row": 1 },
-          { "number": 3, "name": "ガブリエル・マガリャンイス", "position": "DF", "row": 1 },
-          { "number": 13, "name": "ダニーロ", "position": "DF", "row": 1 },
-          { "number": 16, "name": "ドウグラス・サントス", "position": "DF", "row": 1 },
-          { "number": 8, "name": "ブルーノ・ギマランイス", "position": "MF", "row": 2 },
-          { "number": 20, "name": "ルーカス・パケタ", "position": "MF", "row": 2 },
-          { "number": 5, "name": "カゼミーロ", "position": "MF", "row": 2 },
-          { "number": 26, "name": "ハヤン", "position": "FW", "row": 3 },
-          { "number": 9, "name": "マテウス・クーニャ", "position": "FW", "row": 3 },
-          { "number": 7, "name": "ヴィニシウス・ジュニオール", "position": "FW", "row": 3 }
+          {
+            "number": 1,
+            "name": "アリソン",
+            "position": "GK",
+            "row": 0
+          },
+          {
+            "number": 4,
+            "name": "マルキーニョス",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 3,
+            "name": "ガブリエル・マガリャンイス",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 13,
+            "name": "ダニーロ",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 16,
+            "name": "ドウグラス・サントス",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 8,
+            "name": "ブルーノ・ギマランイス",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 20,
+            "name": "ルーカス・パケタ",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 5,
+            "name": "カゼミーロ",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 26,
+            "name": "ハヤン",
+            "position": "FW",
+            "row": 3
+          },
+          {
+            "number": 9,
+            "name": "マテウス・クーニャ",
+            "position": "FW",
+            "row": 3
+          },
+          {
+            "number": 7,
+            "name": "ヴィニシウス・ジュニオール",
+            "position": "FW",
+            "row": 3
+          }
         ],
         "substitutions": []
       },
@@ -282,46 +4218,207 @@
         "formation": "3-4-2-1",
         "formationConfirmed": false,
         "startingPlayers": [
-          { "number": 1, "name": "鈴木彩艶", "position": "GK", "row": 0 },
-          { "number": 22, "name": "冨安健洋", "position": "DF", "row": 1 },
-          { "number": 3, "name": "谷口彰悟", "position": "DF", "row": 1 },
-          { "number": 21, "name": "伊藤洋輝", "position": "DF", "row": 1 },
-          { "number": 10, "name": "堂安律", "position": "MF", "row": 2 },
-          { "number": 13, "name": "中村敬斗", "position": "MF", "row": 2 },
-          { "number": 15, "name": "鎌田大地", "position": "MF", "row": 2 },
-          { "number": 14, "name": "伊東純也", "position": "MF", "row": 2 },
-          { "number": 24, "name": "佐野海舟", "position": "MF", "row": 3 },
-          { "number": 11, "name": "前田大然", "position": "MF", "row": 3 },
-          { "number": 18, "name": "上田綺世", "position": "FW", "row": 4 }
+          {
+            "number": 1,
+            "name": "鈴木彩艶",
+            "position": "GK",
+            "row": 0
+          },
+          {
+            "number": 22,
+            "name": "冨安健洋",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 3,
+            "name": "谷口彰悟",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 21,
+            "name": "伊藤洋輝",
+            "position": "DF",
+            "row": 1
+          },
+          {
+            "number": 10,
+            "name": "堂安律",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 13,
+            "name": "中村敬斗",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 15,
+            "name": "鎌田大地",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 14,
+            "name": "伊東純也",
+            "position": "MF",
+            "row": 2
+          },
+          {
+            "number": 24,
+            "name": "佐野海舟",
+            "position": "MF",
+            "row": 3
+          },
+          {
+            "number": 11,
+            "name": "前田大然",
+            "position": "MF",
+            "row": 3
+          },
+          {
+            "number": 18,
+            "name": "上田綺世",
+            "position": "FW",
+            "row": 4
+          }
         ],
         "substitutions": [
-          { "minute": "66", "playerOut": "堂安律", "playerIn": "菅原由勢" },
-          { "minute": "66", "playerOut": "中村敬斗", "playerIn": "鈴木唯人" },
-          { "minute": "78", "playerOut": "伊東純也", "playerIn": "町野修斗" },
-          { "minute": "78", "playerOut": "鎌田大地", "playerIn": "田中碧" },
-          { "minute": "90+7", "playerOut": "前田大然", "playerIn": "小川航基" }
+          {
+            "minute": "66",
+            "playerOut": "堂安律",
+            "playerIn": "菅原由勢"
+          },
+          {
+            "minute": "66",
+            "playerOut": "中村敬斗",
+            "playerIn": "鈴木唯人"
+          },
+          {
+            "minute": "78",
+            "playerOut": "伊東純也",
+            "playerIn": "町野修斗"
+          },
+          {
+            "minute": "78",
+            "playerOut": "鎌田大地",
+            "playerIn": "田中碧"
+          },
+          {
+            "minute": "90+7",
+            "playerOut": "前田大然",
+            "playerIn": "小川航基"
+          }
         ]
       },
       "goals": [
-        { "team": "away", "minute": "29", "player": "佐野海舟", "type": "normal" },
-        { "team": "home", "minute": "56", "player": "カゼミーロ", "type": "normal" },
-        { "team": "home", "minute": "90+5", "player": "マルチネッリ", "type": "normal" }
+        {
+          "team": "away",
+          "minute": "29",
+          "player": "佐野海舟",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "56",
+          "player": "カゼミーロ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+5",
+          "player": "マルチネッリ",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil" },
-        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/29/martinelli-scores-late-as-brazil-beat-japan-2-1-enter-world-cup-last-16" },
-        { "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage" }
-      ]
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil"
+        },
+        {
+          "name": "Al Jazeera 試合レポート(英語)",
+          "url": "https://www.aljazeera.com/sports/2026/6/29/martinelli-scores-late-as-brazil-beat-japan-2-1-enter-world-cup-last-16"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        }
+      ],
+      "stageType": "knockout",
+      "stageOrder": 1
+    },
+    {
+      "id": "DEU-PRY-2026-06-29",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-06-29",
+      "dateJa": "2026年6月29日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "DEU",
+        "nameJa": "ドイツ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "PRY",
+        "nameJa": "パラグアイ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "54",
+          "player": "ハフェルツ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "42",
+          "player": "エンシソ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ],
+      "extraTime": true,
+      "penaltyShootout": {
+        "home": 3,
+        "away": 4
+      }
     },
     {
       "id": "NED-MAR-2026-06-29",
       "competition": "2026 FIFAワールドカップ",
-      "stage": "けっしょうトーナメント ラウンド32",
+      "stage": "ラウンド32",
       "date": "2026-06-29",
       "dateJa": "2026年6月29日",
       "venue": "エスタディオBBVA(メキシコ・モンテレイ)",
       "extraTime": true,
-      "penaltyShootout": { "home": 2, "away": 3 },
+      "penaltyShootout": {
+        "home": 2,
+        "away": 3
+      },
       "homeTeam": {
         "countryId": "NLD",
         "nameJa": "オランダ",
@@ -341,15 +4438,1255 @@
         "substitutions": []
       },
       "goals": [
-        { "team": "home", "minute": "72", "player": "ハクポ", "type": "normal" },
-        { "team": "away", "minute": "90+1", "player": "ディオプ", "type": "normal" }
+        {
+          "team": "home",
+          "minute": "72",
+          "player": "ハクポ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90+1",
+          "player": "ディオプ",
+          "type": "normal"
+        }
       ],
       "sources": [
-        { "name": "FIFA 公式 試合ページ(英語)", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522" },
-        { "name": "FIFA 公式 試合レポート(英語)", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-morocco-review-highlights" },
-        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands" },
-        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/30/morocco-netherlands-world-cup-knockout-penalty-shootout-saibari-diop-gakpo" }
+        {
+          "name": "FIFA 公式 試合ページ(英語)",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522"
+        },
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-morocco-review-highlights"
+        },
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands"
+        },
+        {
+          "name": "Al Jazeera 試合レポート(英語)",
+          "url": "https://www.aljazeera.com/sports/2026/6/30/morocco-netherlands-world-cup-knockout-penalty-shootout-saibari-diop-gakpo"
+        }
+      ],
+      "stageType": "knockout",
+      "stageOrder": 1
+    },
+    {
+      "id": "CIV-NOR-2026-06-30",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-06-30",
+      "dateJa": "2026年6月30日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "CIV",
+        "nameJa": "コートジボワール",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "74",
+          "player": "ディアロ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "39",
+          "player": "ヌサ",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "86",
+          "player": "ハーランド",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
       ]
+    },
+    {
+      "id": "FRA-SWE-2026-06-30",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-06-30",
+      "dateJa": "2026年6月30日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SWE",
+        "nameJa": "スウェーデン",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "45",
+          "player": "エムバペ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "53",
+          "player": "バルコラ",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "74",
+          "player": "エムバペ",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "MEX-ECU-2026-06-30",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-06-30",
+      "dateJa": "2026年6月30日",
+      "venue": "エスタディオ・アステカ(メキシコ・メキシコシティ)",
+      "homeTeam": {
+        "countryId": "MEX",
+        "nameJa": "メキシコ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ECU",
+        "nameJa": "エクアドル",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "BEL-SEN-2026-07-01",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-01",
+      "dateJa": "2026年7月1日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SEN",
+        "nameJa": "セネガル",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ],
+      "extraTime": true
+    },
+    {
+      "id": "ENG-COD-2026-07-01",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-01",
+      "dateJa": "2026年7月1日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "COD",
+        "nameJa": "コンゴ民主共和国",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "USA-BIH-2026-07-01",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-01",
+      "dateJa": "2026年7月1日",
+      "venue": "リーバイス・スタジアム(アメリカ・カリフォルニア州サンタクララ)",
+      "homeTeam": {
+        "countryId": "USA",
+        "nameJa": "アメリカ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BIH",
+        "nameJa": "ボスニア・ヘルツェゴビナ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "CHE-DZA-2026-07-02",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-02",
+      "dateJa": "2026年7月2日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "DZA",
+        "nameJa": "アルジェリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "ESP-AUT-2026-07-02",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-02",
+      "dateJa": "2026年7月2日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "AUT",
+        "nameJa": "オーストリア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "PRT-HRV-2026-07-02",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-02",
+      "dateJa": "2026年7月2日",
+      "venue": "BMOフィールド(カナダ・トロント)",
+      "homeTeam": {
+        "countryId": "PRT",
+        "nameJa": "ポルトガル",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "HRV",
+        "nameJa": "クロアチア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "ARG-CPV-2026-07-03",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-03",
+      "dateJa": "2026年7月3日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CPV",
+        "nameJa": "カーボベルデ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ],
+      "extraTime": true
+    },
+    {
+      "id": "AUS-EGY-2026-07-03",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-03",
+      "dateJa": "2026年7月3日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "AUS",
+        "nameJa": "オーストラリア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "EGY",
+        "nameJa": "エジプト",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ],
+      "extraTime": true,
+      "penaltyShootout": {
+        "home": 2,
+        "away": 4
+      }
+    },
+    {
+      "id": "COL-GHA-2026-07-03",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド32",
+      "stageType": "knockout",
+      "stageOrder": 1,
+      "date": "2026-07-03",
+      "dateJa": "2026年7月3日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "COL",
+        "nameJa": "コロンビア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "GHA",
+        "nameJa": "ガーナ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 32(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        }
+      ]
+    },
+    {
+      "id": "CAN-MAR-2026-07-04",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-04",
+      "dateJa": "2026年7月4日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "CAN",
+        "nameJa": "カナダ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "PRY-FRA-2026-07-04",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-04",
+      "dateJa": "2026年7月4日",
+      "venue": "リンカーン・ファイナンシャル・フィールド(アメリカ・ペンシルベニア州フィラデルフィア)",
+      "homeTeam": {
+        "countryId": "PRY",
+        "nameJa": "パラグアイ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "BRA-NOR-2026-07-05",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-05",
+      "dateJa": "2026年7月5日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "BRA",
+        "nameJa": "ブラジル",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "away",
+          "minute": "79",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "away",
+          "minute": "90",
+          "player": "ハーランド",
+          "type": "normal"
+        },
+        {
+          "team": "home",
+          "minute": "90+10",
+          "player": "ネイマール",
+          "type": "pk"
+        }
+      ],
+      "sources": [
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-norway-match-report-highlights"
+        },
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760504/norway-brazil"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "MEX-ENG-2026-07-05",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-05",
+      "dateJa": "2026年7月5日",
+      "venue": "エスタディオ・アステカ(メキシコ・メキシコシティ)",
+      "homeTeam": {
+        "countryId": "MEX",
+        "nameJa": "メキシコ",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ],
+      "extraTime": true
+    },
+    {
+      "id": "PRT-ESP-2026-07-06",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-06",
+      "dateJa": "2026年7月6日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "PRT",
+        "nameJa": "ポルトガル",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "USA-BEL-2026-07-06",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-06",
+      "dateJa": "2026年7月6日",
+      "venue": "ルーメン・フィールド(アメリカ・ワシントン州シアトル)",
+      "homeTeam": {
+        "countryId": "USA",
+        "nameJa": "アメリカ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "ARG-EGY-2026-07-07",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-07",
+      "dateJa": "2026年7月7日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "EGY",
+        "nameJa": "エジプト",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ]
+    },
+    {
+      "id": "CHE-COL-2026-07-07",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "ラウンド16",
+      "stageType": "knockout",
+      "stageOrder": 2,
+      "date": "2026-07-07",
+      "dateJa": "2026年7月7日",
+      "venue": "BCプレイス(カナダ・バンクーバー)",
+      "homeTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "COL",
+        "nameJa": "コロンビア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/switzerland-colombia-match-report-highlights"
+        },
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760508/colombia-switzerland"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup round of 16(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_16"
+        },
+        {
+          "name": "CBS Sports ノックアウト結果まとめ(英語)",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/"
+        },
+        {
+          "name": "ESPN 日程・結果まとめ(英語)",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
+        }
+      ],
+      "extraTime": true,
+      "penaltyShootout": {
+        "home": 4,
+        "away": 3
+      }
+    },
+    {
+      "id": "FRA-MAR-2026-07-09",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんじゅんけっしょう(準々決勝)",
+      "stageType": "knockout",
+      "stageOrder": 3,
+      "date": "2026-07-09",
+      "dateJa": "2026年7月9日",
+      "venue": "ジレット・スタジアム(アメリカ・マサチューセッツ州フォックスボロ)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        },
+        {
+          "name": "Yahoo Sports 準々決勝まとめ(英語)",
+          "url": "https://sports.yahoo.com/soccer/live/world-cup-bracket-schedule-scores-results-live-updates-quarterfinals-203257966.html"
+        }
+      ]
+    },
+    {
+      "id": "ESP-BEL-2026-07-10",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんじゅんけっしょう(準々決勝)",
+      "stageType": "knockout",
+      "stageOrder": 3,
+      "date": "2026-07-10",
+      "dateJa": "2026年7月10日",
+      "venue": "SoFiスタジアム(アメリカ・カリフォルニア州イングルウッド)",
+      "homeTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "BEL",
+        "nameJa": "ベルギー",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        },
+        {
+          "name": "Yahoo Sports 準々決勝まとめ(英語)",
+          "url": "https://sports.yahoo.com/soccer/live/world-cup-bracket-schedule-scores-results-live-updates-quarterfinals-203257966.html"
+        }
+      ]
+    },
+    {
+      "id": "ARG-CHE-2026-07-11",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんじゅんけっしょう(準々決勝)",
+      "stageType": "knockout",
+      "stageOrder": 3,
+      "date": "2026-07-11",
+      "dateJa": "2026年7月11日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "CHE",
+        "nameJa": "スイス",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        },
+        {
+          "name": "Yahoo Sports 準々決勝まとめ(英語)",
+          "url": "https://sports.yahoo.com/soccer/live/world-cup-bracket-schedule-scores-results-live-updates-quarterfinals-203257966.html"
+        }
+      ],
+      "extraTime": true
+    },
+    {
+      "id": "NOR-ENG-2026-07-11",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんじゅんけっしょう(準々決勝)",
+      "stageType": "knockout",
+      "stageOrder": 3,
+      "date": "2026-07-11",
+      "dateJa": "2026年7月11日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "NOR",
+        "nameJa": "ノルウェー",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        },
+        {
+          "name": "Yahoo Sports 準々決勝まとめ(英語)",
+          "url": "https://sports.yahoo.com/soccer/live/world-cup-bracket-schedule-scores-results-live-updates-quarterfinals-203257966.html"
+        }
+      ],
+      "extraTime": true
+    },
+    {
+      "id": "FRA-ESP-2026-07-14",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんけっしょう(準決勝)",
+      "stageType": "knockout",
+      "stageOrder": 4,
+      "date": "2026-07-14",
+      "dateJa": "2026年7月14日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup final(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        }
+      ]
+    },
+    {
+      "id": "ARG-ENG-2026-07-15",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "じゅんけっしょう(準決勝)",
+      "stageType": "knockout",
+      "stageOrder": 4,
+      "date": "2026-07-15",
+      "dateJa": "2026年7月15日",
+      "venue": "メルセデス・ベンツ・スタジアム(アメリカ・ジョージア州アトランタ)",
+      "homeTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 2,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup final(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage"
+        }
+      ]
+    },
+    {
+      "id": "FRA-ENG-2026-07-18",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "3位けっていせん",
+      "stageType": "knockout",
+      "stageOrder": 5,
+      "date": "2026-07-18",
+      "dateJa": "2026年7月18日",
+      "venue": "ハードロック・スタジアム(アメリカ・フロリダ州マイアミガーデンズ)",
+      "homeTeam": {
+        "countryId": "FRA",
+        "nameJa": "フランス",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ENG",
+        "nameJa": "イングランド",
+        "score": 6,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760516/england-france"
+        },
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-england-report-highlights-bronze-final"
+        }
+      ]
+    },
+    {
+      "id": "ESP-ARG-2026-07-19",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "けっしょう(決勝)",
+      "stageType": "knockout",
+      "stageOrder": 6,
+      "date": "2026-07-19",
+      "dateJa": "2026年7月19日",
+      "venue": "メットライフ・スタジアム(アメリカ・ニュージャージー州)",
+      "homeTeam": {
+        "countryId": "ESP",
+        "nameJa": "スペイン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "ARG",
+        "nameJa": "アルゼンチン",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        {
+          "team": "home",
+          "minute": "106",
+          "player": "フェラン・トーレス",
+          "type": "normal"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup final(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final"
+        }
+      ],
+      "extraTime": true
     }
   ]
 }

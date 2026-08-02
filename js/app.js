@@ -30,7 +30,7 @@
   function renderMatchList() {
     let shownMatches = matches;
     let heading = "ぜんぶのしあい";
-    let onShowAll = null;
+    let openAll = false;
 
     if (filteredCountryIds) {
       shownMatches = matches.filter(
@@ -42,19 +42,13 @@
         .map((id) => countriesById.get(id).nameJa)
         .join("と");
       heading = `${names}のしあい`;
-      onShowAll = showAllMatches;
+      openAll = true; // 国でしぼったときは、ぜんぶの箱をひらいておく
     }
 
-    MatchView.renderMatchList(shownMatches, selectedMatchId, selectMatch, {
+    MatchView.renderMatchList(shownMatches, selectedMatchId, selectMatch, countriesById, {
       heading,
-      onShowAll,
+      openAll,
     });
-  }
-
-  /** 「ぜんぶのしあいを見る」がおされたとき */
-  function showAllMatches() {
-    filteredCountryIds = null;
-    renderMatchList();
   }
 
   /** 地図で国がえらばれたとき(イギリスのように、1つの場所に2チームのこともある) */
@@ -81,7 +75,7 @@
     const away = countriesById.get(match.awayTeam.countryId);
 
     WorldMap.showMatch(match, home, away);            // 地図:色つけ+たいせんライン
-    renderMatchList();                                // ボタンの「えらんでいる」しるしをつけなおす
+    MatchView.updateSelected(matchId);                // ボタンの「えらんでいる」しるしをつけかえる
     MatchView.renderMatchDetail(match, countriesById); // しあいのくわしい中身
     CountryView.render([home, away]);                 // 2つの国のじょうほう
   }

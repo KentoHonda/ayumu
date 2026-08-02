@@ -176,34 +176,80 @@ const WorldMap = (() => {
   /**
    * しあいを地図にかく
    * - ホームの国を青、アウェイの国を赤にする
-   * - 2つの国を点線でむすび、まん中にスコアを出す
+   * - 2つの国を点線のアーチ(にじの形)でむすび、てっぺんにスコアを出す
+   * - 近い国どうしでも、スコアや国名が重ならないようにする
    */
   function showMatch(match, homeCountry, awayCountry) {
     clearHighlights();
     paintCountry(homeCountry.id, "home-team");
     paintCountry(awayCountry.id, "away-team");
 
-    // 2つの首都のあいだを、地球の上のいちばん短い道(大圏コース)でむすぶ。
-    // こうすると、日付変更線をまたいでも、へんに長い線にならない。
-    const interpolate = d3.geoInterpolate(homeCountry.anchorLngLat, awayCountry.anchorLngLat);
-    const points = d3.range(0, 1.0001, 1 / 60).map(interpolate);
-    lineLayer
-      .append("path")
-      .datum({ type: "LineString", coordinates: points })
-      .attr("class", "match-line")
-      .attr("d", geoPath);
+    const a = projection(homeCountry.anchorLngLat);
+    const b = projection(awayCountry.anchorLngLat);
+    const lngDiff = Math.abs(homeCountry.anchorLngLat[0] - awayCountry.anchorLngLat[0]);
+    let badgeXY;
 
-    // 線のまん中にスコアのふだを出す(PKせんがあれば、それも小さく出す)
-    const mid = projection(interpolate(0.5));
+    if (lngDiff > 150) {
+      // 地球の反対がわどうし(日本×ブラジルなど)は、地球の上のいちばん短い道
+      // (大圏コース)でむすぶ。日付変更線をまたいでも、へんに長い線にならない。
+      const interpolate = d3.geoInterpolate(homeCountry.anchorLngLat, awayCountry.anchorLngLat);
+      const points = d3.range(0, 1.0001, 1 / 60).map(interpolate);
+      lineLayer
+        .append("path")
+        .datum({ type: "LineString", coordinates: points })
+        .attr("class", "match-line")
+        .attr("d", geoPath);
+      badgeXY = projection(interpolate(0.5));
+    } else {
+      // ふつうは、上にふくらんだアーチでむすぶ。
+      // 近い国どうしでも、線とスコアが国名と重ならないようにするため。
+      // ※ カーブのてっぺんは「もち上げる高さ」の半分しか上がらないので、2倍しておく
+      const dist = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      const lift = Math.min(Math.max(40, dist * 0.22), 90);
+      const cx = (a[0] + b[0]) / 2;
+      const cy = Math.max((a[1] + b[1]) / 2 - lift * 2, 18); // 地図の上からはみ出さないようにする
+      lineLayer
+        .append("path")
+        .attr("class", "match-line")
+        .attr("d", `M ${a[0]} ${a[1]} Q ${cx} ${cy} ${b[0]} ${b[1]}`);
+      // アーチのてっぺん(まん中)の場所
+      badgeXY = [(a[0] + 2 * cx + b[0]) / 4, (a[1] + 2 * cy + b[1]) / 4];
+    }
+
+    // スコアのふだを出す(PKせんがあれば、それも出す)
     let scoreText = `${match.homeTeam.score} - ${match.awayTeam.score}`;
     if (match.penaltyShootout) {
       scoreText += ` (PK ${match.penaltyShootout.home}-${match.penaltyShootout.away})`;
     }
-    addScoreBadge(mid, scoreText);
+    const badge = addScoreBadge(badgeXY, scoreText);
 
-    // 両はしに、国旗と国名(ホーム/アウェイつき)のラベルを出す
-    addCountryLabel(homeCountry, "ホーム");
-    addCountryLabel(awayCountry, "アウェイ");
+    // 両はしに、国旗と国名(ホーム/アウェイつき)のラベルを出す。
+    // 近い国どうしでラベルが重なったら、あとの方を下にずらす。
+    const homeLabel = addCountryLabel(homeCountry, "ホーム");
+    const awayLabel = addCountryLabel(awayCountry, "アウェイ");
+    fixLabelOverlap(homeLabel, awayLabel);
+
+    // スコアのふだが国名ラベルと重なっていたら、ふだをラベルの上ににがす
+    [homeLabel, awayLabel].forEach((label) => {
+      if (!label || !badge) return;
+      const xOverlap = Math.abs(badge.x - label.x) < (badge.width + label.width) / 2 + 8;
+      const yOverlap = Math.abs(badge.y - label.y) < 32;
+      if (xOverlap && yOverlap) {
+        badge.y = label.y - 40;
+        badge.g.attr("transform", `translate(${badge.x}, ${badge.y})`);
+      }
+    });
+  }
+
+  /** 2つのラベルが重なっていたら、2つめを下にずらす */
+  function fixLabelOverlap(label1, label2) {
+    if (!label1 || !label2) return;
+    const xOverlap = Math.abs(label1.x - label2.x) < (label1.width + label2.width) / 2 + 6;
+    const yOverlap = Math.abs(label1.y - label2.y) < 26;
+    if (xOverlap && yOverlap) {
+      const newY = label1.y + 26;
+      label2.g.attr("transform", `translate(${label2.tx}, ${newY})`);
+    }
   }
 
   /** 国コードで国に色クラスをつける(地図の形、または丸いしるし) */
@@ -224,7 +270,7 @@ const WorldMap = (() => {
     return projection(country.anchorLngLat);
   }
 
-  /** スコアのふだ(黄色)をかく */
+  /** スコアのふだ(黄色)をかく。場所の情報をかえす */
   function addScoreBadge(xy, text) {
     const g = labelLayer.append("g").attr("transform", `translate(${xy[0]}, ${xy[1]})`);
     const label = g
@@ -242,12 +288,13 @@ const WorldMap = (() => {
       .attr("width", box.width + 24)
       .attr("height", box.height + 12)
       .attr("rx", 10);
+    return { g, x: xy[0], y: xy[1], width: box.width + 24, height: box.height + 12 };
   }
 
-  /** 国旗+国名のラベルをかく(sideLabel は「ホーム」「アウェイ」か null) */
+  /** 国旗+国名のラベルをかく(sideLabel は「ホーム」「アウェイ」か null)。場所の情報をかえす */
   function addCountryLabel(country, sideLabel) {
     const center = labelCenterOf(country);
-    if (!center) return;
+    if (!center) return null;
     const y = center[1] + 14;
 
     const g = labelLayer.append("g");
@@ -277,7 +324,10 @@ const WorldMap = (() => {
     // ラベルが地図のそとにはみ出さないよう、ぜんたいを少し中央よりにする
     const totalWidth = box.width + 34;
     const gx = Math.min(Math.max(center[0], totalWidth / 2 + 4), WIDTH - totalWidth / 2 - 4);
-    g.attr("transform", `translate(${gx - totalWidth / 2 + 14}, ${Math.min(y, HEIGHT - 14)})`);
+    const tx = gx - totalWidth / 2 + 14;
+    const ty = Math.min(y, HEIGHT - 14);
+    g.attr("transform", `translate(${tx}, ${ty})`);
+    return { g, x: gx, y: ty, width: totalWidth, tx };
   }
 
   // そとから使えるものだけを公開する
