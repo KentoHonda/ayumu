@@ -14,7 +14,8 @@
   --gold: #ffd166;          /* 金色(えらんだ国・スコア) */
   --home-blue: #4da3ff;     /* ホームの国の青 */
   --away-red: #ff6b6b;      /* アウェイの国の赤 */
-  --joined-blue: #3d6db5;   /* 出場国の青 */
+  --joined-green: #2f9e63;  /* ワールドカップに出た国の緑 */
+  --joined-green-light: #43c07e; /* 緑の国にマウスをのせたときの色 */
   --other-navy: #22375c;    /* 出ていない国の色 */
   --ocean: #0e2244;         /* 海の色 */
   --pitch-green: #17643b;   /* サッカーコートの緑 */
@@ -185,10 +186,10 @@ kbd {
   stroke-width: 0.6;
 }
 .country.joined {
-  fill: var(--joined-blue);
+  fill: var(--joined-green);
   cursor: pointer;
 }
-.country.joined:hover { fill: #5a8fd6; }
+.country.joined:hover { fill: var(--joined-green-light); }
 .country.joined:focus-visible {
   outline: none;
   stroke: var(--focus);
@@ -197,6 +198,23 @@ kbd {
 .country.selected { fill: var(--gold); }
 .country.home-team { fill: var(--home-blue); }
 .country.away-team { fill: var(--away-red); }
+
+/* 地図に形がない小さな島国の、丸いしるし */
+.country-marker {
+  fill: var(--joined-green);
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  cursor: pointer;
+}
+.country-marker:hover { fill: var(--joined-green-light); }
+.country-marker:focus-visible {
+  outline: none;
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.country-marker.selected { fill: var(--gold); }
+.country-marker.home-team { fill: var(--home-blue); }
+.country-marker.away-team { fill: var(--away-red); }
 
 .ocean { fill: var(--ocean); }
 
@@ -237,7 +255,14 @@ kbd {
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.35);
 }
-.chip-joined { background: var(--joined-blue); }
+.chip-joined { background: var(--joined-green); }
+.chip-marker {
+  background: var(--joined-green);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
 .chip-home { background: var(--home-blue); }
 .chip-away { background: var(--away-red); }
 .chip-selected { background: var(--gold); }
@@ -250,6 +275,16 @@ kbd {
 }
 
 /* ---------- しあいリスト ---------- */
+.match-list-heading {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  color: var(--gold);
+}
+.show-all-btn {
+  background: transparent;
+  border-style: dashed;
+  color: var(--text-soft);
+}
 .match-list {
   display: flex;
   flex-wrap: wrap;
@@ -355,6 +390,11 @@ kbd {
   padding: 3px 16px;
   font-size: 0.95rem;
 }
+.sb-extra {
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
 
 /* ---------- しあいのくわしい中身 ---------- */
 .match-part { margin-top: 20px; }
@@ -426,6 +466,19 @@ kbd {
   border-radius: 12px;
 }
 
+/* コートの下の「とちゅうから出たせんしゅ」リスト */
+.sub-list {
+  margin-top: 10px;
+  text-align: left;
+  background: var(--panel-light);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+.sub-list-head { margin: 0 0 4px; }
+.sub-list .sub-row { margin: 6px 0; }
+.sub-list .sub-inout { font-size: 0.88rem; }
+
 /* ---------- じょうほうのもと(出典) ---------- */
 .sources-list { margin: 0; padding-left: 22px; }
 .sources-list a { color: #9cc7ff; font-weight: bold; }
@@ -495,6 +548,13 @@ kbd {
   color: var(--text-soft);
   font-size: 0.85rem;
   margin: 10px 0 0;
+}
+.country-remarks {
+  background: var(--panel-light);
+  border-left: 5px solid var(--home-blue);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.92rem;
 }
 .country-empty {
   color: var(--text-soft);

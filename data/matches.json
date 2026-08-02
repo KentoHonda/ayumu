@@ -1,5 +1,5 @@
 {
-  "note": "2026年ワールドカップ本大会(ほんたいかい)のしあいだけをのせています。公式(こうしき)のじょうほうでかくにんできたデータだけを入れます。わからないところは空(から)のままにして、すいそくでうめません。formationConfirmed が false のしあいは、せんしゅのならびが「おおよそ」であることを画面に表示します。",
+  "note": "2026年ワールドカップ本大会(ほんたいかい)のしあいだけをのせています。公式(こうしき)のじょうほうでかくにんできたデータだけを入れます。わからないところは空(から)のままにして、すいそくでうめません(画面には「かくにん中」と出ます)。formationConfirmed が false のしあいは、せんしゅのならびが「おおよそ」であることを画面に表示します。えんちょうせんは extraTime、PKせんは penaltyShootout に入れます。",
   "matches": [
     {
       "id": "NED-JPN-2026-06-14",
@@ -69,22 +69,286 @@
         { "team": "away", "minute": "89", "player": "鎌田大地", "type": "normal" }
       ],
       "sources": [
-        {
-          "name": "FIFA 公式 試合ページ(英語)",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470"
-        },
-        {
-          "name": "FIFA 公式 試合レポート(英語)",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-japan-highlights-match-report"
-        },
-        {
-          "name": "ESPN 試合記録(英語)",
-          "url": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands"
-        },
-        {
-          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
-          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
-        }
+        { "name": "FIFA 公式 試合ページ(英語)", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470" },
+        { "name": "FIFA 公式 試合レポート(英語)", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-japan-highlights-match-report" },
+        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands" },
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+      ]
+    },
+    {
+      "id": "SWE-TUN-2026-06-14",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-14",
+      "dateJa": "2026年6月14日",
+      "venue": "",
+      "homeTeam": {
+        "countryId": "SWE",
+        "nameJa": "スウェーデン",
+        "score": 5,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "TUN",
+        "nameJa": "チュニジア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [],
+      "sources": [
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+      ]
+    },
+    {
+      "id": "NED-SWE-2026-06-20",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-20",
+      "dateJa": "2026年6月20日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "NLD",
+        "nameJa": "オランダ",
+        "score": 5,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SWE",
+        "nameJa": "スウェーデン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        { "team": "home", "minute": "5", "player": "ブロビー", "type": "normal" },
+        { "team": "home", "minute": "17", "player": "ブロビー", "type": "normal" },
+        { "team": "home", "minute": "47", "player": "ハクポ", "type": "normal" },
+        { "team": "home", "minute": "54", "player": "ハクポ", "type": "normal" },
+        { "team": "away", "minute": "59", "player": "エランガ", "type": "normal" },
+        { "team": "home", "minute": "89", "player": "サマーフィル", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+      ]
+    },
+    {
+      "id": "TUN-JPN-2026-06-20",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-20",
+      "dateJa": "2026年6月20日",
+      "venue": "エスタディオBBVA(メキシコ・モンテレイ近郊)",
+      "homeTeam": {
+        "countryId": "TUN",
+        "nameJa": "チュニジア",
+        "score": 0,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "JPN",
+        "nameJa": "日本",
+        "score": 4,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        { "team": "away", "minute": "4", "player": "鎌田大地", "type": "normal" },
+        { "team": "away", "minute": "31", "player": "上田綺世", "type": "normal" },
+        { "team": "away", "minute": "69", "player": "伊東純也", "type": "normal" },
+        { "team": "away", "minute": "83", "player": "上田綺世", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" }
+      ]
+    },
+    {
+      "id": "JPN-SWE-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "JPN",
+        "nameJa": "日本",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "SWE",
+        "nameJa": "スウェーデン",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        { "team": "home", "minute": "56", "player": "前田大然", "type": "normal" },
+        { "team": "away", "minute": "62", "player": "エランガ", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" },
+        { "name": "ESPN 試合レポート(英語)", "url": "https://www.espn.com/soccer/story/_/id/49179242/japan-sweden-live-world-cup-2026-latest-updates-commentary-score-result" }
+      ]
+    },
+    {
+      "id": "TUN-NED-2026-06-25",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-25",
+      "dateJa": "2026年6月25日",
+      "venue": "アローヘッド・スタジアム(アメリカ・ミズーリ州カンザスシティ)",
+      "homeTeam": {
+        "countryId": "TUN",
+        "nameJa": "チュニジア",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "NLD",
+        "nameJa": "オランダ",
+        "score": 3,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        { "team": "away", "minute": "3", "player": "スヒリ", "type": "og" },
+        { "team": "away", "minute": "7", "player": "ブロビー", "type": "normal" },
+        { "team": "home", "minute": "54", "player": "マストゥリ", "type": "normal" },
+        { "team": "away", "minute": "62", "player": "ファン・ヘッケ", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F" },
+        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/26/netherlands-beat-tunisia-3-1-enter-world-cup-knockouts-as-group-winners" }
+      ]
+    },
+    {
+      "id": "BRA-JPN-2026-06-29",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "けっしょうトーナメント ラウンド32",
+      "date": "2026-06-29",
+      "dateJa": "2026年6月29日",
+      "venue": "NRGスタジアム(アメリカ・テキサス州ヒューストン)",
+      "homeTeam": {
+        "countryId": "BRA",
+        "nameJa": "ブラジル",
+        "score": 2,
+        "formation": "4-3-3",
+        "formationConfirmed": false,
+        "startingPlayers": [
+          { "number": 1, "name": "アリソン", "position": "GK", "row": 0 },
+          { "number": 4, "name": "マルキーニョス", "position": "DF", "row": 1 },
+          { "number": 3, "name": "ガブリエル・マガリャンイス", "position": "DF", "row": 1 },
+          { "number": 13, "name": "ダニーロ", "position": "DF", "row": 1 },
+          { "number": 16, "name": "ドウグラス・サントス", "position": "DF", "row": 1 },
+          { "number": 8, "name": "ブルーノ・ギマランイス", "position": "MF", "row": 2 },
+          { "number": 20, "name": "ルーカス・パケタ", "position": "MF", "row": 2 },
+          { "number": 5, "name": "カゼミーロ", "position": "MF", "row": 2 },
+          { "number": 26, "name": "ハヤン", "position": "FW", "row": 3 },
+          { "number": 9, "name": "マテウス・クーニャ", "position": "FW", "row": 3 },
+          { "number": 7, "name": "ヴィニシウス・ジュニオール", "position": "FW", "row": 3 }
+        ],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "JPN",
+        "nameJa": "日本",
+        "score": 1,
+        "formation": "3-4-2-1",
+        "formationConfirmed": false,
+        "startingPlayers": [
+          { "number": 1, "name": "鈴木彩艶", "position": "GK", "row": 0 },
+          { "number": 22, "name": "冨安健洋", "position": "DF", "row": 1 },
+          { "number": 3, "name": "谷口彰悟", "position": "DF", "row": 1 },
+          { "number": 21, "name": "伊藤洋輝", "position": "DF", "row": 1 },
+          { "number": 10, "name": "堂安律", "position": "MF", "row": 2 },
+          { "number": 13, "name": "中村敬斗", "position": "MF", "row": 2 },
+          { "number": 15, "name": "鎌田大地", "position": "MF", "row": 2 },
+          { "number": 14, "name": "伊東純也", "position": "MF", "row": 2 },
+          { "number": 24, "name": "佐野海舟", "position": "MF", "row": 3 },
+          { "number": 11, "name": "前田大然", "position": "MF", "row": 3 },
+          { "number": 18, "name": "上田綺世", "position": "FW", "row": 4 }
+        ],
+        "substitutions": [
+          { "minute": "66", "playerOut": "堂安律", "playerIn": "菅原由勢" },
+          { "minute": "66", "playerOut": "中村敬斗", "playerIn": "鈴木唯人" },
+          { "minute": "78", "playerOut": "伊東純也", "playerIn": "町野修斗" },
+          { "minute": "78", "playerOut": "鎌田大地", "playerIn": "田中碧" },
+          { "minute": "90+7", "playerOut": "前田大然", "playerIn": "小川航基" }
+        ]
+      },
+      "goals": [
+        { "team": "away", "minute": "29", "player": "佐野海舟", "type": "normal" },
+        { "team": "home", "minute": "56", "player": "カゼミーロ", "type": "normal" },
+        { "team": "home", "minute": "90+5", "player": "マルチネッリ", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760487/japan-brazil" },
+        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/29/martinelli-scores-late-as-brazil-beat-japan-2-1-enter-world-cup-last-16" },
+        { "name": "Wikipedia: 2026 FIFA World Cup knockout stage(英語)", "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage" }
+      ]
+    },
+    {
+      "id": "NED-MAR-2026-06-29",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "けっしょうトーナメント ラウンド32",
+      "date": "2026-06-29",
+      "dateJa": "2026年6月29日",
+      "venue": "エスタディオBBVA(メキシコ・モンテレイ)",
+      "extraTime": true,
+      "penaltyShootout": { "home": 2, "away": 3 },
+      "homeTeam": {
+        "countryId": "NLD",
+        "nameJa": "オランダ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "awayTeam": {
+        "countryId": "MAR",
+        "nameJa": "モロッコ",
+        "score": 1,
+        "formation": "",
+        "formationConfirmed": false,
+        "startingPlayers": [],
+        "substitutions": []
+      },
+      "goals": [
+        { "team": "home", "minute": "72", "player": "ハクポ", "type": "normal" },
+        { "team": "away", "minute": "90+1", "player": "ディオプ", "type": "normal" }
+      ],
+      "sources": [
+        { "name": "FIFA 公式 試合ページ(英語)", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522" },
+        { "name": "FIFA 公式 試合レポート(英語)", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-morocco-review-highlights" },
+        { "name": "ESPN 試合記録(英語)", "url": "https://www.espn.com/soccer/match/_/gameId/760488/morocco-netherlands" },
+        { "name": "Al Jazeera 試合レポート(英語)", "url": "https://www.aljazeera.com/sports/2026/6/30/morocco-netherlands-world-cup-knockout-penalty-shootout-saibari-diop-gakpo" }
       ]
     }
   ]

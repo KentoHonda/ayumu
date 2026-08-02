@@ -1,8 +1,10 @@
 /* =========================================================
    map.js : せかい地図をかくプログラム
    - D3.js と world-atlas の地図データ(TopoJSON)をつかいます
-   - 出場国をクリック(タップ)できるようにします
+   - ワールドカップに出た48か国を緑色にして、クリック(タップ)できるようにします
    - しあいをえらぶと、2つの国を線でむすんでスコアを出します
+   - 地図に形がない小さな島国(カーボベルデ・キュラソー)は丸いしるしで表示します
+   - イングランドとスコットランドは、地図では同じ「イギリス」の形になります
    ========================================================= */
 
 const WorldMap = (() => {
@@ -19,20 +21,27 @@ const WorldMap = (() => {
   let labelLayer;   // 国名やスコアのラベルをかくグループ
   let countryPaths; // すべての国のpath(D3のselection)
 
-  let countriesByMapId = new Map(); // 地図の国番号 → 国データ
+  let countriesByMapId = new Map();   // 地図の国番号 → その場所の国データ(ふつうは1つ、イギリスは2つ)
   let featureByCountryId = new Map(); // 国コード(JPN など) → 地図のかたち
+  let markerByCountryId = new Map();  // 国コード → 丸いしるし(地図に形がない島国用)
 
   /**
    * 地図をつくる
    * @param {object} worldTopo world-110m.json(TopoJSONデータ)
    * @param {Array}  countries countries.json の国リスト
-   * @param {Function} onCountrySelect 国がえらばれたときによばれる関数
+   * @param {Function} onCountrySelect 国がえらばれたときによばれる関数(国コードのリストをわたす)
    */
   function init(worldTopo, countries, onCountrySelect) {
     // TopoJSON を、D3でかける形(GeoJSON)にかえる
     const world = topojson.feature(worldTopo, worldTopo.objects.countries);
 
-    countriesByMapId = new Map(countries.map((c) => [String(c.mapId), c]));
+    // 同じ場所に2つのチームがあることもあるので、リストでおぼえる(例:イギリス=イングランド+スコットランド)
+    countriesByMapId = new Map();
+    countries.forEach((c) => {
+      if (c.mapId === null) return; // 地図に形がない国は、あとで丸いしるしにする
+      if (!countriesByMapId.has(c.mapId)) countriesByMapId.set(c.mapId, []);
+      countriesByMapId.get(c.mapId).push(c);
+    });
 
     projection = d3
       .geoNaturalEarth1()
@@ -75,25 +84,49 @@ const WorldMap = (() => {
       .attr("tabindex", 0)
       .attr("role", "button")
       .attr("aria-label", (d) => {
-        const c = countriesByMapId.get(String(d.id));
-        return `${c.nameJa}(${c.nameKana})をえらぶ`;
+        const list = countriesByMapId.get(String(d.id));
+        return `${list.map((c) => c.nameJa).join("と")}をえらぶ`;
       })
       .on("click", (event, d) => {
-        const c = countriesByMapId.get(String(d.id));
-        onCountrySelect(c.id);
+        const list = countriesByMapId.get(String(d.id));
+        onCountrySelect(list.map((c) => c.id));
       })
       .on("keydown", (event, d) => {
         // Enter か スペースキーでもえらべるようにする
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          const c = countriesByMapId.get(String(d.id));
-          onCountrySelect(c.id);
+          const list = countriesByMapId.get(String(d.id));
+          onCountrySelect(list.map((c) => c.id));
         }
       })
       .each(function (d) {
         // あとで色をつけられるように、「国コード → 地図のかたち」もおぼえておく
-        const c = countriesByMapId.get(String(d.id));
-        featureByCountryId.set(c.id, d);
+        countriesByMapId.get(String(d.id)).forEach((c) => featureByCountryId.set(c.id, d));
+      });
+
+    // 地図に形がない小さな島国は、首都の場所に丸いしるしをかく
+    const markerLayer = mapRoot.append("g");
+    countries
+      .filter((c) => c.mapId === null)
+      .forEach((c) => {
+        const [x, y] = projection(c.anchorLngLat);
+        const marker = markerLayer
+          .append("circle")
+          .attr("class", "country-marker joined")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", 5)
+          .attr("tabindex", 0)
+          .attr("role", "button")
+          .attr("aria-label", `${c.nameJa}(${c.nameKana})をえらぶ`)
+          .on("click", () => onCountrySelect([c.id]))
+          .on("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              onCountrySelect([c.id]);
+            }
+          });
+        markerByCountryId.set(c.id, marker);
       });
 
     // たいせんラインとラベルは、国の上にかさねてかく
@@ -124,15 +157,20 @@ const WorldMap = (() => {
   /** 地図の色やラインを、ぜんぶもとにもどす */
   function clearHighlights() {
     countryPaths.classed("selected", false).classed("home-team", false).classed("away-team", false);
+    markerByCountryId.forEach((m) =>
+      m.classed("selected", false).classed("home-team", false).classed("away-team", false)
+    );
     lineLayer.selectAll("*").remove();
     labelLayer.selectAll("*").remove();
   }
 
-  /** 国を1つだけ、黄色でえらんだ状態にする */
-  function highlightCountry(country) {
+  /** 国(1つか2つ)を黄色でえらんだ状態にする */
+  function highlightCountries(countryList) {
     clearHighlights();
-    paintCountry(country.id, "selected");
-    addCountryLabel(country, null);
+    countryList.forEach((c) => {
+      paintCountry(c.id, "selected");
+      addCountryLabel(c, null);
+    });
   }
 
   /**
@@ -155,20 +193,35 @@ const WorldMap = (() => {
       .attr("class", "match-line")
       .attr("d", geoPath);
 
-    // 線のまん中にスコアのふだを出す
+    // 線のまん中にスコアのふだを出す(PKせんがあれば、それも小さく出す)
     const mid = projection(interpolate(0.5));
-    addScoreBadge(mid, `${match.homeTeam.score} - ${match.awayTeam.score}`);
+    let scoreText = `${match.homeTeam.score} - ${match.awayTeam.score}`;
+    if (match.penaltyShootout) {
+      scoreText += ` (PK ${match.penaltyShootout.home}-${match.penaltyShootout.away})`;
+    }
+    addScoreBadge(mid, scoreText);
 
     // 両はしに、国旗と国名(ホーム/アウェイつき)のラベルを出す
     addCountryLabel(homeCountry, "ホーム");
     addCountryLabel(awayCountry, "アウェイ");
   }
 
-  /** 国コードで国に色クラスをつける */
+  /** 国コードで国に色クラスをつける(地図の形、または丸いしるし) */
   function paintCountry(countryId, className) {
     const feature = featureByCountryId.get(countryId);
-    if (!feature) return;
-    countryPaths.filter((d) => d === feature).classed(className, true);
+    if (feature) {
+      countryPaths.filter((d) => d === feature).classed(className, true);
+      return;
+    }
+    const marker = markerByCountryId.get(countryId);
+    if (marker) marker.classed(className, true);
+  }
+
+  /** 国のラベルをかく場所(地図の形のまん中、または丸いしるしの場所) */
+  function labelCenterOf(country) {
+    const feature = featureByCountryId.get(country.id);
+    if (feature) return geoPath.centroid(feature);
+    return projection(country.anchorLngLat);
   }
 
   /** スコアのふだ(黄色)をかく */
@@ -193,13 +246,11 @@ const WorldMap = (() => {
 
   /** 国旗+国名のラベルをかく(sideLabel は「ホーム」「アウェイ」か null) */
   function addCountryLabel(country, sideLabel) {
-    const feature = featureByCountryId.get(country.id);
-    if (!feature) return;
-    // ラベルは国のまん中の、少し下に出す
-    const center = geoPath.centroid(feature);
+    const center = labelCenterOf(country);
+    if (!center) return;
     const y = center[1] + 14;
 
-    const g = labelLayer.append("g").attr("transform", `translate(${center[0]}, ${y})`);
+    const g = labelLayer.append("g");
     const text = sideLabel ? `${country.nameJa}(${sideLabel})` : country.nameJa;
     const label = g
       .append("text")
@@ -230,5 +281,5 @@ const WorldMap = (() => {
   }
 
   // そとから使えるものだけを公開する
-  return { init, highlightCountry, showMatch, clearHighlights };
+  return { init, highlightCountries, showMatch, clearHighlights };
 })();

@@ -1,17 +1,20 @@
 /* =========================================================
    match.js : しあいのけっかを表示するプログラム
-   - しあいのボタンのリスト
-   - スコアボード(ホームは左、アウェイは右)
-   - とくてん(ゴール)/ せんしゅこうたい / フォーメーション
+   - しあいのボタンのリスト(国でしぼりこみもできる)
+   - スコアボード(ホームは左、アウェイは右。PKせんにも対応)
+   - とくてん(ゴール)
+   - さいしょに出るメンバー(先発)と せんしゅこうたい(まとめて表示)
    - じょうほうのもと(出典)へのリンク
    ========================================================= */
 
 const MatchView = (() => {
-  let listEl;    // しあいボタンをならべる場所
-  let detailEl;  // しあいのくわしい中身を出す場所
+  let listEl;      // しあいボタンをならべる場所
+  let headingEl;   // しあいリストの見出し
+  let detailEl;    // しあいのくわしい中身を出す場所
 
   function init() {
     listEl = document.getElementById("match-list");
+    headingEl = document.getElementById("match-list-heading");
     detailEl = document.getElementById("match-detail");
   }
 
@@ -28,10 +31,15 @@ const MatchView = (() => {
     return "";
   }
 
-  /** かちまけのことば */
+  /** かちまけのことば(PKせんにも対応) */
   function resultText(match) {
     const home = match.homeTeam;
     const away = match.awayTeam;
+    if (match.penaltyShootout) {
+      const pk = match.penaltyShootout;
+      const winner = pk.home > pk.away ? home.nameJa : away.nameJa;
+      return `PKせんで ${winner}の勝ち`;
+    }
     if (home.score > away.score) return `${home.nameJa}の勝ち`;
     if (home.score < away.score) return `${away.nameJa}の勝ち`;
     return "引き分け";
@@ -46,20 +54,49 @@ const MatchView = (() => {
       .replaceAll('"', "&quot;");
   }
 
-  /** しあいをえらぶボタンのリストをつくる */
-  function renderMatchList(matches, selectedId, onSelect) {
+  /**
+   * しあいをえらぶボタンのリストをつくる
+   * options.heading  : リストの上に出す見出し(例「日本のしあい」)
+   * options.onShowAll: 「ぜんぶのしあいを見る」がおされたときによばれる関数(null なら出さない)
+   */
+  function renderMatchList(matches, selectedId, onSelect, options = {}) {
+    headingEl.textContent = options.heading || "ぜんぶのしあい";
     listEl.innerHTML = "";
-    matches.forEach((match) => {
+
+    const sorted = matches.slice().sort((a, b) => a.date.localeCompare(b.date));
+    sorted.forEach((match) => {
+      let scoreText = `${match.homeTeam.score} - ${match.awayTeam.score}`;
+      if (match.penaltyShootout) {
+        scoreText += ` (PK ${match.penaltyShootout.home}-${match.penaltyShootout.away})`;
+      }
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "match-btn";
       btn.setAttribute("aria-pressed", String(match.id === selectedId));
       btn.innerHTML =
         `<span class="match-btn-date">${escapeHtml(match.dateJa)}・${escapeHtml(match.stage)}</span>` +
-        `${escapeHtml(match.homeTeam.nameJa)} ${match.homeTeam.score} - ${match.awayTeam.score} ${escapeHtml(match.awayTeam.nameJa)}`;
+        `${escapeHtml(match.homeTeam.nameJa)} ${scoreText} ${escapeHtml(match.awayTeam.nameJa)}`;
       btn.addEventListener("click", () => onSelect(match.id));
       listEl.appendChild(btn);
     });
+
+    if (matches.length === 0) {
+      listEl.innerHTML = `<p class="no-data">このチームのしあいデータは、まだ入っていないよ。すこしずつ ふやしていくよ。</p>`;
+    }
+
+    if (options.onShowAll) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "match-btn show-all-btn";
+      btn.textContent = "ぜんぶのしあいを見る";
+      btn.addEventListener("click", options.onShowAll);
+      listEl.appendChild(btn);
+    }
+  }
+
+  /** 「しあいをえらんでね」のプレースホルダ */
+  function renderDetailPlaceholder() {
+    detailEl.innerHTML = `<p class="no-data">上のボタンから しあいをえらぶと、ここに くわしいけっかが 出るよ。</p>`;
   }
 
   /** しあいのくわしい中身をぜんぶかく */
@@ -78,27 +115,29 @@ const MatchView = (() => {
       `${escapeHtml(g.player || "(かくにん中)")}` +
       `<span class="goal-type">${goalTypeText(g.type)}</span> <span aria-hidden="true">⚽</span></p>`;
 
-    const subRow = (s) =>
-      `<p class="sub-row"><span class="minute">${escapeHtml(s.minute)}分</span> ` +
-      `<span class="sub-out">${escapeHtml(s.playerOut)} <span class="sub-inout">(OUT)</span></span> ` +
-      `<span class="sub-arrow" aria-hidden="true">→</span><span class="visually-hidden">から</span> ` +
-      `<span class="sub-in">${escapeHtml(s.playerIn)} <span class="sub-inout">(IN)</span></span></p>`;
+    // ゴールのリスト。数がスコアより少ないときは「かくにん中」と出す(うそのデータでうめない)
+    const goalsHtml = (goals, teamScore) => {
+      if (!goals.length && teamScore === 0) return `<p class="no-data">ゴールなし</p>`;
+      let html = goals.slice().sort(sortByMinute).map(goalRow).join("");
+      if (goals.length < teamScore) {
+        html += `<p class="no-data">(とくてんの くわしい じょうほうは かくにん中)</p>`;
+      }
+      return html;
+    };
 
-    const goalsHtml = (goals, side) =>
-      goals.length
-        ? goals.sort(sortByMinute).map(goalRow).join("")
-        : `<p class="no-data">ゴールなし</p>`;
-
-    const subsHtml = (subs) =>
-      subs.length
-        ? subs.slice().sort(sortByMinute).map(subRow).join("")
-        : `<p class="no-data">こうたいなし</p>`;
+    // PKせん・えんちょうせんの表示
+    let extraHtml = "";
+    if (match.penaltyShootout) {
+      const pk = match.penaltyShootout;
+      extraHtml = `<div class="sb-extra">えんちょうせんでも ${home.score} - ${away.score}。PKせんは ${pk.home} - ${pk.away} だったよ</div>`;
+    }
 
     // フォーメーションが「公式でかくにんできたか」で、ことわり書きを出す
+    const hasLineup = home.startingPlayers.length || away.startingPlayers.length;
     const formationNote =
-      home.formationConfirmed && away.formationConfirmed
-        ? ""
-        : `<p class="formation-note">※ 公式のならびが かくにんできていないため、せんしゅの とうろくポジションをもとにした、おおよその ならびです。</p>`;
+      hasLineup && !(home.formationConfirmed && away.formationConfirmed)
+        ? `<p class="formation-note">※ 公式のならびが かくにんできていないため、せんしゅの とうろくポジションをもとにした、おおよその ならびです。</p>`
+        : "";
 
     const sourcesHtml = match.sources.length
       ? `<ul class="sources-list">` +
@@ -127,6 +166,7 @@ const MatchView = (() => {
         <div class="sb-center">
           <div class="sb-score">${home.score} - ${away.score}</div>
           <span class="sb-result">${escapeHtml(resultText(match))}</span>
+          ${extraHtml}
         </div>
         <div class="sb-team">
           <img class="flag" src="${escapeHtml(awayCountry.flag)}" alt="${escapeHtml(awayCountry.nameJa)}の国旗">
@@ -140,35 +180,21 @@ const MatchView = (() => {
         <div class="two-cols">
           <div class="col-home">
             <p class="col-head">ホーム:${escapeHtml(home.nameJa)}</p>
-            ${goalsHtml(homeGoals, "home")}
+            ${goalsHtml(homeGoals, home.score)}
           </div>
           <div class="col-away">
             <p class="col-head">アウェイ:${escapeHtml(away.nameJa)}</p>
-            ${goalsHtml(awayGoals, "away")}
+            ${goalsHtml(awayGoals, away.score)}
           </div>
         </div>
       </div>
 
       <div class="match-part">
-        <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)</h4>
+        <h4><span aria-hidden="true">📋</span> さいしょに出るメンバー(先発)と せんしゅこうたい</h4>
         ${formationNote}
         <div class="pitches">
-          ${pitchBox(home, "home")}
-          ${pitchBox(away, "away")}
-        </div>
-      </div>
-
-      <div class="match-part">
-        <h4><span aria-hidden="true">🔁</span> せんしゅこうたい</h4>
-        <div class="two-cols">
-          <div class="col-home">
-            <p class="col-head">ホーム:${escapeHtml(home.nameJa)}</p>
-            ${subsHtml(home.substitutions)}
-          </div>
-          <div class="col-away">
-            <p class="col-head">アウェイ:${escapeHtml(away.nameJa)}</p>
-            ${subsHtml(away.substitutions)}
-          </div>
+          ${teamLineupBox(home, "home")}
+          ${teamLineupBox(away, "away")}
         </div>
       </div>
 
@@ -179,28 +205,84 @@ const MatchView = (() => {
     `;
   }
 
-  /** 1チームぶんのコートの箱(タイトル+コートSVG) */
-  function pitchBox(team, side) {
+  /**
+   * 1チームぶんの箱:コート(先発)+ とちゅうから出たせんしゅ
+   * コートの上では、こうたいで下がったせんしゅに「(○分OUT)」と出す。
+   * コートの下に、こうたいで出たせんしゅを「名前(○分IN・だれとこうたい)」で出す。
+   */
+  function teamLineupBox(team, side) {
     if (!team.startingPlayers.length) {
-      return `<div class="pitch-box"><p class="pitch-title">${escapeHtml(team.nameJa)}</p><p class="no-data">先発メンバーは かくにん中です</p></div>`;
+      return `
+        <div class="pitch-box">
+          <p class="pitch-title">${escapeHtml(team.nameJa)}</p>
+          <p class="no-data">先発メンバーと こうたいの じょうほうは かくにん中です</p>
+        </div>`;
     }
+
+    const subs = team.substitutions.slice().sort((a, b) => minuteValue(a.minute) - minuteValue(b.minute));
+    const subsHtml = subs.length
+      ? `<p class="col-head sub-list-head">とちゅうから出たせんしゅ</p>` +
+        subs
+          .map(
+            (s) =>
+              `<p class="sub-row">${escapeHtml(s.playerIn)}` +
+              `<span class="sub-inout">(<span class="minute">${escapeHtml(s.minute)}分</span>IN・${escapeHtml(s.playerOut)} とこうたい)</span></p>`
+          )
+          .join("")
+      : `<p class="no-data">こうたいの じょうほうは かくにん中です</p>`;
+
     return `
       <div class="pitch-box">
         <p class="pitch-title">${escapeHtml(team.nameJa)}
-          <span class="formation-name">${escapeHtml(team.formation || "かくにん中")}</span>
+          <span class="formation-name">${escapeHtml(team.formation || "")}</span>
         </p>
         ${pitchSvg(team, side)}
+        <div class="sub-list">${subsHtml}</div>
       </div>`;
+  }
+
+  /**
+   * 長い名前を、コートの上で2行に分ける
+   * - 「・」があれば、まん中にいちばん近い「・」のうしろで分ける
+   * - なければ、まん中で分ける(小さい文字「ェ」などの前では切らない)
+   */
+  function splitName(name) {
+    const text = String(name);
+    if (text.length <= 6) return [text];
+
+    const parts = text.split("・");
+    if (parts.length >= 2) {
+      let best = 1;
+      let bestDiff = Infinity;
+      for (let i = 1; i < parts.length; i++) {
+        const left = parts.slice(0, i).join("・") + "・";
+        const right = parts.slice(i).join("・");
+        const diff = Math.abs(left.length - right.length);
+        if (diff < bestDiff) {
+          bestDiff = diff;
+          best = i;
+        }
+      }
+      return [parts.slice(0, best).join("・") + "・", parts.slice(best).join("・")];
+    }
+
+    let mid = Math.ceil(text.length / 2);
+    while (mid < text.length - 1 && /[ァィゥェォャュョッー]/.test(text[mid])) mid++;
+    return [text.slice(0, mid), text.slice(mid)];
   }
 
   /**
    * サッカーコートの上に先発メンバーをならべたSVGをつくる
    * - row 0 がゴールキーパー(いちばん下)、数字が大きいほど前(上)
+   * - こうたいで下がったせんしゅには「(○分OUT)」と出す
    */
   function pitchSvg(team, side) {
-    const W = 380;
-    const H = 500;
+    const W = 400;
+    const H = 515;
     const teamColor = side === "home" ? "#4da3ff" : "#ff6b6b";
+
+    // 「この先発せんしゅは何分にOUTしたか」をしらべられるようにしておく
+    const outMinuteByName = new Map(team.substitutions.map((s) => [s.playerOut, s.minute]));
 
     // 選手を row(れつ)ごとにまとめる
     const rows = new Map();
@@ -210,8 +292,8 @@ const MatchView = (() => {
     });
     const rowKeys = [...rows.keys()].sort((a, b) => a - b);
 
-    const topY = 80;      // いちばん前のれつの高さ
-    const bottomY = 445;  // ゴールキーパーの高さ
+    const topY = 75;      // いちばん前のれつの高さ
+    const bottomY = 435;  // ゴールキーパーの高さ
     const stepY = rowKeys.length > 1 ? (bottomY - topY) / (rowKeys.length - 1) : 0;
 
     let players = "";
@@ -222,17 +304,31 @@ const MatchView = (() => {
         const x = (W * (i + 1)) / (rowPlayers.length + 1);
         const isGk = p.position === "GK";
         const fill = isGk ? "#ffd166" : teamColor;
-        const name = escapeHtml(p.name);
-        // 長い名前は textLength でおしこめて、よこの選手と重ならないようにする
-        const nameLength = String(p.name).length;
-        const textLengthAttr = nameLength > 5 ? ` textLength="88" lengthAdjust="spacingAndGlyphs"` : "";
+
+        // 名前は2行までに折り返して、よこの選手と重ならないようにする
+        const nameLines = splitName(p.name);
+        const nameText = nameLines
+          .map((line, li) => {
+            const fontSize = line.length >= 7 ? 10 : 11.5;
+            return `<tspan x="${x}" y="${y + 31 + li * 12}" font-size="${fontSize}">${escapeHtml(line)}</tspan>`;
+          })
+          .join("");
+
+        // こうたいで下がった選手には「(○分OUT)」と出す
+        const outMinute = outMinuteByName.get(p.name);
+        const outText = outMinute
+          ? `<text x="${x}" y="${y + 31 + nameLines.length * 12}" text-anchor="middle" font-size="9.5"
+               fill="#ffd166" stroke="#0b3d22" stroke-width="3" paint-order="stroke">(${escapeHtml(outMinute)}分OUT)</text>`
+          : "";
+
         players += `
           <g>
             <circle cx="${x}" cy="${y}" r="17" fill="${fill}" stroke="#082042" stroke-width="2"/>
             <text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central"
               font-size="14" font-weight="bold" fill="#082042">${p.number}</text>
-            <text x="${x}" y="${y + 31}" text-anchor="middle" font-size="11.5" font-weight="bold"
-              fill="#ffffff" stroke="#0b3d22" stroke-width="3" paint-order="stroke"${textLengthAttr}>${name}</text>
+            <text text-anchor="middle" font-weight="bold"
+              fill="#ffffff" stroke="#0b3d22" stroke-width="3" paint-order="stroke">${nameText}</text>
+            ${outText}
           </g>`;
       });
     });
@@ -244,13 +340,13 @@ const MatchView = (() => {
       <svg class="pitch-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}">
         <rect width="${W}" height="${H}" rx="12" fill="#17643b"/>
         <rect x="14" y="14" width="${W - 28}" height="${H - 28}" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2"/>
-        <line x1="14" y1="47" x2="${W - 14}" y2="47" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+        <line x1="14" y1="44" x2="${W - 14}" y2="44" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
         <path d="M ${W / 2 - 70} 14 A 70 70 0 0 0 ${W / 2 + 70} 14" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2"/>
-        <rect x="${W / 2 - 90}" y="${H - 86}" width="180" height="72" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2"/>
-        <rect x="${W / 2 - 44}" y="${H - 48}" width="88" height="34" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2"/>
+        <rect x="${W / 2 - 95}" y="${H - 86}" width="190" height="72" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2"/>
+        <rect x="${W / 2 - 46}" y="${H - 48}" width="92" height="34" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2"/>
         ${players}
       </svg>`;
   }
 
-  return { init, renderMatchList, renderMatchDetail };
+  return { init, renderMatchList, renderMatchDetail, renderDetailPlaceholder };
 })();

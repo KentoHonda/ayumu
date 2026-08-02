@@ -46,8 +46,8 @@
     <section id="map-section" class="panel" aria-labelledby="map-heading">
       <h2 id="map-heading"><span aria-hidden="true">🌍</span> せかい地図</h2>
       <p class="hint">
-        あかるい青色の国は、ワールドカップ2026に 出た国だよ。<br>
-        国を タップ(クリック)すると、その国のことが わかるよ。キーボードの
+        緑色の国は、ワールドカップ2026に 出た48か国だよ。<br>
+        国を タップ(クリック)すると、下の「しあいのけっか」に その国のしあいが ならぶよ。キーボードの
         <kbd>Tab</kbd> と <kbd>Enter</kbd> でも えらべるよ。
       </p>
       <div class="map-toolbar">
@@ -58,8 +58,9 @@
       <div class="map-wrap">
         <svg id="world-map" role="group" aria-label="せかい地図。ワールドカップに出た国をえらべます。"></svg>
       </div>
-      <div class="legend" role="img" aria-label="地図のはんれい。あかるい青はワールドカップに出た国、青はホームの国、赤はアウェイの国、黄色はえらんだ国、点線はたいせんラインです。">
+      <div class="legend" role="img" aria-label="地図のはんれい。緑はワールドカップに出た国、緑の丸は地図にのっていない小さな島国、青はホームの国、赤はアウェイの国、黄色はえらんだ国、点線はたいせんラインです。">
         <span class="legend-item"><span class="chip chip-joined"></span>ワールドカップに出た国</span>
+        <span class="legend-item"><span class="chip chip-marker"></span>小さな島国(カーボベルデ・キュラソー)</span>
         <span class="legend-item"><span class="chip chip-home"></span>ホームの国</span>
         <span class="legend-item"><span class="chip chip-away"></span>アウェイの国</span>
         <span class="legend-item"><span class="chip chip-selected"></span>えらんだ国</span>
@@ -70,7 +71,9 @@
     <!-- ========== しあいのけっか ========== -->
     <section id="match-section" class="panel" aria-labelledby="match-heading">
       <h2 id="match-heading"><span aria-hidden="true">⚽</span> しあいのけっか</h2>
-      <p class="hint">見たい しあいの ボタンを おしてね。</p>
+      <p class="hint">見たい しあいの ボタンを おしてね。地図で国をえらぶと、その国のしあいだけに しぼれるよ。<br>
+        ※ まだ ぜんぶの国のしあいは 入っていないよ。すこしずつ ふやしていくよ。</p>
+      <h3 id="match-list-heading" class="match-list-heading">ぜんぶのしあい</h3>
       <div id="match-list" class="match-list"></div>
       <article id="match-detail" aria-live="polite"></article>
     </section>

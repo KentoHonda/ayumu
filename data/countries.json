@@ -1,81 +1,297 @@
 {
-  "note": "国のじょうほうです。人口(じんこう)などは年によってかわるので、「約」をつけています。mapId は地図データ(world-110m.json)の国番号(ISO 3166-1 numeric)、id は3文字の国コード(ISO 3166-1 alpha-3)です。",
+  "note": "ワールドカップ2026に出た48か国のデータです。人口(populationMan は「万人」の数)や広さ(areaKm2)は年によってかわる、おおよその数字です。mapId は地図データ(world-110m.json)の国番号(ISO 3166-1 numeric)、id は3文字の国コードです。イングランドとスコットランドは、地図では同じ「イギリス」(826)の場所になります。カーボベルデとキュラソーは小さい島国で、この地図データに形がないため mapId が null になっていて、地図の上では丸いしるしで表示します。",
   "countries": [
     {
-      "id": "JPN",
-      "mapId": "392",
-      "nameJa": "日本",
-      "nameKana": "にほん",
-      "nameEn": "Japan",
-      "flag": "assets/icons/flag-jpn.svg",
-      "capital": "東京(とうきょう)",
-      "population": "約1億2400万人",
-      "populationYear": 2023,
-      "area": "約37万8000平方キロメートル",
-      "areaKm2": 378000,
-      "areaVsJapan": "(くらべるもとの国です)",
-      "language": "日本語",
-      "currency": "円(えん)",
-      "anchorLngLat": [139.69, 35.69],
-      "worldCup2026": { "joined": true, "group": "F" },
-      "infoSource": "国の公開データをもとにしています(2023〜2024年ごろ)"
+      "id": "MEX", "mapId": "484", "group": "A",
+      "nameJa": "メキシコ", "nameKana": "めきしこ", "nameEn": "Mexico", "flag": "assets/flags/mx.svg",
+      "capital": "メキシコシティ", "populationMan": 12900, "populationYear": 2023, "areaKm2": 1964000,
+      "language": "スペイン語", "currency": "メキシコ・ペソ", "anchorLngLat": [-99.13, 19.43]
     },
     {
-      "id": "NLD",
-      "mapId": "528",
-      "nameJa": "オランダ",
-      "nameKana": "おらんだ",
-      "nameEn": "Netherlands",
-      "flag": "assets/icons/flag-nld.svg",
-      "capital": "アムステルダム",
-      "population": "約1800万人",
-      "populationYear": 2024,
-      "area": "約4万2000平方キロメートル",
-      "areaKm2": 42000,
-      "areaVsJapan": "日本の約9分の1の広さ",
-      "language": "オランダ語",
-      "currency": "ユーロ",
-      "anchorLngLat": [4.9, 52.37],
-      "worldCup2026": { "joined": true, "group": "F" },
-      "infoSource": "国の公開データをもとにしています(2023〜2024年ごろ)"
+      "id": "ZAF", "mapId": "710", "group": "A",
+      "nameJa": "南アフリカ", "nameKana": "みなみあふりか", "nameEn": "South Africa", "flag": "assets/flags/za.svg",
+      "capital": "プレトリア", "populationMan": 6200, "populationYear": 2023, "areaKm2": 1221000,
+      "language": "英語・ズールー語など", "currency": "ランド", "anchorLngLat": [28.19, -25.75]
     },
     {
-      "id": "SWE",
-      "mapId": "752",
-      "nameJa": "スウェーデン",
-      "nameKana": "すうぇーでん",
-      "nameEn": "Sweden",
-      "flag": "assets/icons/flag-swe.svg",
-      "capital": "ストックホルム",
-      "population": "約1060万人",
-      "populationYear": 2024,
-      "area": "約45万平方キロメートル",
-      "areaKm2": 450000,
-      "areaVsJapan": "日本の約1.2倍の広さ",
-      "language": "スウェーデン語",
-      "currency": "スウェーデン・クローナ",
-      "anchorLngLat": [18.07, 59.33],
-      "worldCup2026": { "joined": true, "group": "F" },
-      "infoSource": "国の公開データをもとにしています(2023〜2024年ごろ)"
+      "id": "KOR", "mapId": "410", "group": "A",
+      "nameJa": "韓国", "nameKana": "かんこく", "nameEn": "Korea Republic", "flag": "assets/flags/kr.svg",
+      "capital": "ソウル", "populationMan": 5200, "populationYear": 2023, "areaKm2": 100000,
+      "language": "韓国語", "currency": "ウォン", "anchorLngLat": [126.98, 37.57]
     },
     {
-      "id": "TUN",
-      "mapId": "788",
-      "nameJa": "チュニジア",
-      "nameKana": "ちゅにじあ",
-      "nameEn": "Tunisia",
-      "flag": "assets/icons/flag-tun.svg",
-      "capital": "チュニス",
-      "population": "約1200万人",
-      "populationYear": 2023,
-      "area": "約16万4000平方キロメートル",
-      "areaKm2": 164000,
-      "areaVsJapan": "日本の半分より少しせまい広さ",
-      "language": "アラビア語(フランス語もつかわれます)",
-      "currency": "チュニジア・ディナール",
-      "anchorLngLat": [10.18, 36.8],
-      "worldCup2026": { "joined": true, "group": "F" },
-      "infoSource": "国の公開データをもとにしています(2023〜2024年ごろ)"
+      "id": "CZE", "mapId": "203", "group": "A",
+      "nameJa": "チェコ", "nameKana": "ちぇこ", "nameEn": "Czechia", "flag": "assets/flags/cz.svg",
+      "capital": "プラハ", "populationMan": 1090, "populationYear": 2023, "areaKm2": 79000,
+      "language": "チェコ語", "currency": "チェコ・コルナ", "anchorLngLat": [14.42, 50.09]
+    },
+    {
+      "id": "CAN", "mapId": "124", "group": "B",
+      "nameJa": "カナダ", "nameKana": "かなだ", "nameEn": "Canada", "flag": "assets/flags/ca.svg",
+      "capital": "オタワ", "populationMan": 4000, "populationYear": 2023, "areaKm2": 9985000,
+      "language": "英語・フランス語", "currency": "カナダドル", "anchorLngLat": [-75.7, 45.42]
+    },
+    {
+      "id": "BIH", "mapId": "070", "group": "B",
+      "nameJa": "ボスニア・ヘルツェゴビナ", "nameKana": "ぼすにあ・へるつぇごびな", "nameEn": "Bosnia and Herzegovina", "flag": "assets/flags/ba.svg",
+      "capital": "サラエボ", "populationMan": 320, "populationYear": 2023, "areaKm2": 51000,
+      "language": "ボスニア語など", "currency": "兌換マルク", "anchorLngLat": [18.41, 43.86]
+    },
+    {
+      "id": "QAT", "mapId": "634", "group": "B",
+      "nameJa": "カタール", "nameKana": "かたーる", "nameEn": "Qatar", "flag": "assets/flags/qa.svg",
+      "capital": "ドーハ", "populationMan": 270, "populationYear": 2023, "areaKm2": 12000,
+      "language": "アラビア語", "currency": "カタール・リヤル", "anchorLngLat": [51.53, 25.29]
+    },
+    {
+      "id": "CHE", "mapId": "756", "group": "B",
+      "nameJa": "スイス", "nameKana": "すいす", "nameEn": "Switzerland", "flag": "assets/flags/ch.svg",
+      "capital": "ベルン", "populationMan": 890, "populationYear": 2023, "areaKm2": 41000,
+      "language": "ドイツ語・フランス語など", "currency": "スイス・フラン", "anchorLngLat": [7.45, 46.95]
+    },
+    {
+      "id": "BRA", "mapId": "076", "group": "C",
+      "nameJa": "ブラジル", "nameKana": "ぶらじる", "nameEn": "Brazil", "flag": "assets/flags/br.svg",
+      "capital": "ブラジリア", "populationMan": 21600, "populationYear": 2023, "areaKm2": 8516000,
+      "language": "ポルトガル語", "currency": "レアル", "anchorLngLat": [-47.88, -15.79]
+    },
+    {
+      "id": "MAR", "mapId": "504", "group": "C",
+      "nameJa": "モロッコ", "nameKana": "もろっこ", "nameEn": "Morocco", "flag": "assets/flags/ma.svg",
+      "capital": "ラバト", "populationMan": 3800, "populationYear": 2023, "areaKm2": 447000,
+      "language": "アラビア語", "currency": "モロッコ・ディルハム", "anchorLngLat": [-6.85, 34.02]
+    },
+    {
+      "id": "HTI", "mapId": "332", "group": "C",
+      "nameJa": "ハイチ", "nameKana": "はいち", "nameEn": "Haiti", "flag": "assets/flags/ht.svg",
+      "capital": "ポルトープランス", "populationMan": 1200, "populationYear": 2023, "areaKm2": 28000,
+      "language": "フランス語・ハイチ語", "currency": "グールド", "anchorLngLat": [-72.34, 18.54]
+    },
+    {
+      "id": "SCO", "mapId": "826", "group": "C",
+      "nameJa": "スコットランド", "nameKana": "すこっとらんど", "nameEn": "Scotland", "flag": "assets/flags/gb-sct.svg",
+      "capital": "エディンバラ", "populationMan": 550, "populationYear": 2023, "areaKm2": 78000,
+      "language": "英語", "currency": "ポンド", "anchorLngLat": [-3.19, 55.95],
+      "remarks": "イギリスの一部だけど、サッカーでは べつのチームとして出場するよ。"
+    },
+    {
+      "id": "USA", "mapId": "840", "group": "D",
+      "nameJa": "アメリカ", "nameKana": "あめりか", "nameEn": "United States", "flag": "assets/flags/us.svg",
+      "capital": "ワシントンD.C.", "populationMan": 34000, "populationYear": 2024, "areaKm2": 9834000,
+      "language": "英語", "currency": "米ドル", "anchorLngLat": [-77.04, 38.9]
+    },
+    {
+      "id": "PRY", "mapId": "600", "group": "D",
+      "nameJa": "パラグアイ", "nameKana": "ぱらぐあい", "nameEn": "Paraguay", "flag": "assets/flags/py.svg",
+      "capital": "アスンシオン", "populationMan": 680, "populationYear": 2023, "areaKm2": 407000,
+      "language": "スペイン語・グアラニー語", "currency": "グアラニー", "anchorLngLat": [-57.58, -25.26]
+    },
+    {
+      "id": "AUS", "mapId": "036", "group": "D",
+      "nameJa": "オーストラリア", "nameKana": "おーすとらりあ", "nameEn": "Australia", "flag": "assets/flags/au.svg",
+      "capital": "キャンベラ", "populationMan": 2700, "populationYear": 2024, "areaKm2": 7692000,
+      "language": "英語", "currency": "オーストラリア・ドル", "anchorLngLat": [149.13, -35.28]
+    },
+    {
+      "id": "TUR", "mapId": "792", "group": "D",
+      "nameJa": "トルコ", "nameKana": "とるこ", "nameEn": "Türkiye", "flag": "assets/flags/tr.svg",
+      "capital": "アンカラ", "populationMan": 8500, "populationYear": 2023, "areaKm2": 784000,
+      "language": "トルコ語", "currency": "トルコ・リラ", "anchorLngLat": [32.85, 39.93]
+    },
+    {
+      "id": "DEU", "mapId": "276", "group": "E",
+      "nameJa": "ドイツ", "nameKana": "どいつ", "nameEn": "Germany", "flag": "assets/flags/de.svg",
+      "capital": "ベルリン", "populationMan": 8400, "populationYear": 2023, "areaKm2": 358000,
+      "language": "ドイツ語", "currency": "ユーロ", "anchorLngLat": [13.4, 52.52]
+    },
+    {
+      "id": "CUW", "mapId": null, "group": "E",
+      "nameJa": "キュラソー", "nameKana": "きゅらそー", "nameEn": "Curaçao", "flag": "assets/flags/cw.svg",
+      "capital": "ウィレムスタット", "populationMan": 15, "populationYear": 2023, "areaKm2": 444,
+      "language": "オランダ語・パピアメント語", "currency": "カリブ・ギルダー", "anchorLngLat": [-68.99, 12.11],
+      "remarks": "カリブ海の小さな島国で、オランダ王国の一員だよ。地図では小さくて見えないので、丸いしるしで表示しているよ。"
+    },
+    {
+      "id": "CIV", "mapId": "384", "group": "E",
+      "nameJa": "コートジボワール", "nameKana": "こーとじぼわーる", "nameEn": "Côte d'Ivoire", "flag": "assets/flags/ci.svg",
+      "capital": "ヤムスクロ", "populationMan": 2900, "populationYear": 2023, "areaKm2": 322000,
+      "language": "フランス語", "currency": "CFAフラン", "anchorLngLat": [-5.28, 6.82]
+    },
+    {
+      "id": "ECU", "mapId": "218", "group": "E",
+      "nameJa": "エクアドル", "nameKana": "えくあどる", "nameEn": "Ecuador", "flag": "assets/flags/ec.svg",
+      "capital": "キト", "populationMan": 1800, "populationYear": 2023, "areaKm2": 256000,
+      "language": "スペイン語", "currency": "米ドル", "anchorLngLat": [-78.47, -0.18]
+    },
+    {
+      "id": "NLD", "mapId": "528", "group": "F",
+      "nameJa": "オランダ", "nameKana": "おらんだ", "nameEn": "Netherlands", "flag": "assets/flags/nl.svg",
+      "capital": "アムステルダム", "populationMan": 1800, "populationYear": 2024, "areaKm2": 42000,
+      "language": "オランダ語", "currency": "ユーロ", "anchorLngLat": [4.9, 52.37]
+    },
+    {
+      "id": "JPN", "mapId": "392", "group": "F",
+      "nameJa": "日本", "nameKana": "にほん", "nameEn": "Japan", "flag": "assets/flags/jp.svg",
+      "capital": "東京(とうきょう)", "populationMan": 12400, "populationYear": 2023, "areaKm2": 378000,
+      "language": "日本語", "currency": "円(えん)", "anchorLngLat": [139.69, 35.69]
+    },
+    {
+      "id": "SWE", "mapId": "752", "group": "F",
+      "nameJa": "スウェーデン", "nameKana": "すうぇーでん", "nameEn": "Sweden", "flag": "assets/flags/se.svg",
+      "capital": "ストックホルム", "populationMan": 1060, "populationYear": 2024, "areaKm2": 450000,
+      "language": "スウェーデン語", "currency": "スウェーデン・クローナ", "anchorLngLat": [18.07, 59.33]
+    },
+    {
+      "id": "TUN", "mapId": "788", "group": "F",
+      "nameJa": "チュニジア", "nameKana": "ちゅにじあ", "nameEn": "Tunisia", "flag": "assets/flags/tn.svg",
+      "capital": "チュニス", "populationMan": 1200, "populationYear": 2023, "areaKm2": 164000,
+      "language": "アラビア語(フランス語もつかわれます)", "currency": "チュニジア・ディナール", "anchorLngLat": [10.18, 36.8]
+    },
+    {
+      "id": "BEL", "mapId": "056", "group": "G",
+      "nameJa": "ベルギー", "nameKana": "べるぎー", "nameEn": "Belgium", "flag": "assets/flags/be.svg",
+      "capital": "ブリュッセル", "populationMan": 1180, "populationYear": 2023, "areaKm2": 31000,
+      "language": "オランダ語・フランス語", "currency": "ユーロ", "anchorLngLat": [4.35, 50.85]
+    },
+    {
+      "id": "EGY", "mapId": "818", "group": "G",
+      "nameJa": "エジプト", "nameKana": "えじぷと", "nameEn": "Egypt", "flag": "assets/flags/eg.svg",
+      "capital": "カイロ", "populationMan": 11000, "populationYear": 2023, "areaKm2": 1002000,
+      "language": "アラビア語", "currency": "エジプト・ポンド", "anchorLngLat": [31.24, 30.04]
+    },
+    {
+      "id": "IRN", "mapId": "364", "group": "G",
+      "nameJa": "イラン", "nameKana": "いらん", "nameEn": "IR Iran", "flag": "assets/flags/ir.svg",
+      "capital": "テヘラン", "populationMan": 9000, "populationYear": 2024, "areaKm2": 1648000,
+      "language": "ペルシャ語", "currency": "イラン・リヤル", "anchorLngLat": [51.39, 35.69]
+    },
+    {
+      "id": "NZL", "mapId": "554", "group": "G",
+      "nameJa": "ニュージーランド", "nameKana": "にゅーじーらんど", "nameEn": "New Zealand", "flag": "assets/flags/nz.svg",
+      "capital": "ウェリントン", "populationMan": 530, "populationYear": 2023, "areaKm2": 268000,
+      "language": "英語・マオリ語", "currency": "ニュージーランド・ドル", "anchorLngLat": [174.78, -41.29]
+    },
+    {
+      "id": "ESP", "mapId": "724", "group": "H",
+      "nameJa": "スペイン", "nameKana": "すぺいん", "nameEn": "Spain", "flag": "assets/flags/es.svg",
+      "capital": "マドリード", "populationMan": 4800, "populationYear": 2023, "areaKm2": 506000,
+      "language": "スペイン語", "currency": "ユーロ", "anchorLngLat": [-3.7, 40.42]
+    },
+    {
+      "id": "CPV", "mapId": null, "group": "H",
+      "nameJa": "カーボベルデ", "nameKana": "かーぼべるで", "nameEn": "Cabo Verde", "flag": "assets/flags/cv.svg",
+      "capital": "プライア", "populationMan": 50, "populationYear": 2023, "areaKm2": 4000,
+      "language": "ポルトガル語", "currency": "カーボベルデ・エスクード", "anchorLngLat": [-23.51, 14.93],
+      "remarks": "アフリカの西の海にある島国だよ。地図では小さくて見えないので、丸いしるしで表示しているよ。"
+    },
+    {
+      "id": "SAU", "mapId": "682", "group": "H",
+      "nameJa": "サウジアラビア", "nameKana": "さうじあらびあ", "nameEn": "Saudi Arabia", "flag": "assets/flags/sa.svg",
+      "capital": "リヤド", "populationMan": 3600, "populationYear": 2023, "areaKm2": 2207000,
+      "language": "アラビア語", "currency": "サウジ・リヤル", "anchorLngLat": [46.68, 24.63]
+    },
+    {
+      "id": "URY", "mapId": "858", "group": "H",
+      "nameJa": "ウルグアイ", "nameKana": "うるぐあい", "nameEn": "Uruguay", "flag": "assets/flags/uy.svg",
+      "capital": "モンテビデオ", "populationMan": 340, "populationYear": 2023, "areaKm2": 176000,
+      "language": "スペイン語", "currency": "ウルグアイ・ペソ", "anchorLngLat": [-56.19, -34.9]
+    },
+    {
+      "id": "FRA", "mapId": "250", "group": "I",
+      "nameJa": "フランス", "nameKana": "ふらんす", "nameEn": "France", "flag": "assets/flags/fr.svg",
+      "capital": "パリ", "populationMan": 6800, "populationYear": 2024, "areaKm2": 552000,
+      "language": "フランス語", "currency": "ユーロ", "anchorLngLat": [2.35, 48.86]
+    },
+    {
+      "id": "SEN", "mapId": "686", "group": "I",
+      "nameJa": "セネガル", "nameKana": "せねがる", "nameEn": "Senegal", "flag": "assets/flags/sn.svg",
+      "capital": "ダカール", "populationMan": 1800, "populationYear": 2023, "areaKm2": 197000,
+      "language": "フランス語", "currency": "CFAフラン", "anchorLngLat": [-17.44, 14.69]
+    },
+    {
+      "id": "IRQ", "mapId": "368", "group": "I",
+      "nameJa": "イラク", "nameKana": "いらく", "nameEn": "Iraq", "flag": "assets/flags/iq.svg",
+      "capital": "バグダッド", "populationMan": 4500, "populationYear": 2023, "areaKm2": 435000,
+      "language": "アラビア語・クルド語", "currency": "イラク・ディナール", "anchorLngLat": [44.36, 33.31]
+    },
+    {
+      "id": "NOR", "mapId": "578", "group": "I",
+      "nameJa": "ノルウェー", "nameKana": "のるうぇー", "nameEn": "Norway", "flag": "assets/flags/no.svg",
+      "capital": "オスロ", "populationMan": 550, "populationYear": 2023, "areaKm2": 385000,
+      "language": "ノルウェー語", "currency": "ノルウェー・クローネ", "anchorLngLat": [10.75, 59.91]
+    },
+    {
+      "id": "ARG", "mapId": "032", "group": "J",
+      "nameJa": "アルゼンチン", "nameKana": "あるぜんちん", "nameEn": "Argentina", "flag": "assets/flags/ar.svg",
+      "capital": "ブエノスアイレス", "populationMan": 4600, "populationYear": 2023, "areaKm2": 2780000,
+      "language": "スペイン語", "currency": "アルゼンチン・ペソ", "anchorLngLat": [-58.38, -34.6]
+    },
+    {
+      "id": "DZA", "mapId": "012", "group": "J",
+      "nameJa": "アルジェリア", "nameKana": "あるじぇりあ", "nameEn": "Algeria", "flag": "assets/flags/dz.svg",
+      "capital": "アルジェ", "populationMan": 4600, "populationYear": 2023, "areaKm2": 2382000,
+      "language": "アラビア語", "currency": "アルジェリア・ディナール", "anchorLngLat": [3.06, 36.75]
+    },
+    {
+      "id": "AUT", "mapId": "040", "group": "J",
+      "nameJa": "オーストリア", "nameKana": "おーすとりあ", "nameEn": "Austria", "flag": "assets/flags/at.svg",
+      "capital": "ウィーン", "populationMan": 910, "populationYear": 2023, "areaKm2": 84000,
+      "language": "ドイツ語", "currency": "ユーロ", "anchorLngLat": [16.37, 48.21]
+    },
+    {
+      "id": "JOR", "mapId": "400", "group": "J",
+      "nameJa": "ヨルダン", "nameKana": "よるだん", "nameEn": "Jordan", "flag": "assets/flags/jo.svg",
+      "capital": "アンマン", "populationMan": 1100, "populationYear": 2023, "areaKm2": 89000,
+      "language": "アラビア語", "currency": "ヨルダン・ディナール", "anchorLngLat": [35.93, 31.95]
+    },
+    {
+      "id": "PRT", "mapId": "620", "group": "K",
+      "nameJa": "ポルトガル", "nameKana": "ぽるとがる", "nameEn": "Portugal", "flag": "assets/flags/pt.svg",
+      "capital": "リスボン", "populationMan": 1050, "populationYear": 2023, "areaKm2": 92000,
+      "language": "ポルトガル語", "currency": "ユーロ", "anchorLngLat": [-9.14, 38.72]
+    },
+    {
+      "id": "COD", "mapId": "180", "group": "K",
+      "nameJa": "コンゴ民主共和国", "nameKana": "こんごみんしゅきょうわこく", "nameEn": "Congo DR", "flag": "assets/flags/cd.svg",
+      "capital": "キンシャサ", "populationMan": 10200, "populationYear": 2023, "areaKm2": 2345000,
+      "language": "フランス語", "currency": "コンゴ・フラン", "anchorLngLat": [15.27, -4.32]
+    },
+    {
+      "id": "UZB", "mapId": "860", "group": "K",
+      "nameJa": "ウズベキスタン", "nameKana": "うずべきすたん", "nameEn": "Uzbekistan", "flag": "assets/flags/uz.svg",
+      "capital": "タシケント", "populationMan": 3600, "populationYear": 2023, "areaKm2": 449000,
+      "language": "ウズベク語", "currency": "スム", "anchorLngLat": [69.24, 41.31]
+    },
+    {
+      "id": "COL", "mapId": "170", "group": "K",
+      "nameJa": "コロンビア", "nameKana": "ころんびあ", "nameEn": "Colombia", "flag": "assets/flags/co.svg",
+      "capital": "ボゴタ", "populationMan": 5200, "populationYear": 2023, "areaKm2": 1142000,
+      "language": "スペイン語", "currency": "コロンビア・ペソ", "anchorLngLat": [-74.07, 4.71]
+    },
+    {
+      "id": "ENG", "mapId": "826", "group": "L",
+      "nameJa": "イングランド", "nameKana": "いんぐらんど", "nameEn": "England", "flag": "assets/flags/gb-eng.svg",
+      "capital": "ロンドン", "populationMan": 5700, "populationYear": 2023, "areaKm2": 130000,
+      "language": "英語", "currency": "ポンド", "anchorLngLat": [-0.13, 51.51],
+      "remarks": "イギリスの一部だけど、サッカーでは べつのチームとして出場するよ。"
+    },
+    {
+      "id": "HRV", "mapId": "191", "group": "L",
+      "nameJa": "クロアチア", "nameKana": "くろあちあ", "nameEn": "Croatia", "flag": "assets/flags/hr.svg",
+      "capital": "ザグレブ", "populationMan": 390, "populationYear": 2023, "areaKm2": 57000,
+      "language": "クロアチア語", "currency": "ユーロ", "anchorLngLat": [15.98, 45.81]
+    },
+    {
+      "id": "GHA", "mapId": "288", "group": "L",
+      "nameJa": "ガーナ", "nameKana": "がーな", "nameEn": "Ghana", "flag": "assets/flags/gh.svg",
+      "capital": "アクラ", "populationMan": 3400, "populationYear": 2023, "areaKm2": 239000,
+      "language": "英語", "currency": "セディ", "anchorLngLat": [-0.19, 5.55]
+    },
+    {
+      "id": "PAN", "mapId": "591", "group": "L",
+      "nameJa": "パナマ", "nameKana": "ぱなま", "nameEn": "Panama", "flag": "assets/flags/pa.svg",
+      "capital": "パナマシティ", "populationMan": 450, "populationYear": 2023, "areaKm2": 75000,
+      "language": "スペイン語", "currency": "バルボア・米ドル", "anchorLngLat": [-79.52, 8.98]
     }
   ]
 }
