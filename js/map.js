@@ -39,8 +39,9 @@ const WorldMap = (() => {
    * @param {object} worldTopo world-110m.json(TopoJSONデータ)
    * @param {Array}  countries countries.json の国リスト
    * @param {Function} onCountrySelect 国がえらばれたときによばれる関数(国コードのリストをわたす)
+   * @param {Function} onReset 「もとにもどす」がおされたときによばれる関数
    */
-  function init(worldTopo, countries, onCountrySelect) {
+  function init(worldTopo, countries, onCountrySelect, onReset) {
     // TopoJSON を、D3でかける形(GeoJSON)にかえる
     const world = topojson.feature(worldTopo, worldTopo.objects.countries);
 
@@ -162,9 +163,12 @@ const WorldMap = (() => {
     // 「+」「−」「もとにもどす」ボタン
     d3.select("#zoom-in").on("click", () => svg.transition().duration(300).call(zoom.scaleBy, 1.6));
     d3.select("#zoom-out").on("click", () => svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6));
-    d3.select("#zoom-reset").on("click", () =>
-      svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity)
-    );
+    d3.select("#zoom-reset").on("click", () => {
+      // ズームをもとにもどして、えらんでいた国の色もぜんぶ解除する
+      svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+      clearHighlights();
+      if (onReset) onReset();
+    });
   }
 
   /** 地図の色やラインを、ぜんぶもとにもどす */

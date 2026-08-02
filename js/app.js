@@ -68,6 +68,15 @@
     }, 0);
   }
 
+  /** 地図の「もとにもどす」がおされたとき:えらんだ国と試合もぜんぶ解除する */
+  function resetAll() {
+    filteredCountryIds = null;
+    selectedMatchId = null;
+    CountryView.renderEmpty();            // 国の情報カードを「まだえらんでいないよ」に
+    renderMatchList();                    // 試合リストを「ぜんぶの試合」にもどす
+    MatchView.renderDetailPlaceholder();  // くわしい結果も「試合をえらんでね」に
+  }
+
   /** 試合がえらばれたとき */
   function selectMatch(matchId) {
     const match = matches.find((m) => m.id === matchId);
@@ -96,7 +105,7 @@
       matches = matchesData.matches;
       countriesById = new Map(countries.map((c) => [c.id, c]));
 
-      WorldMap.init(worldTopo, countries, selectCountries);
+      WorldMap.init(worldTopo, countries, selectCountries, resetAll);
       MatchView.init();
       CountryView.init();
 
