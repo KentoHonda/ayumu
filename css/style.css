@@ -680,6 +680,26 @@ kbd {
   text-align: center;
 }
 
+/* ---------- 「上にもどる」ボタン ---------- */
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  min-height: 52px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #082042;
+  background: var(--gold);
+  border: 2px solid #b8860b;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+.back-to-top:hover { background: #ffe08a; }
+
 /* ---------- フッター ---------- */
 .site-footer {
   border-top: 2px solid var(--line);

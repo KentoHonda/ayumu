@@ -92,8 +92,24 @@
     CountryView.render([home, away]);                 // 2つの国の情報
   }
 
+  /** 「上にもどる」ボタン:少し下にスクロールしたら右下に出す */
+  function setupBackToTop() {
+    const btn = document.getElementById("back-to-top");
+    window.addEventListener(
+      "scroll",
+      () => {
+        btn.hidden = window.scrollY < 400;
+      },
+      { passive: true }
+    );
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
   /** アプリのスタート */
   async function start() {
+    setupBackToTop();
     try {
       const [worldTopo, countriesData, matchesData] = await Promise.all([
         fetchJson("data/world-110m.json"),
