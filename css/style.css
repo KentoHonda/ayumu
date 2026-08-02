@@ -184,6 +184,7 @@ kbd {
   fill: var(--other-navy);
   stroke: #0a1a33;
   stroke-width: 0.6;
+  vector-effect: non-scaling-stroke; /* ズームしても、国ざかいの線は太くしない */
 }
 .country.joined {
   fill: var(--joined-green);
@@ -205,6 +206,7 @@ kbd {
   stroke: #ffffff;
   stroke-width: 1.5;
   cursor: pointer;
+  vector-effect: non-scaling-stroke; /* ズームしても、わく線は太くしない */
 }
 .country-marker:hover { fill: var(--joined-green-light); }
 .country-marker:focus-visible {

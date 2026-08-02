@@ -25,6 +25,15 @@ const WorldMap = (() => {
   let featureByCountryId = new Map(); // 国コード(JPN など) → 地図のかたち
   let markerByCountryId = new Map();  // 国コード → 丸いしるし(地図に形がない島国用)
 
+  // ズームしても文字が大きくなりすぎないように、いまの拡大率をおぼえておく
+  let currentZoomK = 1;
+  let anchoredItems = []; // ラベルやスコアのふだ({ g, x, y })。拡大率に合わせて大きさを直す
+
+  /** ラベルやふだを、地図の場所(x, y)にはりつけて、ズームのぶんだけ縮めて表示する */
+  function applyAnchoredTransform(item) {
+    item.g.attr("transform", `translate(${item.x}, ${item.y}) scale(${1 / currentZoomK})`);
+  }
+
   /**
    * 地図をつくる
    * @param {object} worldTopo world-110m.json(TopoJSONデータ)
@@ -143,6 +152,10 @@ const WorldMap = (() => {
       ])
       .on("zoom", (event) => {
         mapRoot.attr("transform", event.transform);
+        // 地図を大きくしても、文字やしるしは大きくなりすぎないように縮めなおす
+        currentZoomK = event.transform.k;
+        anchoredItems.forEach(applyAnchoredTransform);
+        markerByCountryId.forEach((m) => m.attr("r", 5 / currentZoomK));
       });
     svg.call(zoom).on("dblclick.zoom", null);
 
@@ -162,6 +175,7 @@ const WorldMap = (() => {
     );
     lineLayer.selectAll("*").remove();
     labelLayer.selectAll("*").remove();
+    anchoredItems = [];
   }
 
   /** 国(1つか2つ)を黄色でえらんだ状態にする */
@@ -236,7 +250,7 @@ const WorldMap = (() => {
       const yOverlap = Math.abs(badge.y - label.y) < 32;
       if (xOverlap && yOverlap) {
         badge.y = label.y - 40;
-        badge.g.attr("transform", `translate(${badge.x}, ${badge.y})`);
+        applyAnchoredTransform(badge);
       }
     });
   }
@@ -247,8 +261,8 @@ const WorldMap = (() => {
     const xOverlap = Math.abs(label1.x - label2.x) < (label1.width + label2.width) / 2 + 6;
     const yOverlap = Math.abs(label1.y - label2.y) < 26;
     if (xOverlap && yOverlap) {
-      const newY = label1.y + 26;
-      label2.g.attr("transform", `translate(${label2.tx}, ${newY})`);
+      label2.y = label1.y + 26;
+      applyAnchoredTransform(label2);
     }
   }
 
@@ -272,7 +286,7 @@ const WorldMap = (() => {
 
   /** スコアのふだ(黄色)をかく。場所の情報をかえす */
   function addScoreBadge(xy, text) {
-    const g = labelLayer.append("g").attr("transform", `translate(${xy[0]}, ${xy[1]})`);
+    const g = labelLayer.append("g");
     const label = g
       .append("text")
       .attr("class", "score-badge-text")
@@ -288,7 +302,10 @@ const WorldMap = (() => {
       .attr("width", box.width + 24)
       .attr("height", box.height + 12)
       .attr("rx", 10);
-    return { g, x: xy[0], y: xy[1], width: box.width + 24, height: box.height + 12 };
+    const item = { g, x: xy[0], y: xy[1], width: box.width + 24, height: box.height + 12 };
+    anchoredItems.push(item);
+    applyAnchoredTransform(item);
+    return item;
   }
 
   /** 国旗+国名のラベルをかく(sideLabel は「ホーム」「アウェイ」か null)。場所の情報をかえす */
@@ -302,32 +319,34 @@ const WorldMap = (() => {
     const label = g
       .append("text")
       .attr("class", "map-label-text")
-      .attr("x", 12) // 国旗のぶん、右にずらす
       .attr("dominant-baseline", "middle")
       .attr("font-size", 14)
       .text(text);
     const box = label.node().getBBox();
+    const totalWidth = box.width + 34;
+    // ラベルのまん中が(0, 0)になるように、国旗・わく・文字をならべる
+    label.attr("x", -totalWidth / 2 + 26);
     g.insert("rect", "text")
       .attr("class", "map-label-bg")
-      .attr("x", -14)
+      .attr("x", -totalWidth / 2)
       .attr("y", box.y - 4)
-      .attr("width", box.width + 34)
+      .attr("width", totalWidth)
       .attr("height", box.height + 8)
       .attr("rx", 7);
     g.append("image")
       .attr("href", country.flag)
-      .attr("x", -10)
+      .attr("x", -totalWidth / 2 + 4)
       .attr("y", -7)
       .attr("width", 18)
       .attr("height", 14)
       .attr("preserveAspectRatio", "none");
     // ラベルが地図のそとにはみ出さないよう、ぜんたいを少し中央よりにする
-    const totalWidth = box.width + 34;
     const gx = Math.min(Math.max(center[0], totalWidth / 2 + 4), WIDTH - totalWidth / 2 - 4);
-    const tx = gx - totalWidth / 2 + 14;
     const ty = Math.min(y, HEIGHT - 14);
-    g.attr("transform", `translate(${tx}, ${ty})`);
-    return { g, x: gx, y: ty, width: totalWidth, tx };
+    const item = { g, x: gx, y: ty, width: totalWidth };
+    anchoredItems.push(item);
+    applyAnchoredTransform(item);
+    return item;
   }
 
   // そとから使えるものだけを公開する
