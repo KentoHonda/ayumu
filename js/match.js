@@ -170,29 +170,37 @@ const MatchView = (() => {
     const homeCountry = countriesById.get(home.countryId);
     const awayCountry = countriesById.get(away.countryId);
 
-    const goalRow = (g) =>
-      `<p class="goal-row"><span class="minute">${escapeHtml(g.minute)}分</span> ` +
-      `${escapeHtml(g.player || "(かくにん中)")}` +
-      `<span class="goal-type">${goalTypeText(g.type)}</span> <span aria-hidden="true">⚽</span></p>`;
+    // ホームは「アイコン・選手・時間」、アウェイは「時間・選手・アイコン」のじゅんにして、
+    // まん中のスコアボードをはさんで左右たいしょうに見えるようにする
+    const goalRow = (g, side) => {
+      const minute = `<span class="minute">${escapeHtml(g.minute)}分</span>`;
+      const name = `${escapeHtml(g.player || "(かくにん中)")}<span class="goal-type">${goalTypeText(g.type)}</span>`;
+      const icon = `<span aria-hidden="true">⚽</span>`;
+      return side === "home"
+        ? `<p class="goal-row">${icon} ${name} ${minute}</p>`
+        : `<p class="goal-row">${minute} ${name} ${icon}</p>`;
+    };
 
-    const cardRow = (c) => {
-      const icon = c.type === "red" ? "🟥" : "🟨";
+    const cardRow = (c, side) => {
+      const minute = `<span class="minute">${escapeHtml(c.minute)}分</span>`;
       const label = c.type === "red" ? "レッドカード" : "イエローカード";
-      return (
-        `<p class="goal-row"><span class="minute">${escapeHtml(c.minute)}分</span> ` +
-        `${escapeHtml(c.player)} <span aria-hidden="true">${icon}</span>` +
-        `<span class="visually-hidden">${label}</span></p>`
-      );
+      const icon =
+        `<span aria-hidden="true">${c.type === "red" ? "🟥" : "🟨"}</span>` +
+        `<span class="visually-hidden">${label}</span>`;
+      const name = escapeHtml(c.player);
+      return side === "home"
+        ? `<p class="goal-row">${icon} ${name} ${minute}</p>`
+        : `<p class="goal-row">${minute} ${name} ${icon}</p>`;
     };
 
     // ゴールとカードをまとめて、時間のじゅんにならべる
     const eventsHtml = (side, teamScore) => {
       const goals = match.goals
         .filter((g) => g.team === side)
-        .map((g) => ({ sortKey: minuteValue(g.minute), html: goalRow(g) }));
+        .map((g) => ({ sortKey: minuteValue(g.minute), html: goalRow(g, side) }));
       const cards = (match.cards || [])
         .filter((c) => c.team === side)
-        .map((c) => ({ sortKey: minuteValue(c.minute), html: cardRow(c) }));
+        .map((c) => ({ sortKey: minuteValue(c.minute), html: cardRow(c, side) }));
       if (!goals.length && !cards.length && teamScore === 0) {
         return `<p class="no-data">ゴールもカードもなし</p>`;
       }
