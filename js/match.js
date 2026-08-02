@@ -107,11 +107,10 @@ const MatchView = (() => {
         html += `<h4 class="stage-type-heading">${heading}</h4>`;
         lastType = section.stageType;
       }
-      // 国でしぼったとき・えらんだ試合がある箱・決勝の箱は、ひらいておく
+      // 国でしぼったときと、えらんだ試合がある箱だけ、ひらいておく
+      // (さいしょと「もとにもどす」のあとは、ぜんぶとじた状態にそろえる)
       const open =
-        options.openAll ||
-        section.matches.some((m) => m.id === selectedId) ||
-        section.stage === "決勝"
+        options.openAll || section.matches.some((m) => m.id === selectedId)
           ? " open"
           : "";
       html += `<details class="stage-box"${open}><summary>${escapeHtml(section.stage)} <span class="stage-count">(${section.matches.length}試合)</span></summary><div class="stage-matches">`;

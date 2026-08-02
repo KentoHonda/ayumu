@@ -600,36 +600,13 @@ kbd {
 .sources-list a:hover { color: var(--gold); }
 
 /* ---------- 選手ランキング ---------- */
-.rank-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-.rank-tab {
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--text);
-  background: var(--panel-light);
-  border: 2px solid var(--line);
-  border-radius: 999px;
-  padding: 10px 16px;
-  min-height: 48px;
-  cursor: pointer;
-}
-.rank-tab:hover { border-color: var(--gold); background: #24457e; }
-.rank-tab[aria-pressed="true"] {
-  background: var(--gold);
-  color: #082042;
-  border-color: #b8860b;
-}
 .rank-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   max-width: 640px;
   margin: 0 auto;
+  padding: 4px 10px 10px;
 }
 .rank-row {
   display: grid;
