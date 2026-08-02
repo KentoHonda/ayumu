@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ワールドカップ2026 せかい地図アプリ</title>
+  <meta name="description" content="2026年サッカーワールドカップのしあいと出場国を、せかい地図でしらべられる学習アプリです(小学生の自由研究)。">
+  <link rel="icon" href="assets/icons/ball.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#map-section">地図までスキップ</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="title-block">
+        <!-- トロフィーのアイコン -->
+        <svg class="trophy" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M16 8h32v6c0 14-6 24-16 24S16 28 16 14V8z" fill="#ffd166" stroke="#b8860b" stroke-width="2"/>
+          <path d="M16 12H6v4c0 8 5 13 12 14" fill="none" stroke="#ffd166" stroke-width="4"/>
+          <path d="M48 12h10v4c0 8-5 13-12 14" fill="none" stroke="#ffd166" stroke-width="4"/>
+          <rect x="28" y="38" width="8" height="8" fill="#ffd166"/>
+          <rect x="20" y="46" width="24" height="6" rx="2" fill="#ffd166" stroke="#b8860b" stroke-width="2"/>
+          <circle cx="32" cy="20" r="7" fill="#fff8e1"/>
+        </svg>
+        <div>
+          <h1>ワールドカップ2026</h1>
+          <p class="subtitle">せかい地図で しあいを チェック!</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="ページの中のメニュー">
+        <a href="#map-section">せかい地図</a>
+        <a href="#match-section">しあいのけっか</a>
+        <a href="#country-section">国のじょうほう</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="error-banner" id="error-banner" hidden>
+      データが よみこめませんでした。ファイルを そのまま ひらいたときは うごかないことがあります。
+      README の「パソコンで うごかす ほうほう」を 見てね。
+    </p>
+
+    <!-- ========== せかい地図 ========== -->
+    <section id="map-section" class="panel" aria-labelledby="map-heading">
+      <h2 id="map-heading"><span aria-hidden="true">🌍</span> せかい地図</h2>
+      <p class="hint">
+        あかるい青色の国は、ワールドカップ2026に 出た国だよ。<br>
+        国を タップ(クリック)すると、その国のことが わかるよ。キーボードの
+        <kbd>Tab</kbd> と <kbd>Enter</kbd> でも えらべるよ。
+      </p>
+      <div class="map-toolbar">
+        <button type="button" id="zoom-in" class="zoom-btn" aria-label="地図を大きくする">+</button>
+        <button type="button" id="zoom-out" class="zoom-btn" aria-label="地図を小さくする">−</button>
+        <button type="button" id="zoom-reset" class="zoom-btn zoom-reset" aria-label="地図をもとの大きさにもどす">もとにもどす</button>
+      </div>
+      <div class="map-wrap">
+        <svg id="world-map" role="group" aria-label="せかい地図。ワールドカップに出た国をえらべます。"></svg>
+      </div>
+      <div class="legend" role="img" aria-label="地図のはんれい。あかるい青はワールドカップに出た国、青はホームの国、赤はアウェイの国、黄色はえらんだ国、点線はたいせんラインです。">
+        <span class="legend-item"><span class="chip chip-joined"></span>ワールドカップに出た国</span>
+        <span class="legend-item"><span class="chip chip-home"></span>ホームの国</span>
+        <span class="legend-item"><span class="chip chip-away"></span>アウェイの国</span>
+        <span class="legend-item"><span class="chip chip-selected"></span>えらんだ国</span>
+        <span class="legend-item"><span class="chip chip-line"></span>たいせんライン(まん中の数字はスコア)</span>
+      </div>
+    </section>
+
+    <!-- ========== しあいのけっか ========== -->
+    <section id="match-section" class="panel" aria-labelledby="match-heading">
+      <h2 id="match-heading"><span aria-hidden="true">⚽</span> しあいのけっか</h2>
+      <p class="hint">見たい しあいの ボタンを おしてね。</p>
+      <div id="match-list" class="match-list"></div>
+      <article id="match-detail" aria-live="polite"></article>
+    </section>
+
+    <!-- ========== 国のじょうほう ========== -->
+    <section id="country-section" class="panel" aria-labelledby="country-heading">
+      <h2 id="country-heading"><span aria-hidden="true">🚩</span> 国のじょうほう</h2>
+      <p class="hint">地図で 国をえらぶと、ここに くわしい じょうほうが 出るよ。</p>
+      <div id="country-cards" class="country-cards"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>このページは、小学生の自由研究(じゆうけんきゅう)で作った、ワールドカップ2026の学習アプリです。</p>
+    <p>しあいのデータは、FIFA(国際サッカー連盟)などの公式じょうほうを もとにしています。くわしくは、それぞれのしあいの「じょうほうのもとを見る」を見てね。</p>
+    <p>このページに、名前・住所などの こじんじょうほうは のせていません。</p>
+  </footer>
+
+  <!-- ライブラリ(リポジトリの中に入れてあるので、インターネットのAPIにはアクセスしません) -->
+  <script src="libs/d3.v7.min.js"></script>
+  <script src="libs/topojson-client.min.js"></script>
+  <!-- このアプリのプログラム -->
+  <script src="js/map.js"></script>
+  <script src="js/match.js"></script>
+  <script src="js/country.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

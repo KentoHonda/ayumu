@@ -1,0 +1,11 @@
+# Claude Code のローカル設定(公開リポジトリに入れない)
+.claude/
+
+# OSがかってに作るファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタの設定
+.vscode/
+.idea/

@@ -1,0 +1,91 @@
+{
+  "note": "2026年ワールドカップ本大会(ほんたいかい)のしあいだけをのせています。公式(こうしき)のじょうほうでかくにんできたデータだけを入れます。わからないところは空(から)のままにして、すいそくでうめません。formationConfirmed が false のしあいは、せんしゅのならびが「おおよそ」であることを画面に表示します。",
+  "matches": [
+    {
+      "id": "NED-JPN-2026-06-14",
+      "competition": "2026 FIFAワールドカップ",
+      "stage": "グループF",
+      "date": "2026-06-14",
+      "dateJa": "2026年6月14日",
+      "venue": "AT&Tスタジアム(アメリカ・テキサス州アーリントン)",
+      "homeTeam": {
+        "countryId": "NLD",
+        "nameJa": "オランダ",
+        "score": 2,
+        "formation": "4-3-3",
+        "formationConfirmed": false,
+        "startingPlayers": [
+          { "number": 1, "name": "フェルブルッヘン", "position": "GK", "row": 0 },
+          { "number": 22, "name": "ダンフリース", "position": "DF", "row": 1 },
+          { "number": 6, "name": "ファン・ヘッケ", "position": "DF", "row": 1 },
+          { "number": 4, "name": "ファン・ダイク", "position": "DF", "row": 1 },
+          { "number": 15, "name": "ファン・デ・フェン", "position": "DF", "row": 1 },
+          { "number": 8, "name": "フラーフェンベルフ", "position": "MF", "row": 2 },
+          { "number": 21, "name": "デ・ヨング", "position": "MF", "row": 2 },
+          { "number": 14, "name": "レイナース", "position": "MF", "row": 2 },
+          { "number": 24, "name": "サマーフィル", "position": "FW", "row": 3 },
+          { "number": 18, "name": "マレン", "position": "FW", "row": 3 },
+          { "number": 11, "name": "ハクポ", "position": "FW", "row": 3 }
+        ],
+        "substitutions": [
+          { "minute": "70", "playerOut": "マレン", "playerIn": "デパイ" },
+          { "minute": "70", "playerOut": "サマーフィル", "playerIn": "コープマイネルス" },
+          { "minute": "70", "playerOut": "レイナース", "playerIn": "ティンバー" },
+          { "minute": "81", "playerOut": "フラーフェンベルフ", "playerIn": "アケ" },
+          { "minute": "85", "playerOut": "ハクポ", "playerIn": "ブロビー" }
+        ]
+      },
+      "awayTeam": {
+        "countryId": "JPN",
+        "nameJa": "日本",
+        "score": 2,
+        "formation": "3-4-2-1",
+        "formationConfirmed": false,
+        "startingPlayers": [
+          { "number": 1, "name": "鈴木彩艶", "position": "GK", "row": 0 },
+          { "number": 16, "name": "渡辺剛", "position": "DF", "row": 1 },
+          { "number": 3, "name": "谷口彰悟", "position": "DF", "row": 1 },
+          { "number": 21, "name": "伊藤洋輝", "position": "DF", "row": 1 },
+          { "number": 10, "name": "堂安律", "position": "MF", "row": 2 },
+          { "number": 24, "name": "佐野海舟", "position": "MF", "row": 2 },
+          { "number": 15, "name": "鎌田大地", "position": "MF", "row": 2 },
+          { "number": 13, "name": "中村敬斗", "position": "MF", "row": 2 },
+          { "number": 8, "name": "久保建英", "position": "MF", "row": 3 },
+          { "number": 11, "name": "前田大然", "position": "MF", "row": 3 },
+          { "number": 18, "name": "上田綺世", "position": "FW", "row": 4 }
+        ],
+        "substitutions": [
+          { "minute": "66", "playerOut": "前田大然", "playerIn": "伊東純也" },
+          { "minute": "75", "playerOut": "久保建英", "playerIn": "小川航基" },
+          { "minute": "75", "playerOut": "堂安律", "playerIn": "菅原由勢" },
+          { "minute": "75", "playerOut": "渡辺剛", "playerIn": "冨安健洋" },
+          { "minute": "84", "playerOut": "上田綺世", "playerIn": "塩貝健人" }
+        ]
+      },
+      "goals": [
+        { "team": "home", "minute": "51", "player": "ファン・ダイク", "type": "normal" },
+        { "team": "away", "minute": "57", "player": "中村敬斗", "type": "normal" },
+        { "team": "home", "minute": "64", "player": "サマーフィル", "type": "normal" },
+        { "team": "away", "minute": "89", "player": "鎌田大地", "type": "normal" }
+      ],
+      "sources": [
+        {
+          "name": "FIFA 公式 試合ページ(英語)",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470"
+        },
+        {
+          "name": "FIFA 公式 試合レポート(英語)",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-japan-highlights-match-report"
+        },
+        {
+          "name": "ESPN 試合記録(英語)",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands"
+        },
+        {
+          "name": "Wikipedia: 2026 FIFA World Cup Group F(英語)",
+          "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F"
+        }
+      ]
+    }
+  ]
+}

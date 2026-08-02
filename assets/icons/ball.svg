@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="サッカーボール">
+  <circle cx="50" cy="50" r="46" fill="#ffffff" stroke="#0a1a33" stroke-width="5"/>
+  <polygon points="50,32 67,44 61,64 39,64 33,44" fill="#0a1a33"/>
+  <g stroke="#0a1a33" stroke-width="4" stroke-linecap="round">
+    <line x1="50" y1="32" x2="50" y2="10"/>
+    <line x1="67" y1="44" x2="87" y2="36"/>
+    <line x1="61" y1="64" x2="74" y2="82"/>
+    <line x1="39" y1="64" x2="26" y2="82"/>
+    <line x1="33" y1="44" x2="13" y2="36"/>
+  </g>
+</svg>

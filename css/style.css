@@ -1,0 +1,559 @@
+/* =========================================================
+   ワールドカップ2026 せかい地図アプリ のスタイル
+   サッカー中継のデータ画面みたいな、濃い青のデザイン
+   ========================================================= */
+
+:root {
+  /* 色は、ここでまとめて決めています */
+  --bg: #0a1a33;            /* いちばんうしろの濃い青 */
+  --panel: #12294d;         /* パネルの青 */
+  --panel-light: #1a3560;   /* すこし明るいパネル */
+  --line: #2c4a7c;          /* わく線 */
+  --text: #f5f8ff;          /* ふつうの文字(白っぽい色) */
+  --text-soft: #c3d2ec;     /* すこしうすい文字 */
+  --gold: #ffd166;          /* 金色(えらんだ国・スコア) */
+  --home-blue: #4da3ff;     /* ホームの国の青 */
+  --away-red: #ff6b6b;      /* アウェイの国の赤 */
+  --joined-blue: #3d6db5;   /* 出場国の青 */
+  --other-navy: #22375c;    /* 出ていない国の色 */
+  --ocean: #0e2244;         /* 海の色 */
+  --pitch-green: #17643b;   /* サッカーコートの緑 */
+  --focus: #ffe08a;         /* キーボードでえらんだときのわく */
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  /* 子どもにも読みやすい、まるっこいゴシック体をえらんでいます */
+  font-family: "Hiragino Maru Gothic ProN", "BIZ UDPGothic", "Yu Gothic UI", "Yu Gothic",
+    "Meiryo", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ---------- キーボードそうさの人のための「スキップリンク」 ---------- */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -60px;
+  background: var(--gold);
+  color: #082042;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  z-index: 100;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 8px; }
+
+/* ---------- ヘッダー ---------- */
+.site-header {
+  background: linear-gradient(135deg, #0d2347 0%, #123063 55%, #0d2347 100%);
+  border-bottom: 3px solid var(--gold);
+  padding: 18px 16px;
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.title-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.trophy { width: 56px; height: 56px; flex-shrink: 0; }
+h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4.5vw, 2.2rem);
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+.subtitle {
+  margin: 2px 0 0;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: clamp(0.95rem, 3vw, 1.15rem);
+}
+
+/* ヘッダーのメニュー */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.main-nav a {
+  display: inline-block;
+  background: var(--panel-light);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 2px solid var(--line);
+  font-size: 1rem;
+}
+.main-nav a:hover { background: #24457e; border-color: var(--gold); }
+
+/* ---------- 全体のレイアウト ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 14px 40px;
+}
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 18px;
+  margin-top: 22px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.3rem, 4vw, 1.6rem);
+  border-left: 8px solid var(--gold);
+  padding-left: 12px;
+}
+h3 { font-size: 1.2rem; margin: 0 0 8px; }
+.hint { color: var(--text-soft); margin: 4px 0 14px; }
+kbd {
+  background: var(--panel-light);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 8px;
+  font-family: inherit;
+}
+
+.error-banner {
+  background: #5b1f2b;
+  border: 2px solid var(--away-red);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ---------- 地図 ---------- */
+.map-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.zoom-btn {
+  min-width: 52px;
+  min-height: 48px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--panel-light);
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.zoom-reset { font-size: 1rem; padding: 0 14px; }
+.zoom-btn:hover { border-color: var(--gold); background: #24457e; }
+
+.map-wrap {
+  background: var(--ocean);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+#world-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: pan-y; /* スマホで上下スクロールできるようにする */
+}
+
+/* 地図の中の国の色 */
+.country {
+  fill: var(--other-navy);
+  stroke: #0a1a33;
+  stroke-width: 0.6;
+}
+.country.joined {
+  fill: var(--joined-blue);
+  cursor: pointer;
+}
+.country.joined:hover { fill: #5a8fd6; }
+.country.joined:focus-visible {
+  outline: none;
+  stroke: var(--focus);
+  stroke-width: 2;
+}
+.country.selected { fill: var(--gold); }
+.country.home-team { fill: var(--home-blue); }
+.country.away-team { fill: var(--away-red); }
+
+.ocean { fill: var(--ocean); }
+
+/* たいせんライン */
+.match-line {
+  fill: none;
+  stroke: #ffe08a;
+  stroke-width: 2.5;
+  stroke-dasharray: 7 6;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* 地図の上のラベル(国名やスコア) */
+.map-label-bg { fill: rgba(8, 20, 44, 0.85); stroke: var(--line); rx: 8; }
+.map-label-text {
+  fill: #fff;
+  font-weight: bold;
+  font-family: inherit;
+}
+.score-badge-bg { fill: var(--gold); stroke: #b8860b; }
+.score-badge-text { fill: #082042; font-weight: bold; }
+
+/* はんれい(凡例) */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+.legend-item { display: inline-flex; align-items: center; gap: 7px; }
+.chip {
+  width: 22px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.chip-joined { background: var(--joined-blue); }
+.chip-home { background: var(--home-blue); }
+.chip-away { background: var(--away-red); }
+.chip-selected { background: var(--gold); }
+.chip-line {
+  background: none;
+  border: none;
+  border-top: 3px dashed #ffe08a;
+  height: 0;
+  border-radius: 0;
+}
+
+/* ---------- しあいリスト ---------- */
+.match-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.match-btn {
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: var(--text);
+  background: var(--panel-light);
+  border: 2px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 18px;
+  min-height: 52px;
+  cursor: pointer;
+  text-align: left;
+}
+.match-btn:hover { border-color: var(--gold); background: #24457e; }
+.match-btn[aria-pressed="true"] {
+  border-color: var(--gold);
+  background: #2b4c86;
+  box-shadow: 0 0 0 2px var(--gold) inset;
+}
+.match-btn .match-btn-date {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--text-soft);
+}
+
+/* ---------- スコアボード ---------- */
+.match-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  color: var(--text-soft);
+  margin-bottom: 12px;
+}
+.stage-badge {
+  background: var(--gold);
+  color: #082042;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 4px 14px;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #16325c, #102647);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 14px;
+}
+.sb-team { text-align: center; min-width: 0; }
+.sb-team .flag {
+  width: 64px;
+  height: 43px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  object-fit: cover;
+}
+.sb-team .team-name {
+  font-size: clamp(1.05rem, 3.5vw, 1.5rem);
+  font-weight: bold;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+.side-label {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 2px 12px;
+  color: #082042;
+}
+.side-label.home { background: var(--home-blue); }
+.side-label.away { background: var(--away-red); }
+
+.sb-center { text-align: center; }
+.sb-score {
+  font-size: clamp(2.2rem, 9vw, 3.6rem);
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  white-space: nowrap;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.sb-result {
+  display: inline-block;
+  margin-top: 6px;
+  background: var(--gold);
+  color: #082042;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 3px 16px;
+  font-size: 0.95rem;
+}
+
+/* ---------- しあいのくわしい中身 ---------- */
+.match-part { margin-top: 20px; }
+.match-part h4 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 6px;
+}
+
+/* とくてん(ゴール)を、ホーム左・アウェイ右にならべる */
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.col-head {
+  font-weight: bold;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+.col-home { text-align: left; }
+.col-away { text-align: right; }
+.goal-row, .sub-row {
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+.minute {
+  display: inline-block;
+  background: var(--panel-light);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 8px;
+  font-weight: bold;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.goal-type { color: var(--text-soft); font-size: 0.9rem; }
+.no-data { color: var(--text-soft); }
+
+/* せんしゅこうたい */
+.sub-arrow { color: var(--gold); font-weight: bold; }
+.sub-out, .sub-in { white-space: nowrap; }
+.sub-inout { color: var(--text-soft); font-size: 0.85rem; }
+
+/* ---------- フォーメーション ---------- */
+.formation-note {
+  background: var(--panel-light);
+  border-left: 6px solid var(--gold);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+.pitches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.pitch-box { text-align: center; }
+.pitch-title { font-weight: bold; margin-bottom: 6px; }
+.pitch-title .formation-name { color: var(--gold); }
+.pitch-svg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ---------- じょうほうのもと(出典) ---------- */
+.sources-list { margin: 0; padding-left: 22px; }
+.sources-list a { color: #9cc7ff; font-weight: bold; }
+.sources-list a:hover { color: var(--gold); }
+
+/* ---------- 国のじょうほうカード ---------- */
+.country-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 16px;
+}
+.country-card {
+  background: linear-gradient(180deg, #16325c, #102647);
+  border: 2px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+.country-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.country-card-head .flag {
+  width: 84px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  object-fit: cover;
+}
+.country-card-head .country-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.country-card-head .country-kana {
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+.group-badge {
+  display: inline-block;
+  background: var(--home-blue);
+  color: #082042;
+  font-weight: bold;
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.country-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.country-table th, .country-table td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.country-table th {
+  width: 9em;
+  color: var(--text-soft);
+  font-weight: bold;
+  white-space: nowrap;
+}
+.country-note {
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  margin: 10px 0 0;
+}
+.country-empty {
+  color: var(--text-soft);
+  background: var(--panel-light);
+  border: 2px dashed var(--line);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+}
+
+/* ---------- フッター ---------- */
+.site-footer {
+  border-top: 2px solid var(--line);
+  margin-top: 30px;
+  padding: 20px 16px 34px;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  text-align: center;
+}
+.site-footer p { max-width: 900px; margin: 6px auto; }
+
+/* 画面には見えないけれど、読み上げソフトにはつたわる文字 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- ボタンやリンクをキーボードでえらんだときのわく ---------- */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* =========================================================
+   スマートフォンなど、せまい画面のとき
+   ========================================================= */
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .main-nav a { padding: 8px 12px; font-size: 0.92rem; }
+
+  .scoreboard { padding: 14px 8px; gap: 6px; }
+  .sb-team .flag { width: 48px; height: 32px; }
+
+  /* とくてん・こうたいの2れつは、せまい画面では文字を少し小さくして重ならないようにする */
+  .two-cols { gap: 8px; font-size: 0.92rem; }
+  .minute { padding: 0 6px; }
+
+  /* フォーメーションのコートは、たてにならべる */
+  .pitches { grid-template-columns: 1fr; }
+
+  .country-cards { grid-template-columns: 1fr; }
+}
