@@ -326,6 +326,20 @@ kbd {
   font-weight: normal;
   font-size: 0.88rem;
 }
+/* グループの箱の見出しにならべる、4か国の国旗 */
+.stage-flags {
+  display: inline-flex;
+  gap: 5px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.stage-flag {
+  width: 22px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  object-fit: cover;
+}
 .stage-matches {
   display: flex;
   flex-direction: column;

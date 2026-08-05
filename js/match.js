@@ -102,7 +102,7 @@ const MatchView = (() => {
       if (section.stageType !== lastType) {
         const heading =
           section.stageType === "group"
-            ? "🏁 グループリーグ(1回せんリーグ)"
+            ? "🏁 グループリーグ(1回せん各リーグ6試合)"
             : "🏆 決勝トーナメント(かったら つぎにすすめる)";
         html += `<h4 class="stage-type-heading">${heading}</h4>`;
         lastType = section.stageType;
@@ -113,7 +113,21 @@ const MatchView = (() => {
         options.openAll || section.matches.some((m) => m.id === selectedId)
           ? " open"
           : "";
-      html += `<details class="stage-box"${open}><summary>${escapeHtml(section.stage)} <span class="stage-count">(${section.matches.length}試合)</span></summary><div class="stage-matches">`;
+      // グループの箱には、そのグループ4か国の国旗をならべる
+      // (決勝トーナメントの箱は、これまでどおり試合の数を出す)
+      let summaryExtra = ` <span class="stage-count">(${section.matches.length}試合)</span>`;
+      if (section.stageType === "group") {
+        const letter = section.stage.replace("グループ", "");
+        const flags = [...countriesById.values()]
+          .filter((c) => c.group === letter)
+          .map(
+            (c) =>
+              `<img class="stage-flag" src="${escapeHtml(c.flag)}" alt="${escapeHtml(c.nameJa)}" loading="lazy">`
+          )
+          .join("");
+        summaryExtra = ` <span class="stage-flags">${flags}</span>`;
+      }
+      html += `<details class="stage-box"${open}><summary>${escapeHtml(section.stage)}${summaryExtra}</summary><div class="stage-matches">`;
       section.matches.forEach((match) => {
         html += matchButtonHtml(match, countriesById, selectedId);
       });
