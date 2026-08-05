@@ -17,9 +17,10 @@
   let filteredCountryIds = null; // どの国の試合にしぼっているか(null = ぜんぶ)
   let selectedMatchId = null;    // いまえらんでいる試合
 
-  /** JSONファイルをよみこむ(GitHub Pagesのサブフォルダでもうごくように、相対パスをつかう) */
+  /** JSONファイルをよみこむ(GitHub Pagesのサブフォルダでもうごくように、相対パスをつかう)
+      ?v= の更新番号をつけて、古いキャッシュが使われないようにする */
   async function fetchJson(path) {
-    const res = await fetch(path);
+    const res = await fetch(`${path}?v=${window.ASSET_VERSION || "1"}`);
     if (!res.ok) {
       throw new Error(`${path} がよみこめませんでした (${res.status})`);
     }

@@ -6,7 +6,10 @@
   <title>ワールドカップ2026 世界地図アプリ</title>
   <meta name="description" content="2026年サッカーワールドカップの試合と出場国を、世界地図でしらべられる学習アプリです(小学生の自由研究)。">
   <link rel="icon" href="assets/icons/ball.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- ?v= の数字は「アプリの更新番号」。プログラムやデータを直したら1つ上げると、
+       見ている人のブラウザに古いキャッシュがのこっていても、すぐ新しいものが読みこまれる -->
+  <script>window.ASSET_VERSION = "2";</script>
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#map-section">地図までスキップ</a>
@@ -110,10 +113,10 @@
   <script src="libs/d3.v7.min.js"></script>
   <script src="libs/topojson-client.min.js"></script>
   <!-- このアプリのプログラム -->
-  <script src="js/map.js"></script>
-  <script src="js/match.js"></script>
-  <script src="js/country.js"></script>
-  <script src="js/ranking.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/map.js?v=2"></script>
+  <script src="js/match.js?v=2"></script>
+  <script src="js/country.js?v=2"></script>
+  <script src="js/ranking.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
 </body>
 </html>
