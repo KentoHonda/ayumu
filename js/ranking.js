@@ -31,11 +31,11 @@ const RankingView = (() => {
     onCountryTap = onTap;
     boxesEl = document.getElementById("ranking-boxes");
 
-    // 4つの箱をつくる(さいしょは「得点」だけひらいておく)
-    boxesEl.innerHTML = KINDS.map((kind, i) => {
+    // 4つの箱をつくる(さいしょはぜんぶとじた状態。見出しをおすとひらく)
+    boxesEl.innerHTML = KINDS.map((kind) => {
       const rows = rankings[kind.key] || [];
       return (
-        `<details class="stage-box"${i === 0 ? " open" : ""}>` +
+        `<details class="stage-box">` +
         `<summary>${kind.label} <span class="stage-count">(${rows.length}人)</span></summary>` +
         `<div class="rank-list">${rowsHtml(kind, rows)}</div>` +
         `</details>`
